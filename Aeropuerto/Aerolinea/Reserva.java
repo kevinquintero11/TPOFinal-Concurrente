@@ -15,4 +15,15 @@ public class Reserva {
         this.aeropuerto = aeropuerto;
         this.idReserva = id;
     }
+
+    public Aeropuerto getAeropuerto(){
+        return this.aeropuerto;
+    }
+
+    public Aerolinea getAerolinea(){
+        return this.aerolinea;
+    }
+
+
+    
 }
