@@ -1,4 +1,4 @@
-package Tren;
+package Aeropuerto.Tren;
 
 public class Tren {
     

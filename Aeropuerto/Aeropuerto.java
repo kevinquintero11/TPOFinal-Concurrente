@@ -4,7 +4,7 @@ import java.util.List;
 
 import Aeropuerto.Aerolinea.Aerolinea;
 import Aeropuerto.Terminal.Terminal;
-import Tren.Tren;
+import Aeropuerto.Tren.Tren;
 
 public class Aeropuerto{
     private String nombreAeropuerto;
