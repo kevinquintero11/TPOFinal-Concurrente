@@ -3,9 +3,11 @@ package Aeropuerto;
 import java.util.List;
 
 import Aeropuerto.Aerolinea.Aerolinea;
+import Aeropuerto.PuestoAtencion.PuestoAtencion;
 import Aeropuerto.Terminal.Terminal;
 import Aeropuerto.Tren.Tren;
 import Nose.Reloj;
+import Pasajero.Pasajero;
 
 public class Aeropuerto{
     private String nombreAeropuerto;
@@ -79,6 +81,10 @@ public class Aeropuerto{
             System.out.println("El aeropuerto está ahora cerrado.");
         }
     }
+
+    // public synchronized PuestoAtencion ingresarPuestoInforme(Pasajero pasajero){
+    //   //  return pasajero.getReserva();
+    // }
 
     
 }

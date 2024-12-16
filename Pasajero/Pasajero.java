@@ -35,7 +35,12 @@ public class Pasajero implements Runnable {
 
         Aeropuerto aeropuerto = this.miReserva.getAeropuerto();
         PuestoAtencion puesto;
-        aeropuerto.ingresarAeropuerto();
+        try {
+            aeropuerto.ingresarAeropuerto();
+           // aeropuerto.ingresarPuestoInforme();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         
         
     }
