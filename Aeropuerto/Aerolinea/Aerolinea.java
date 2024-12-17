@@ -14,6 +14,12 @@ public class Aerolinea {
         this.listaVuelos = vuelos;
     }
     
+    public String getNombre(){
+        return this.nombreAerolinea;
+    }
 
+    public List<Vuelo> getVuelos(){
+        return this.listaVuelos;
+    }
     
 }

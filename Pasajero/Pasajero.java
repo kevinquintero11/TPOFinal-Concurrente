@@ -37,7 +37,8 @@ public class Pasajero implements Runnable {
         PuestoAtencion puesto;
         try {
             aeropuerto.ingresarAeropuerto();
-           // aeropuerto.ingresarPuestoInforme();
+            PuestoAtencion puestoPasajero = aeropuerto.ingresarPuestoInforme(this);
+            puestoPasajero.ingresarPuestoAtencion(this);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

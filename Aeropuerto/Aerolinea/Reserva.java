@@ -24,6 +24,13 @@ public class Reserva {
         return this.aerolinea;
     }
 
+    public int getIdReserva(){
+        return this.idReserva;
+    }
+
+    public Vuelo getVuelo(){
+        return this.miVuelo;
+    }
 
     
 }

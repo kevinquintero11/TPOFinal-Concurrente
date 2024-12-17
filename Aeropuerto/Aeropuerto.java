@@ -15,13 +15,15 @@ public class Aeropuerto{
     private PuestoInforme puestoInforme;
     private List<Aerolinea> listaAerolineas;
     private List<Terminal> listaTerminales;
+    private List<PuestoAtencion> listaPuestos;
     private Reloj reloj;
     private boolean abierto = false;
 
-    public Aeropuerto(String nombre, List<Aerolinea> aerolineas, List<Terminal> terminales, Tren trencito, Reloj rel){
+    public Aeropuerto(String nombre, List<Aerolinea> aerolineas, List<Terminal> terminales, List<PuestoAtencion> puestos, Tren trencito, Reloj rel){
         this.nombreAeropuerto = nombre;
         this.listaAerolineas = aerolineas;
         this.listaTerminales = terminales;
+        this.listaPuestos = puestos;
         this.tren = trencito;
         this.puestoInforme = new PuestoInforme();
         this.reloj = rel;
@@ -59,6 +61,10 @@ public class Aeropuerto{
         this.puestoInforme = puesto;
     }
 
+    public List<PuestoAtencion> getPuestosAtencion(){
+        return this.listaPuestos;
+    }
+
     public synchronized void ingresarAeropuerto() throws InterruptedException {
         while (!abierto) { // Evaluar la condición
             System.out.println("El aeropuerto todavía no está abierto");
@@ -67,7 +73,7 @@ public class Aeropuerto{
         System.out.println("Pasajero entra al aeropuerto.");
     }
 
-    public synchronized void abrirAeropuerto() {
+    public void abrirAeropuerto() {
         if (!abierto) { // Evitar notificaciones redundantes si ya está abierto
             abierto = true; // Cambiar el estado
             System.out.println("El aeropuerto está ahora abierto.");
@@ -75,16 +81,17 @@ public class Aeropuerto{
         }
     }
 
-    public synchronized void cerrarAeropuerto() {
+    public void cerrarAeropuerto() {
         if (abierto) {
             abierto = false; // Cambiar el estado
             System.out.println("El aeropuerto está ahora cerrado.");
         }
     }
 
-    // public synchronized PuestoAtencion ingresarPuestoInforme(Pasajero pasajero){
-    //   //  return pasajero.getReserva();
-    // }
+    public PuestoAtencion ingresarPuestoInforme(Pasajero pasajero) throws InterruptedException{
+       PuestoAtencion puestoAtencion = puestoInforme.atenderPasajero(pasajero, this.listaPuestos);
+        return puestoAtencion;
+    }
 
     
 }
