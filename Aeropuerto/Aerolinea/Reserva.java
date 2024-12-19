@@ -32,5 +32,9 @@ public class Reserva {
         return this.miVuelo;
     }
 
+    public Terminal getTerminal(){
+        return this.terminal;
+    }
+
     
 }

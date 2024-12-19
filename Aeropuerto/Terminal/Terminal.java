@@ -16,5 +16,7 @@ public class Terminal {
     public int getIdTerminal(){
         return this.idTerminal;
     }
+
+   
     
 }

@@ -93,5 +93,11 @@ public class Aeropuerto{
         return puestoAtencion;
     }
 
+    public void irTerminal(Pasajero pasajero, List<Object> lista) throws InterruptedException{
+        this.tren.subir();
+        Terminal term = (Terminal) lista.get(0);
+        this.tren.bajar(term);
+    }
+
     
 }

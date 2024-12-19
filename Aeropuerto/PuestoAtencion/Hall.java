@@ -1,18 +1,19 @@
 package Aeropuerto.PuestoAtencion;
 
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+
+import Pasajero.Pasajero;
 
 public class Hall {
     
-     private Lock lock = new ReentrantLock(true);
-    private Condition[] puestosAtencion;
+    private BlockingQueue<Pasajero> colaEspera;
+   
+    public Hall() { 
+        this.colaEspera = new LinkedBlockingQueue<>(200);
+    }
 
-    public Hall(int cantPuestos) {
-        this.puestosAtencion = new Condition[cantPuestos];
-        for (int i = 0; i < cantPuestos; i++) {
-            puestosAtencion[i] = lock.newCondition();
-        }
+    public BlockingQueue<Pasajero> getColaEspera(){
+        return this.colaEspera;
     }
 }

@@ -1,8 +1,11 @@
 package Pasajero;
 
+import java.util.List;
+
 import Aeropuerto.Aeropuerto;
 import Aeropuerto.Aerolinea.Reserva;
 import Aeropuerto.PuestoAtencion.PuestoAtencion;
+import Aeropuerto.Terminal.Terminal;
 
 public class Pasajero implements Runnable {
 
@@ -37,8 +40,9 @@ public class Pasajero implements Runnable {
         PuestoAtencion puesto;
         try {
             aeropuerto.ingresarAeropuerto();
-            PuestoAtencion puestoPasajero = aeropuerto.ingresarPuestoInforme(this);
-            puestoPasajero.ingresarPuestoAtencion(this);
+            puesto = aeropuerto.ingresarPuestoInforme(this);
+            List<Object> terminalYPuertoEmbarque = puesto.ingresarPuestoAtencion(this); // Intenta ingresar al puesto
+            aeropuerto.irTerminal(this, terminalYPuertoEmbarque);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
