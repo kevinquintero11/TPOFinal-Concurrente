@@ -65,6 +65,10 @@ public class Aeropuerto{
         return this.listaPuestos;
     }
 
+    public Reloj getReloj(){
+        return this.reloj;
+    }
+
     public synchronized void ingresarAeropuerto() throws InterruptedException {
         while (!abierto) { // Evaluar la condición
             System.out.println("El aeropuerto todavía no está abierto");
