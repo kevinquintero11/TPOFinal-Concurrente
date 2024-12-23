@@ -10,6 +10,7 @@ import Aeropuerto.Aerolinea.Aerolinea;
 import Aeropuerto.Terminal.PuestoEmbarque;
 import Aeropuerto.Terminal.Terminal;
 import Pasajero.Pasajero;
+import Utilidades.Log;
 
 public class PuestoAtencion {
     
@@ -39,7 +40,10 @@ public class PuestoAtencion {
     public List<Object> atenderPasajero(Pasajero pas) throws InterruptedException {
         List<Object> terminalYPuestoEmbarque = new ArrayList<>();
         Pasajero pasajero = colaPasajeros.take(); // Toma al siguiente pasajero
+
+        Log.escribir("Atendiendo a " + pasajero.getReserva().getIdReserva());
         System.out.println("Atendiendo a " + pasajero.getReserva().getIdReserva());
+
         Terminal terminal = pasajero.getReserva().getTerminal();
         terminalYPuestoEmbarque.add(terminal);
         terminalYPuestoEmbarque.add(pasajero.getReserva().getTerminal().getIdTerminal());
@@ -52,6 +56,7 @@ public class PuestoAtencion {
         List<Object> terminalYPuestoEmbarque = new ArrayList<>();
         if (capacidadDisponible.tryAcquire()) {
             colaPasajeros.put(pasajero); // Ingresa directamente al puesto
+            Log.escribir(pasajero.getReserva().getIdReserva() + " ingresó al puesto de atención.");
             System.out.println(pasajero.getReserva().getIdReserva() + " ingresó al puesto de atención.");
            
         } else {
@@ -66,6 +71,7 @@ public class PuestoAtencion {
         // El guardia permite que un pasajero del hall central ingrese al puesto
         Pasajero pasajero = hall.getColaEspera().take(); // Toma al siguiente pasajero en espera
         colaPasajeros.put(pasajero); // Lo coloca en el puesto
+        Log.escribir("Guardia permitió el ingreso de " + pasajero.getReserva().getIdReserva());
         System.out.println("Guardia permitió el ingreso de " + pasajero.getReserva().getIdReserva());
         capacidadDisponible.acquire(); // Disminuye el espacio disponible
     }

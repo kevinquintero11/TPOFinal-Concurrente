@@ -8,6 +8,8 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 import Aeropuerto.Terminal.Terminal;
+import Pasajero.Pasajero;
+import Utilidades.Log;
 
 public class Tren implements Runnable{
     private int capacidadTren;
@@ -35,7 +37,7 @@ public class Tren implements Runnable{
         this.terminalActual = null;
     }
     
-    public void subir() throws InterruptedException {
+    public void subir(Pasajero pasajero) throws InterruptedException {
         // espaciosDisponibles.acquire(); // Esperar espacio disponible
         // //mutex.acquire(); // Exclusión mutua para abordar
         // cerrojo.lock();
@@ -58,6 +60,7 @@ public class Tren implements Runnable{
                 esperandoDetencion.await();
             }
             pasajerosABordo++;
+            Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": subio al tren. Pasajeros a bordo: " + pasajerosABordo);
             System.out.println(Thread.currentThread().getName() + " subió al tren. Pasajeros a bordo: " + pasajerosABordo);
 
             // Si el tren está lleno, notifica que puede iniciar el viaje
@@ -69,7 +72,7 @@ public class Tren implements Runnable{
         }
     }
 
-    public void bajar(Terminal terminal) throws InterruptedException{
+    public void bajar(Terminal terminal, Pasajero pasajero) throws InterruptedException{
         cerrojo.lock();
         try {
             // Espera hasta que el tren se detenga en una terminal
@@ -83,6 +86,7 @@ public class Tren implements Runnable{
             if(pasajerosABordo == 0){
                 esperandoBajadaPasajeros.signal();
             }
+            Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": bajo en la terminal " + terminal.getIdTerminal());
             System.out.println(Thread.currentThread().getName() + " bajó en la terminal: " + terminal.getIdTerminal());
         } finally {
             // Asegura la liberación del lock
@@ -93,6 +97,7 @@ public class Tren implements Runnable{
     // El tren verifica y detiene en cada terminal según las solicitudes
     private void detenerEnTerminal(Terminal terminal) throws InterruptedException {
         System.out.println("El tren se detiene en la terminal: " + terminal.getIdTerminal());
+        Log.escribir("El tren se detiene en la terminal: " + terminal.getIdTerminal());
         this.terminalActual = terminal;
         this.detenidoEnTerminal = true;
         this.esperandoDetencion.signalAll();
@@ -111,6 +116,7 @@ public class Tren implements Runnable{
     private void iniciarViajeTren() throws InterruptedException {
         this.iniciarViaje.acquire();
         System.out.println("El tren comienza su recorrido con " + pasajerosABordo + " pasajeros a bordo.");
+        Log.escribir("El tren comienza su recorrido con " + pasajerosABordo + " pasajeros a bordo.");
         int cantidadTerminales = listaTerminales.size();
 
         for (int i = 0; i < cantidadTerminales; i++) {
@@ -131,6 +137,7 @@ public class Tren implements Runnable{
 
     private void regresarInicio() throws InterruptedException{
         System.out.println("El tren regresa vacío al inicio del recorrido.");
+        Log.escribir("El tren regresa vacío al inicio del recorrido.");
         this.ultimaTerminal = false;
         this.terminalActual = null; // Indica que el tren está fuera de las terminales
         Thread.sleep(2000); // Simula el tiempo de regreso

@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadLocalRandom;
 
+import Pasajero.Pasajero;
+import Utilidades.Log;
+
 public class FreeShop {
 
     private String nombre;
@@ -33,13 +36,15 @@ public class FreeShop {
     }
 
     // Método para ingresar al free-shop
-    public boolean ingresarFreeShop() {
+    public boolean ingresarFreeShop(Pasajero pasajero) {
         boolean ingreso = false;
         try {
             if (!capacidadTienda.tryAcquire()) {
                 System.out.println(Thread.currentThread().getName() + " no pudo ingresar. Free-shop lleno.");
+                Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": no pudo ingresar. Free-shop lleno.");
                 ingreso = false;
             }
+            Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": ingresó al free-shop.");
             System.out.println(Thread.currentThread().getName() + " ingresó al free-shop.");
             ingreso = true;
         } catch (Exception e) {
@@ -50,22 +55,23 @@ public class FreeShop {
         return ingreso;
     }
 
-    // Método para salir del free-shop
-    public void salirFreeShop() {
+    public void salirFreeShop(Pasajero pasajero) {
         System.out.println(Thread.currentThread().getName() + " salió del free-shop.");
+        Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": salió del free-shop.");
         capacidadTienda.release(); // Libera un lugar en la tienda
     }
 
-    public void comprar(double monto) {
+    public void comprar(double monto, Pasajero pasajero) {
         try {
             cajasDisponibles.acquire(); // Espera por una caja disponible
             System.out.println(Thread.currentThread().getName() + " está usando una caja.");
-            
+            Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ":  está usando una caja.");
             mutex.acquire();
             balanceTienda += monto;
             mutex.release();
             Thread.sleep(1000); // Simula el tiempo de uso de la caja
-            System.out.println(Thread.currentThread().getName() + " terminó de usar la caja.");
+            Log.escribir(nombre);
+            System.out.println("Pasajero " + pasajero.getReserva().getIdReserva() + ": terminó de usar la caja.");
             cajasDisponibles.release(); // Libera una caja
         } catch (InterruptedException e) {
             e.printStackTrace();

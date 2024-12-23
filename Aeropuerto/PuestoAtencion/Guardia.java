@@ -17,7 +17,6 @@ public class Guardia implements Runnable {
                 puestoTrabajo.permitirIngresoDesdeHall(); // Permitir ingreso desde el hall central
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
-                System.out.println("El guardia fue interrumpido.");
                 break;
             }
         }

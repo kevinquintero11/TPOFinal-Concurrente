@@ -49,10 +49,15 @@ public class Main {
         crearPuestosAtencion();
         
         aeropuerto = new Aeropuerto("Viaje Bonito", listaAerolineas, listaTerminales, listaPuestosAtencion, tren);
-        Reloj reloj = new Reloj(5, aeropuerto);
-        Thread hiloReloj = new Thread(reloj);
         crearPasajeros(aeropuerto);
+        Reloj reloj = new Reloj(5, aeropuerto);
+
+        Thread hiloReloj = new Thread(reloj);
         listaHilos.add(hiloReloj);
+
+        Thread hiloTren = new Thread(tren);
+        listaHilos.add(hiloTren);
+
 
         int cantHilos = listaHilos.size();
         for (int i = 0; i < cantHilos; i++) {

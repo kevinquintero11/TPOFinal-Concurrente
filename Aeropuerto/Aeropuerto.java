@@ -7,6 +7,7 @@ import Aeropuerto.PuestoAtencion.PuestoAtencion;
 import Aeropuerto.Terminal.Terminal;
 import Aeropuerto.Tren.Tren;
 import Pasajero.Pasajero;
+import Utilidades.Log;
 import Utilidades.Reloj;
 
 public class Aeropuerto{
@@ -71,6 +72,7 @@ public class Aeropuerto{
 
     public synchronized void ingresarAeropuerto() throws InterruptedException {
         while (!abierto) { // Evaluar la condición
+            Log.escribir("El aeropuerto todavia no esta abierto");
             System.out.println("El aeropuerto todavía no está abierto");
             this.wait(); // Los pasajeros esperan aquí
         }
@@ -80,6 +82,7 @@ public class Aeropuerto{
     public void abrirAeropuerto() {
         if (!abierto) { // Evitar notificaciones redundantes si ya está abierto
             abierto = true; // Cambiar el estado
+            Log.escribir("El aeropuerto está ahora abierto.");
             System.out.println("El aeropuerto está ahora abierto.");
             notifyAll(); // Despertar a todos los pasajeros que están esperando
         }
@@ -89,6 +92,7 @@ public class Aeropuerto{
         if (abierto) {
             abierto = false; // Cambiar el estado
             System.out.println("El aeropuerto está ahora cerrado.");
+            Log.escribir("El aeropuerto esta ahora cerrado");
         }
     }
 
@@ -98,9 +102,9 @@ public class Aeropuerto{
     }
 
     public void irTerminal(Pasajero pasajero, Terminal terminal) throws InterruptedException{
-        this.tren.subir();
+        this.tren.subir(pasajero);
        // Terminal term = (Terminal) lista.get(0);
-        this.tren.bajar(terminal);
+        this.tren.bajar(terminal, pasajero);
     }
 
     

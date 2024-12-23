@@ -9,6 +9,7 @@ import Aeropuerto.PuestoAtencion.PuestoAtencion;
 import Aeropuerto.Terminal.Terminal;
 import Aeropuerto.Terminal.FreeShop.FreeShop;
 //import Aeropuerto.Terminal.FreeShop.Producto;
+import Utilidades.Log;
 
 public class Pasajero implements Runnable {
 
@@ -49,20 +50,23 @@ public class Pasajero implements Runnable {
             aeropuerto.irTerminal(this, terminalVuelo);
             if (Math.abs(aeropuerto.getReloj().getHora() - this.miReserva.getVuelo().getHora()) > 1) {
                 FreeShop tienda = this.miReserva.getTerminal().getTienda();
-                if(tienda.ingresarFreeShop()) {
+                if(tienda.ingresarFreeShop(this)) {
                     Random random = new Random();
                     boolean comprar = random.nextBoolean();
                     if(comprar){
                         double monto = 1000 + (4000 - 1000) * random.nextDouble();
-                        tienda.comprar(monto);
+                        tienda.comprar(monto, this);
                     }else{
+                        Log.escribir("Pasajero " + this.getReserva().getIdReserva() + ": solo observó los productos");
                         System.out.println(this.getReserva().getIdReserva() + " solo observo los productos");
                     }
+                    tienda.salirFreeShop(this);
                 }
             }
            // this.getReserva().getVuelo().esperarAbordaje();
             terminalVuelo.getPuestoEmbarqueGeneral().esperarAbordaje(this.getReserva().getVuelo());
             System.out.println(this.getReserva().getIdReserva() + " Subio al avion. Hora de vuelo: " + this.miReserva.getVuelo().getHora()+ ". Hora aeropuerto: "+aeropuerto.getReloj().getHora());
+            Log.escribir("Pasajero " + this.getReserva().getIdReserva() + ": Subio al avion. Hora de vuelo: " + this.miReserva.getVuelo().getHora()+ ". Hora aeropuerto: "+aeropuerto.getReloj().getHora());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }      
