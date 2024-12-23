@@ -1,23 +1,21 @@
 package Aeropuerto.Terminal;
 
-import java.util.List;
-
 import Aeropuerto.Terminal.FreeShop.FreeShop;
 
 public class Terminal {
 
-    private int idTerminal;
-    private List<PuestoEmbarque> listaPuestos;
+    private char idTerminal;
+    private PuestoEmbarque puestoEmbarqueGeneral;
     private FreeShop tienda;
 
-    public Terminal(List<PuestoEmbarque> puestos, int id, FreeShop tiendaTerminal){
-        this.listaPuestos = puestos;
+    public Terminal(PuestoEmbarque puesto, char id, FreeShop tiendaTerminal){
+        this.puestoEmbarqueGeneral = puesto;
         this.idTerminal = id;
         this.tienda = tiendaTerminal;
 
     }
 
-    public int getIdTerminal(){
+    public char getIdTerminal(){
         return this.idTerminal;
     }
 
@@ -25,6 +23,8 @@ public class Terminal {
         return this.tienda;
     }
 
-   
-    
+    public PuestoEmbarque getPuestoEmbarqueGeneral(){
+        return this.puestoEmbarqueGeneral;
+    }
+       
 }

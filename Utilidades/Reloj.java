@@ -1,4 +1,4 @@
-package Nose;
+package Utilidades;
 
 import Aeropuerto.Aeropuerto;
 
@@ -22,12 +22,12 @@ public class Reloj implements Runnable {
             this.hora++;
         }
         System.out.println("Hora actual: " + this.hora);
-        notifyAll(); // Notificar a los posibles hilos esperando el cambio de hora
+        this.notifyAll(); // Notificar a los posibles hilos esperando el cambio de hora
     }
 
     public synchronized void verificarHoraVuelo(int horaVuelo) throws InterruptedException {
         while (this.hora != horaVuelo) {
-            wait(); // Esperar hasta que la hora del vuelo coincida
+            this.wait(); // Esperar hasta que la hora del vuelo coincida
         }
     }
 

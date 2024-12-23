@@ -8,7 +8,7 @@ import Aeropuerto.Aerolinea.Reserva;
 import Aeropuerto.PuestoAtencion.PuestoAtencion;
 import Aeropuerto.Terminal.Terminal;
 import Aeropuerto.Terminal.FreeShop.FreeShop;
-import Aeropuerto.Terminal.FreeShop.Producto;
+//import Aeropuerto.Terminal.FreeShop.Producto;
 
 public class Pasajero implements Runnable {
 
@@ -45,7 +45,8 @@ public class Pasajero implements Runnable {
             aeropuerto.ingresarAeropuerto();
             puesto = aeropuerto.ingresarPuestoInforme(this);
             List<Object> terminalYPuertoEmbarque = puesto.ingresarPuestoAtencion(this); // Intenta ingresar al puesto
-            aeropuerto.irTerminal(this, terminalYPuertoEmbarque);
+            Terminal terminalVuelo = (Terminal) terminalYPuertoEmbarque.get(0);
+            aeropuerto.irTerminal(this, terminalVuelo);
             if (Math.abs(aeropuerto.getReloj().getHora() - this.miReserva.getVuelo().getHora()) > 1) {
                 FreeShop tienda = this.miReserva.getTerminal().getTienda();
                 if(tienda.ingresarFreeShop()) {
@@ -59,14 +60,11 @@ public class Pasajero implements Runnable {
                     }
                 }
             }
-            this.getReserva().getVuelo().esperarDespegue();
+           // this.getReserva().getVuelo().esperarAbordaje();
+            terminalVuelo.getPuestoEmbarqueGeneral().esperarAbordaje(this.getReserva().getVuelo());
+            System.out.println(this.getReserva().getIdReserva() + " Subio al avion. Hora de vuelo: " + this.miReserva.getVuelo().getHora()+ ". Hora aeropuerto: "+aeropuerto.getReloj().getHora());
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
-        
-        
+        }      
     }
-
-
-    
 }

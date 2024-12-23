@@ -6,8 +6,8 @@ import Aeropuerto.Aerolinea.Aerolinea;
 import Aeropuerto.PuestoAtencion.PuestoAtencion;
 import Aeropuerto.Terminal.Terminal;
 import Aeropuerto.Tren.Tren;
-import Nose.Reloj;
 import Pasajero.Pasajero;
+import Utilidades.Reloj;
 
 public class Aeropuerto{
     private String nombreAeropuerto;
@@ -19,14 +19,14 @@ public class Aeropuerto{
     private Reloj reloj;
     private boolean abierto = false;
 
-    public Aeropuerto(String nombre, List<Aerolinea> aerolineas, List<Terminal> terminales, List<PuestoAtencion> puestos, Tren trencito, Reloj rel){
+    public Aeropuerto(String nombre, List<Aerolinea> aerolineas, List<Terminal> terminales, List<PuestoAtencion> puestos, Tren trencito){
         this.nombreAeropuerto = nombre;
         this.listaAerolineas = aerolineas;
         this.listaTerminales = terminales;
         this.listaPuestos = puestos;
         this.tren = trencito;
         this.puestoInforme = new PuestoInforme();
-        this.reloj = rel;
+        //this.reloj = rel;
     }
 
     public String getNombre(){
@@ -97,10 +97,10 @@ public class Aeropuerto{
         return puestoAtencion;
     }
 
-    public void irTerminal(Pasajero pasajero, List<Object> lista) throws InterruptedException{
+    public void irTerminal(Pasajero pasajero, Terminal terminal) throws InterruptedException{
         this.tren.subir();
-        Terminal term = (Terminal) lista.get(0);
-        this.tren.bajar(term);
+       // Terminal term = (Terminal) lista.get(0);
+        this.tren.bajar(terminal);
     }
 
     

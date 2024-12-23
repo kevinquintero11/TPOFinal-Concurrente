@@ -12,17 +12,17 @@ public class FreeShop {
     private Semaphore capacidadTienda; // Controla el acceso a la tienda
     private Semaphore cajasDisponibles; // Controla la cantidad de cajas disponibles
     private Semaphore mutex; // Exclusión mutua para acceder a las listas de cajas
-    private List<Producto> productos;
+    
     private List<Caja> cajasRDisponibles = new LinkedList<>();
     private List<Caja> cajasOcupadas = new LinkedList<>();
     private double balanceTienda;
 
-    public FreeShop(int capacidad, int numCajas, List<Producto> productos, String nombreTienda) {
+    public FreeShop(int capacidad, int numCajas, String nombreTienda) {
         this.capacidadMax = capacidad;
         this.capacidadTienda = new Semaphore(capacidad);
         this.cajasDisponibles = new Semaphore(numCajas);
         this.mutex = new Semaphore(1);
-        this.productos = productos;
+        
         this.nombre = nombreTienda;
         this.balanceTienda = ThreadLocalRandom.current().nextDouble(5000, 20000);
 

@@ -1,9 +1,9 @@
 package Aeropuerto.Aerolinea;
 
-import java.util.List;
+//import java.util.List;
 
 import Aeropuerto.Terminal.PuestoEmbarque;
-import Nose.Reloj;
+import Utilidades.Reloj;
 
 public class Vuelo {
 
@@ -16,7 +16,6 @@ public class Vuelo {
         this.horaDespegue = hs;
         this.destino = nombreDestino;
         this.puestoSalida = puesto;
-
     }
 
     public String getDestino(){
@@ -35,11 +34,5 @@ public class Vuelo {
        relojAeropuerto.verificarHoraVuelo(this.horaDespegue); //en este instante, los hilos haran wait dentro de verificarHolaVuelo
     }
 
-    public synchronized void esperarDes() throws InterruptedException{
-        while(this.horaDespegue != relojAeropuerto.getHora()){
-            wait();
-        }
-        notifyAll();
-    }
 
 }
