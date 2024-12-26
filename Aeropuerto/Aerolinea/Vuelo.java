@@ -12,10 +12,11 @@ public class Vuelo {
     private PuestoEmbarque puestoSalida;
     private Reloj relojAeropuerto;
 
-    public Vuelo(int hs, String nombreDestino, PuestoEmbarque puesto){
+    public Vuelo(int hs, String nombreDestino, PuestoEmbarque puesto, Reloj reloj){
         this.horaDespegue = hs;
         this.destino = nombreDestino;
         this.puestoSalida = puesto;
+        this.relojAeropuerto = reloj;
     }
 
     public String getDestino(){

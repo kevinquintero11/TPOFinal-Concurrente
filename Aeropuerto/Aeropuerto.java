@@ -20,14 +20,14 @@ public class Aeropuerto{
     private Reloj reloj;
     private boolean abierto = false;
 
-    public Aeropuerto(String nombre, List<Aerolinea> aerolineas, List<Terminal> terminales, List<PuestoAtencion> puestos, Tren trencito){
+    public Aeropuerto(String nombre, List<Aerolinea> aerolineas, List<Terminal> terminales, List<PuestoAtencion> puestos, Tren trencito, Reloj rel){
         this.nombreAeropuerto = nombre;
         this.listaAerolineas = aerolineas;
         this.listaTerminales = terminales;
         this.listaPuestos = puestos;
         this.tren = trencito;
         this.puestoInforme = new PuestoInforme();
-        //this.reloj = rel;
+        this.reloj = rel;
     }
 
     public String getNombre(){
@@ -79,7 +79,7 @@ public class Aeropuerto{
         System.out.println("Pasajero entra al aeropuerto.");
     }
 
-    public void abrirAeropuerto() {
+    public synchronized void abrirAeropuerto() {
         if (!abierto) { // Evitar notificaciones redundantes si ya está abierto
             abierto = true; // Cambiar el estado
             Log.escribir("El aeropuerto está ahora abierto.");

@@ -9,11 +9,12 @@ public class Reserva {
     private Vuelo miVuelo;
     private int idReserva;
 
-    public Reserva(Aeropuerto aeropuerto, Aerolinea aero, Vuelo vuelo, int id){
+    public Reserva(Aeropuerto aeropuerto, Aerolinea aero, Vuelo vuelo, int id, Terminal term){
         this.aerolinea = aero;
         this.miVuelo = vuelo;
         this.aeropuerto = aeropuerto;
         this.idReserva = id;
+        this.terminal = term;
     }
 
     public Aeropuerto getAeropuerto(){

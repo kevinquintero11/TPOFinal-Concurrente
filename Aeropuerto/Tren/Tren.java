@@ -61,7 +61,7 @@ public class Tren implements Runnable{
             }
             pasajerosABordo++;
             Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": subio al tren. Pasajeros a bordo: " + pasajerosABordo);
-            System.out.println(Thread.currentThread().getName() + " subió al tren. Pasajeros a bordo: " + pasajerosABordo);
+            //System.out.println(Thread.currentThread().getName() + " subió al tren. Pasajeros a bordo: " + pasajerosABordo);
 
             // Si el tren está lleno, notifica que puede iniciar el viaje
             if (pasajerosABordo == capacidadTren) {
@@ -87,7 +87,7 @@ public class Tren implements Runnable{
                 esperandoBajadaPasajeros.signal();
             }
             Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": bajo en la terminal " + terminal.getIdTerminal());
-            System.out.println(Thread.currentThread().getName() + " bajó en la terminal: " + terminal.getIdTerminal());
+            //System.out.println(Thread.currentThread().getName() + " bajó en la terminal: " + terminal.getIdTerminal());
         } finally {
             // Asegura la liberación del lock
             cerrojo.unlock();
@@ -96,6 +96,7 @@ public class Tren implements Runnable{
 
     // El tren verifica y detiene en cada terminal según las solicitudes
     private void detenerEnTerminal(Terminal terminal) throws InterruptedException {
+        cerrojo.lock();
         System.out.println("El tren se detiene en la terminal: " + terminal.getIdTerminal());
         Log.escribir("El tren se detiene en la terminal: " + terminal.getIdTerminal());
         this.terminalActual = terminal;
@@ -110,6 +111,7 @@ public class Tren implements Runnable{
             //espaciosDisponibles.drainPermits();
         }
         this.detenidoEnTerminal = false;
+        cerrojo.unlock();
     }
         
     // Inicia el viaje

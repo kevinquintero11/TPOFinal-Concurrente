@@ -4,13 +4,16 @@ import Aeropuerto.Aeropuerto;
 
 public class Reloj implements Runnable {
     private int hora;
-    private final Aeropuerto aeropuerto; // Referencia al aeropuerto
-
-    public Reloj(int hora, Aeropuerto aeropuerto) {
-        this.hora = hora;
-        this.aeropuerto = aeropuerto; // Asignar el aeropuerto
+    private Aeropuerto aeropuerto; // Referencia al aeropuerto
+    
+        public Reloj(int hora) {
+            this.hora = hora;
+           // this.aeropuerto = aeropuerto; // Asignar el aeropuerto
+        }
+    
+        public void setAeropuerto(Aeropuerto aero){
+            this.aeropuerto = aero;
     }
-
     public synchronized int getHora() {
         return this.hora;
     }

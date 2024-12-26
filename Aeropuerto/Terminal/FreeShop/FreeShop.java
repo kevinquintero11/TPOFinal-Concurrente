@@ -40,12 +40,12 @@ public class FreeShop {
         boolean ingreso = false;
         try {
             if (!capacidadTienda.tryAcquire()) {
-                System.out.println(Thread.currentThread().getName() + " no pudo ingresar. Free-shop lleno.");
+                //System.out.println(Thread.currentThread().getName() + " no pudo ingresar. Free-shop lleno.");
                 Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": no pudo ingresar. Free-shop lleno.");
                 ingreso = false;
             }
             Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": ingresó al free-shop.");
-            System.out.println(Thread.currentThread().getName() + " ingresó al free-shop.");
+            //System.out.println(Thread.currentThread().getName() + " ingresó al free-shop.");
             ingreso = true;
         } catch (Exception e) {
             e.printStackTrace();
@@ -56,7 +56,7 @@ public class FreeShop {
     }
 
     public void salirFreeShop(Pasajero pasajero) {
-        System.out.println(Thread.currentThread().getName() + " salió del free-shop.");
+        //System.out.println(Thread.currentThread().getName() + " salió del free-shop.");
         Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": salió del free-shop.");
         capacidadTienda.release(); // Libera un lugar en la tienda
     }
@@ -64,14 +64,14 @@ public class FreeShop {
     public void comprar(double monto, Pasajero pasajero) {
         try {
             cajasDisponibles.acquire(); // Espera por una caja disponible
-            System.out.println(Thread.currentThread().getName() + " está usando una caja.");
+           // System.out.println(Thread.currentThread().getName() + " está usando una caja.");
             Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ":  está usando una caja.");
             mutex.acquire();
             balanceTienda += monto;
             mutex.release();
             Thread.sleep(1000); // Simula el tiempo de uso de la caja
             Log.escribir(nombre);
-            System.out.println("Pasajero " + pasajero.getReserva().getIdReserva() + ": terminó de usar la caja.");
+            //System.out.println("Pasajero " + pasajero.getReserva().getIdReserva() + ": terminó de usar la caja.");
             cajasDisponibles.release(); // Libera una caja
         } catch (InterruptedException e) {
             e.printStackTrace();

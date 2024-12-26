@@ -16,12 +16,13 @@ import Aeropuerto.Terminal.Terminal;
 import Aeropuerto.Terminal.FreeShop.FreeShop;
 import Aeropuerto.Tren.Tren;
 import Pasajero.Pasajero;
+import Utilidades.Log;
 import Utilidades.Reloj;
 
 public class Main {
     
     //DECLARACION DE VARIABLES
-    final static int CANTIDAD_PASAJEROS = 100;
+    final static int CANTIDAD_PASAJEROS = 30;
     final static int CANTIDAD_TERMINALES = 3; // Segun consigna dice que son 3 terminales: A, B y C.
     final static int CANTIDAD_AEROLINEAS = 6; // CANTIDAD AerolineasXAeropuerto
     final static int CANTIDAD_VUELOS = 3; // CANTIDAD de VuelosxAerolinea
@@ -38,19 +39,22 @@ public class Main {
     final static Tren tren = new Tren(CAPMAX_TREN, listaTerminales);
     final static List<Pasajero> listaPasajeros = new LinkedList<>();
     final static List<Thread> listaHilos = new LinkedList<>();
+    final static Reloj reloj = new Reloj(5);
     
     public static void main(String[] args) {
         
+        Log logSistema = new Log();
         Aeropuerto aeropuerto;
- 
+        
         crearPuestosEmbarque();
         crearTerminales();
         crearAerolineas();
         crearPuestosAtencion();
         
-        aeropuerto = new Aeropuerto("Viaje Bonito", listaAerolineas, listaTerminales, listaPuestosAtencion, tren);
+        aeropuerto = new Aeropuerto("Viaje Bonito", listaAerolineas, listaTerminales, listaPuestosAtencion, tren, reloj);
+        reloj.setAeropuerto(aeropuerto);
         crearPasajeros(aeropuerto);
-        Reloj reloj = new Reloj(5, aeropuerto);
+        
 
         Thread hiloReloj = new Thread(reloj);
         listaHilos.add(hiloReloj);
@@ -88,10 +92,10 @@ public class Main {
         for(int i = 0; i < CANTIDAD_VUELOS; i++){
             int indiceDestino = random.nextInt(DESTINOS.length);
             int horaSalida = 7 + random.nextInt(16);
-            int numAleatorio = random.nextInt(3) + 1;
+            int numAleatorio = random.nextInt(2) + 1;
             PuestoEmbarque puesto = listaPuestosEmbarques.get(numAleatorio);
             
-            Vuelo vuelo = new Vuelo(horaSalida, DESTINOS[indiceDestino], puesto);
+            Vuelo vuelo = new Vuelo(horaSalida, DESTINOS[indiceDestino], puesto, reloj);
             listaVuelos.add(vuelo);
         }
         return  listaVuelos;
@@ -138,7 +142,9 @@ public class Main {
             Aerolinea aerolinea = listaAerolineas.get(numAleatorio);
             int  vueloAleatorio = random.nextInt(aerolinea.getVuelos().size());
             Vuelo vuelo = aerolinea.getVuelos().get(vueloAleatorio);
-            Reserva reserva = new Reserva(aeropuerto, aerolinea, vuelo, i+100);
+            int terminalAleatoria = random.nextInt(listaTerminales.size());
+            Terminal terminal = listaTerminales.get(terminalAleatoria);
+            Reserva reserva = new Reserva(aeropuerto, aerolinea, vuelo, i+100, terminal);
             Pasajero pasajero = new Pasajero(i, reserva);
             listaPasajeros.add(pasajero);
             Thread pasajeroHilo = new Thread(pasajero);
