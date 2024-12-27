@@ -70,20 +70,21 @@ public class Aeropuerto{
         return this.reloj;
     }
 
-    public synchronized void ingresarAeropuerto() throws InterruptedException {
+    public synchronized void ingresarAeropuerto(Pasajero pasajero) throws InterruptedException {
         while (!abierto) { // Evaluar la condición
-            Log.escribir("El aeropuerto todavia no esta abierto");
-            System.out.println("El aeropuerto todavía no está abierto");
+            Log.escribir("Pasajero " + pasajero.getIdPasajero() + " intenta ingresar pero el aeropuerto todavia no esta abierto");
+            //System.out.println("El aeropuerto todavía no está abierto");
             this.wait(); // Los pasajeros esperan aquí
         }
-        System.out.println("Pasajero entra al aeropuerto.");
+        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " entra al aeropuerto.");
+        //System.out.println("Pasajero entra al aeropuerto.");
     }
 
     public synchronized void abrirAeropuerto() {
         if (!abierto) { // Evitar notificaciones redundantes si ya está abierto
             abierto = true; // Cambiar el estado
             Log.escribir("El aeropuerto está ahora abierto.");
-            System.out.println("El aeropuerto está ahora abierto.");
+            //System.out.println("El aeropuerto está ahora abierto.");
             notifyAll(); // Despertar a todos los pasajeros que están esperando
         }
     }
@@ -91,7 +92,7 @@ public class Aeropuerto{
     public void cerrarAeropuerto() {
         if (abierto) {
             abierto = false; // Cambiar el estado
-            System.out.println("El aeropuerto está ahora cerrado.");
+            //System.out.println("El aeropuerto está ahora cerrado.");
             Log.escribir("El aeropuerto esta ahora cerrado");
         }
     }

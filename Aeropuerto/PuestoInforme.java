@@ -7,6 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import Aeropuerto.Aerolinea.Aerolinea;
 import Aeropuerto.PuestoAtencion.PuestoAtencion;
 import Pasajero.Pasajero;
+import Utilidades.Log;
 
 public class PuestoInforme {
     
@@ -18,7 +19,10 @@ public class PuestoInforme {
 
     public PuestoAtencion atenderPasajero(Pasajero pasajero, List<PuestoAtencion> puestos) throws InterruptedException{
         mutex.acquire();
+        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " esta siendo atendido en el puesto de informes.");
+        Thread.sleep(1000);
         PuestoAtencion puesto = indicarPuesto(pasajero, puestos);
+        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " se tiene que dirigir al puesto " + puesto.getAerolinea().getNombre());
         mutex.release();
         return puesto;
 

@@ -22,7 +22,7 @@ import Utilidades.Reloj;
 public class Main {
     
     //DECLARACION DE VARIABLES
-    final static int CANTIDAD_PASAJEROS = 30;
+    final static int CANTIDAD_PASAJEROS = 50;
     final static int CANTIDAD_TERMINALES = 3; // Segun consigna dice que son 3 terminales: A, B y C.
     final static int CANTIDAD_AEROLINEAS = 6; // CANTIDAD AerolineasXAeropuerto
     final static int CANTIDAD_VUELOS = 3; // CANTIDAD de VuelosxAerolinea
@@ -36,13 +36,13 @@ public class Main {
     final static Hall hall = new Hall();
     final static List<Aerolinea> listaAerolineas = new LinkedList<>();
     final static List<PuestoAtencion> listaPuestosAtencion = new LinkedList<>();
-    final static Tren tren = new Tren(CAPMAX_TREN, listaTerminales);
+    // final static Tren tren = new Tren(CAPMAX_TREN, listaTerminales);
     final static List<Pasajero> listaPasajeros = new LinkedList<>();
     final static List<Thread> listaHilos = new LinkedList<>();
     final static Reloj reloj = new Reloj(5);
     
     public static void main(String[] args) {
-        
+       
         Log logSistema = new Log();
         Aeropuerto aeropuerto;
         
@@ -50,7 +50,7 @@ public class Main {
         crearTerminales();
         crearAerolineas();
         crearPuestosAtencion();
-        
+        Tren tren = new Tren(CAPMAX_TREN, listaTerminales);
         aeropuerto = new Aeropuerto("Viaje Bonito", listaAerolineas, listaTerminales, listaPuestosAtencion, tren, reloj);
         reloj.setAeropuerto(aeropuerto);
         crearPasajeros(aeropuerto);
@@ -70,10 +70,17 @@ public class Main {
     }
     
     public static void crearAerolineas(){
-       
-        for(int i = 0; i < CANTIDAD_AEROLINEAS; i++){
+        String[] AEROLINEAS = {
+            "Aerolíneas Argentinas", "American Airlines", "British Airways", "Air France",
+            "Lufthansa", "Emirates", "Qantas Airways", "Japan Airlines",
+            "Iberia", "KLM Royal Dutch Airlines"
+        };
+
+        Random random = new Random();
+
+        for(int i = 0; i < CANTIDAD_AEROLINEAS; i++){       
             List<Vuelo> listaVuelos = crearVuelos();
-            Aerolinea aerolinea = new Aerolinea("Aerolinea " + i,  listaVuelos);
+            Aerolinea aerolinea = new Aerolinea(AEROLINEAS[i],  listaVuelos);
             listaAerolineas.add(aerolinea);
         }
 

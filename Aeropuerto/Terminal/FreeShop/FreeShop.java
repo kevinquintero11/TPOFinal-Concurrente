@@ -41,10 +41,10 @@ public class FreeShop {
         try {
             if (!capacidadTienda.tryAcquire()) {
                 //System.out.println(Thread.currentThread().getName() + " no pudo ingresar. Free-shop lleno.");
-                Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": no pudo ingresar. Free-shop lleno.");
+                Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": no pudo ingresar. Free-shop lleno.");
                 ingreso = false;
             }
-            Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": ingresó al free-shop.");
+            Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": ingresó al free-shop.");
             //System.out.println(Thread.currentThread().getName() + " ingresó al free-shop.");
             ingreso = true;
         } catch (Exception e) {
@@ -64,7 +64,7 @@ public class FreeShop {
     public void comprar(double monto, Pasajero pasajero) {
         try {
             cajasDisponibles.acquire(); // Espera por una caja disponible
-           // System.out.println(Thread.currentThread().getName() + " está usando una caja.");
+            //System.out.println(Thread.currentThread().getName() + " está usando una caja.");
             Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ":  está usando una caja.");
             mutex.acquire();
             balanceTienda += monto;

@@ -41,8 +41,8 @@ public class PuestoAtencion {
         List<Object> terminalYPuestoEmbarque = new ArrayList<>();
         Pasajero pasajero = colaPasajeros.take(); // Toma al siguiente pasajero
 
-        Log.escribir("Atendiendo a " + pasajero.getReserva().getIdReserva());
-        System.out.println("Atendiendo a " + pasajero.getReserva().getIdReserva());
+        Log.escribir("Atendiendo al pasajero " + pasajero.getIdPasajero() + " en el puesto " + this.getAerolinea().getNombre());
+        //System.out.println("Atendiendo a " + pasajero.getReserva().getIdReserva());
 
         Terminal terminal = pasajero.getReserva().getTerminal();
         terminalYPuestoEmbarque.add(terminal);
@@ -56,14 +56,16 @@ public class PuestoAtencion {
         List<Object> terminalYPuestoEmbarque = new ArrayList<>();
         if (capacidadDisponible.tryAcquire()) {
             colaPasajeros.put(pasajero); // Ingresa directamente al puesto
-            Log.escribir(pasajero.getReserva().getIdReserva() + " ingresó al puesto de atención.");
-            System.out.println(pasajero.getReserva().getIdReserva() + " ingresó al puesto de atención.");
+            Log.escribir("Pasajero " + pasajero.getIdPasajero() + " ingresó al puesto de atención: " + this.aerolinea.getNombre());
+            //System.out.println(pasajero.getReserva().getIdReserva() + " ingresó al puesto de atención.");
            
         } else {
             hall.getColaEspera().put(pasajero); // Si está lleno, espera en el hall
             
         }
         terminalYPuestoEmbarque = atenderPasajero(pasajero);
+        Terminal term = (Terminal) terminalYPuestoEmbarque.get(0);
+        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " salió del puesto de atencion y se dirige rumbo a la terminal " + term.getIdTerminal());
         return terminalYPuestoEmbarque;
     }
 
@@ -71,8 +73,8 @@ public class PuestoAtencion {
         // El guardia permite que un pasajero del hall central ingrese al puesto
         Pasajero pasajero = hall.getColaEspera().take(); // Toma al siguiente pasajero en espera
         colaPasajeros.put(pasajero); // Lo coloca en el puesto
-        Log.escribir("Guardia permitió el ingreso de " + pasajero.getReserva().getIdReserva());
-        System.out.println("Guardia permitió el ingreso de " + pasajero.getReserva().getIdReserva());
+        Log.escribir("Guardia permitió el ingreso de " + pasajero.getReserva().getIdReserva() + " al puesto de atencion: " + this.aerolinea.getNombre());
+        //System.out.println("Guardia permitió el ingreso de " + pasajero.getReserva().getIdReserva());
         capacidadDisponible.acquire(); // Disminuye el espacio disponible
     }
 

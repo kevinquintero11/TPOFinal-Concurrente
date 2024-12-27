@@ -24,8 +24,8 @@ public class Reloj implements Runnable {
         } else {
             this.hora++;
         }
-        Log.escribir("Hola actual Aeropuerto: " + this.hora);
-        System.out.println("Hora actual: " + this.hora);
+        Log.escribir("Hola actual Aeropuerto: " + this.hora + "hs");
+        //System.out.println("Hora actual: " + this.hora);
         this.notifyAll(); // Notificar a los posibles hilos esperando el cambio de hora
     }
 
@@ -39,7 +39,7 @@ public class Reloj implements Runnable {
     public void run() {
         while (true) {
             try {
-                Thread.sleep(10000); // Simula 1 hora con un intervalo de 10 segundos
+                Thread.sleep(5000); // Simula 1 hora con un intervalo de 10 segundos
                 avanzarTiempo(); // Incrementa la hora
                 manejarEstadoAeropuerto(); // Verifica si debe abrir o cerrar el aeropuerto
             } catch (InterruptedException e) {

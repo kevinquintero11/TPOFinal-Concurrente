@@ -6,10 +6,12 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
-
 import Aeropuerto.Terminal.Terminal;
 import Pasajero.Pasajero;
 import Utilidades.Log;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Tren implements Runnable{
     private int capacidadTren;
@@ -25,6 +27,8 @@ public class Tren implements Runnable{
     private ReentrantLock cerrojo = new ReentrantLock();
     private Condition esperandoDetencion = cerrojo.newCondition();
     private Condition esperandoBajadaPasajeros = cerrojo.newCondition();
+    private Condition esperandoNuevoRecorrido = cerrojo.newCondition();
+    private boolean inicioRecorrido = true;
 
     public Tren(int capacidad, List<Terminal> terminales){
         this.capacidadTren = capacidad;
@@ -34,36 +38,21 @@ public class Tren implements Runnable{
         this.iniciarViaje = new Semaphore(0);
         this.mutex = new Semaphore(1);
         this.barreraSubida = new CyclicBarrier(capacidad);
-        this.terminalActual = null;
+        this.terminalActual = terminales.get(0);
     }
-    
+
     public void subir(Pasajero pasajero) throws InterruptedException {
-        // espaciosDisponibles.acquire(); // Esperar espacio disponible
-        // //mutex.acquire(); // Exclusión mutua para abordar
-        // cerrojo.lock();
-        // pasajerosABordo++;
-        // System.out.println(Thread.currentThread().getName() + " subió al tren. Pasajeros a bordo: " + pasajerosABordo);
-        
-        // try {
-        //     // Espera un tiempo antes de iniciar si no todos los pasajeros han subido
-        //     barreraSubida.await(5, TimeUnit.SECONDS);
-        //     iniciarViaje.release();
-        // } catch (Exception e) {
-        //     e.printStackTrace();
-        // }
-
-        // cerrojo.unlock();
-
         cerrojo.lock();
         try {
-            while (pasajerosABordo >= capacidadTren) {
-                esperandoDetencion.await();
+            // Solo permite subir si el tren está al inicio del recorrido
+            while (!inicioRecorrido || pasajerosABordo >= capacidadTren) {
+                Log.escribir("Pasajero " + pasajero.getIdPasajero() + " intenta subir al tren, pero no puede.");
+                esperandoNuevoRecorrido.await();
             }
             pasajerosABordo++;
-            Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": subio al tren. Pasajeros a bordo: " + pasajerosABordo);
-            //System.out.println(Thread.currentThread().getName() + " subió al tren. Pasajeros a bordo: " + pasajerosABordo);
-
-            // Si el tren está lleno, notifica que puede iniciar el viaje
+            Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": subió al tren. Pasajeros a bordo: " + pasajerosABordo);
+    
+            // Notifica que el tren puede iniciar si está lleno
             if (pasajerosABordo == capacidadTren) {
                 iniciarViaje.release();
             }
@@ -71,85 +60,97 @@ public class Tren implements Runnable{
             cerrojo.unlock();
         }
     }
-
-    public void bajar(Terminal terminal, Pasajero pasajero) throws InterruptedException{
+    
+    public void bajar(Terminal terminal, Pasajero pasajero) throws InterruptedException {
         cerrojo.lock();
         try {
-            // Espera hasta que el tren se detenga en una terminal
-            while (!detenidoEnTerminal || terminalActual != terminal) {
+            // Espera hasta que el tren se detenga en una terminal.
+            while (!detenidoEnTerminal || terminalActual.getIdTerminal() != terminal.getIdTerminal() ) {
+                Log.escribir("Pasajero " + pasajero.getIdPasajero() + ". Terminal actual: " + terminalActual.getIdTerminal() + ". Terminal de bajada: " + terminal.getIdTerminal());
                 esperandoDetencion.await();
             }
-    
-            // Una vez detenido en la terminal correcta, el pasajero baja
-            //espaciosDisponibles.release();
             pasajerosABordo--;
-            if(pasajerosABordo == 0){
-                esperandoBajadaPasajeros.signal();
-            }
-            Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": bajo en la terminal " + terminal.getIdTerminal());
-            //System.out.println(Thread.currentThread().getName() + " bajó en la terminal: " + terminal.getIdTerminal());
+            Log.escribir("Pasajero " + pasajero.getIdPasajero() + " bajó en la terminal " + terminalActual.getIdTerminal());
+            esperandoBajadaPasajeros.signal(); // Notificar que un pasajero ha bajado.
+            
         } finally {
-            // Asegura la liberación del lock
+            cerrojo.unlock();
+        }
+    }
+    
+    private void detenerEnTerminal(Terminal terminal) throws InterruptedException {
+        cerrojo.lock();
+        try {
+            Log.escribir("El tren se detiene en la terminal: " + terminal.getIdTerminal());
+            this.terminalActual = terminal;
+            this.detenidoEnTerminal = true;
+            esperandoDetencion.signalAll(); // Notificar a los pasajeros que pueden bajar.
+            
+            if (ultimaTerminal) {
+                // Forzar el descenso de todos los pasajeros.
+                while (pasajerosABordo > 0) {
+                    Log.escribir("Todos los pasajeros deben bajar en la última terminal: " + terminal.getIdTerminal());
+                    esperandoBajadaPasajeros.await(); // Esperar a que todos bajen.
+                }
+            }
+            Thread.sleep(2000); // Simula la detención.
+            this.detenidoEnTerminal = false;
+        } finally {
             cerrojo.unlock();
         }
     }
 
-    // El tren verifica y detiene en cada terminal según las solicitudes
-    private void detenerEnTerminal(Terminal terminal) throws InterruptedException {
-        cerrojo.lock();
-        System.out.println("El tren se detiene en la terminal: " + terminal.getIdTerminal());
-        Log.escribir("El tren se detiene en la terminal: " + terminal.getIdTerminal());
-        this.terminalActual = terminal;
-        this.detenidoEnTerminal = true;
-        this.esperandoDetencion.signalAll();
-        
-        Thread.sleep(2000); // Simulamos el tiempo de detención en la terminal
-        if(ultimaTerminal){
-            while (pasajerosABordo > 0) {
-                esperandoBajadaPasajeros.await(); // Espera a que todos los pasajeros bajen
-            }
-            //espaciosDisponibles.drainPermits();
-        }
-        this.detenidoEnTerminal = false;
-        cerrojo.unlock();
-    }
-        
-    // Inicia el viaje
     private void iniciarViajeTren() throws InterruptedException {
-        this.iniciarViaje.acquire();
-        System.out.println("El tren comienza su recorrido con " + pasajerosABordo + " pasajeros a bordo.");
-        Log.escribir("El tren comienza su recorrido con " + pasajerosABordo + " pasajeros a bordo.");
-        int cantidadTerminales = listaTerminales.size();
-
-        for (int i = 0; i < cantidadTerminales; i++) {
-            Terminal terminal = listaTerminales.get(i);
-            try {
-                if (i == cantidadTerminales - 1) { // Última terminal
-                    this.ultimaTerminal = true;
+        iniciarViaje.acquire();
+       // cerrojo.lock();
+        try {
+            inicioRecorrido = false; // Cambia el estado
+            Log.escribir("El tren comienza su recorrido con " + pasajerosABordo + " pasajeros a bordo.");
+            int cantidadTerminales = listaTerminales.size();
+            for (int i = 0; i < cantidadTerminales; i++) {
+                Terminal terminal = listaTerminales.get(i);
+                Log.escribir("Terminal actual: " + terminal.getIdTerminal());
+                try {
+                    if (i == cantidadTerminales - 1) { // Última terminal
+                        ultimaTerminal = true;
+                    }
+                    detenerEnTerminal(terminal);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
-                detenerEnTerminal(terminal); 
-                
-            } catch (InterruptedException e) {
-                e.printStackTrace();
             }
+            Log.escribir("Terminó el recorrido del tren");
+        } finally {
+           // cerrojo.unlock();
         }
-       
         
     }
-
-    private void regresarInicio() throws InterruptedException{
-        System.out.println("El tren regresa vacío al inicio del recorrido.");
-        Log.escribir("El tren regresa vacío al inicio del recorrido.");
-        this.ultimaTerminal = false;
-        this.terminalActual = null; // Indica que el tren está fuera de las terminales
-        Thread.sleep(2000); // Simula el tiempo de regreso
+    
+    private void regresarInicio() throws InterruptedException {
+        cerrojo.lock();
+        try {
+            while (pasajerosABordo > 0) {
+                esperandoBajadaPasajeros.await();
+            }
+            Log.escribir("El tren regresa vacío al inicio del recorrido.");
+            Thread.sleep(2000); // Simula el tiempo de regreso
+            pasajerosABordo = 0;
+            inicioRecorrido = true;
+            ultimaTerminal = false; // Resetea el flag
+            esperandoNuevoRecorrido.signalAll();
+        } finally {
+            cerrojo.unlock();
+        }
     }
+    
+    
 
     @Override
     public void run() {
         while (true) {
             try {
                 this.iniciarViajeTren();
+                Log.escribir("Volviendo al inicio del aeropuerto.");
                 this.regresarInicio();
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -158,65 +159,171 @@ public class Tren implements Runnable{
     }
 
 
-    // public void subir() throws InterruptedException{
-        //     espaciosDisponibles.acquire();
-        //     mutex.acquire();
-        //     this.pasajerosABordo++;
-            
-        //      //si el pasajero es el ultimo en ingresar, avisa al tren.
-        //      if (this.pasajerosABordo == this.capacidadTren) {
-        //         this.iniciarViaje.release();
-        //     }
-    
-        //     mutex.release();
-        // }
+    // public class Tren implements Runnable {
+    //     private int capacidadTren;
+    //     private int pasajerosABordo;
+    //     private List<Terminal> listaTerminales;
+    //     private Semaphore espaciosDisponibles;
+    //     private Semaphore iniciarViaje;
+    //     private Semaphore mutex;
+    //     private CyclicBarrier barreraSubida;
+    //     private boolean detenidoEnTerminal = false;
+    //     private boolean ultimaTerminal = false;
+    //     private Terminal terminalActual;
+    //     private ReentrantLock cerrojo = new ReentrantLock();
+    //     private Condition esperandoDetencion = cerrojo.newCondition();
+    //     private Condition esperandoBajadaPasajeros = cerrojo.newCondition();
+    //     private Condition esperandoNuevoRecorrido = cerrojo.newCondition();
+    //     private boolean inicioRecorrido = true;
         
-    
-        // public void bajar() throws InterruptedException{
-        //     mutex.acquire();
-        //     this.pasajerosABordo--;
-        //     mutex.release();
-    
-        // }
-    
-        // public void iniciarViajeTren() throws InterruptedException{
-        //     this.iniciarViaje.acquire();
-        //     mutex.acquire();
-        //     int permisos = this.capacidadTren - this.pasajerosABordo;
-        //     mutex.release();
-        //     espaciosDisponibles.acquire(permisos);
-        //     int cantidadTerminales = listaTerminales.size();
-        //     for(int i = 0; i < cantidadTerminales; i++){
-    
-        //     }
-    
-    
-        // }
-    
-        // @Override
-        // public void run() {
-        //     while (true) {
-        //         try {
-        //             this.iniciarViajeTren();
-        //             //esto es para que espere un tiempo despues de estacionar en una terminal
-        //             while (!this.pararTerminal()) {
-        //                 Thread.sleep(4000); //espero un corto periodo de tiempo antes de volver a llamar al metodo.
-        //             }
-                    
-        //         } catch (InterruptedException e) {
-        //             e.printStackTrace();
-        //         }
-        //     }
-        // }
+    //     // Mapa para llevar cuenta de los pasajeros que bajan en cada terminal
+    //     private Map<Terminal, Integer> pasajerosPorTerminal = new HashMap<>();
+        
+    //     public Tren(int capacidad, List<Terminal> terminales){
+    //         this.capacidadTren = capacidad;
+    //         this.listaTerminales = terminales;
+    //         this.espaciosDisponibles = new Semaphore(capacidadTren);
+    //         this.pasajerosABordo = 0;
+    //         this.iniciarViaje = new Semaphore(0);
+    //         this.mutex = new Semaphore(1);
+    //         this.barreraSubida = new CyclicBarrier(capacidad);
+    //         this.terminalActual = terminales.get(0);
+            
+    //         // Inicializar el mapa de pasajeros por terminal
+    //         for (Terminal terminal : terminales) {
+    //             pasajerosPorTerminal.put(terminal, 0);
+    //         }
+    //     }
+        
+    //     public void subir(Pasajero pasajero) throws InterruptedException {
+    //         cerrojo.lock();
+    //         try {
+    //             while (!inicioRecorrido || pasajerosABordo >= capacidadTren) {
+    //                 Log.escribir("Pasajero " + pasajero.getIdPasajero() + " intenta subir al tren, pero no puede.");
+    //                 esperandoNuevoRecorrido.await();
+    //             }
+    //             pasajerosABordo++;
+    //             Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": subió al tren. Pasajeros a bordo: " + pasajerosABordo);
+        
+    //             // Si el tren está lleno, permite iniciar el viaje
+    //             if (pasajerosABordo == capacidadTren) {
+    //                 iniciarViaje.release();
+    //             }
+    //         } finally {
+    //             cerrojo.unlock();
+    //         }
+    //     }
+        
+    //     public void bajar(Terminal terminal, Pasajero pasajero) throws InterruptedException {
+    //         cerrojo.lock();
+    //         try {
+    //             // Incrementamos el contador de pasajeros que bajarán en esta terminal
+    //             pasajerosPorTerminal.put(terminal, pasajerosPorTerminal.get(terminal) + 1);
+                
+    //             // Espera hasta que el tren se detenga en la terminal correspondiente
+    //             while (!detenidoEnTerminal || terminalActual.getIdTerminal() != terminal.getIdTerminal()) {
+    //                 Log.escribir("Pasajero " + pasajero.getIdPasajero() + ". Terminal actual: " + terminalActual.getIdTerminal() + ". Terminal de bajada: " + terminal.getIdTerminal());
+    //                 esperandoDetencion.await();
+    //             }
+                
+    //             pasajerosABordo--;
+    //             Log.escribir("Pasajero " + pasajero.getIdPasajero() + " bajó en la terminal " + terminalActual.getIdTerminal());
+                
+    //             // Notifica que un pasajero ha bajado en esta terminal
+    //             pasajerosPorTerminal.put(terminal, pasajerosPorTerminal.get(terminal) - 1);
+    //             if (pasajerosPorTerminal.get(terminal) == 0) {
+    //                 esperandoBajadaPasajeros.signal();  // Señaliza que no hay más pasajeros en esta terminal.
+    //             }
+    //         } finally {
+    //             cerrojo.unlock();
+    //         }
+    //     }
+        
+    //     private void detenerEnTerminal(Terminal terminal) throws InterruptedException {
+    //         cerrojo.lock();
+    //         try {
+    //             Log.escribir("El tren se detiene en la terminal: " + terminal.getIdTerminal());
+    //             this.terminalActual = terminal;
+    //             this.detenidoEnTerminal = true;
+    //             esperandoDetencion.signalAll();  // Notificar a los pasajeros que pueden bajar.
+                
+    //             // Si es la última terminal, esperamos que todos los pasajeros bajen antes de continuar
+    //             if (ultimaTerminal) {
+    //                 while (pasajerosABordo > 0) {
+    //                     Log.escribir("Todos los pasajeros deben bajar en la última terminal: " + terminal.getIdTerminal());
+    //                     esperandoBajadaPasajeros.await();  // Espera hasta que todos los pasajeros bajen.
+    //                 }
+    //             } else {
+    //                 // Para terminales intermedias, esperamos hasta que todos los pasajeros que deben bajar aquí bajen.
+    //                 while (pasajerosPorTerminal.get(terminal) > 0) {
+    //                     Log.escribir("Esperando a que todos los pasajeros bajen en la terminal " + terminal.getIdTerminal());
+    //                     esperandoBajadaPasajeros.await();  // Espera hasta que todos los pasajeros bajen.
+    //                 }
+    //             }
+                
+    //             // Simula el tiempo de detención en la terminal
+    //             Thread.sleep(2000);  // Tiempo de espera simulado para la detención del tren.
+    //             this.detenidoEnTerminal = false;  // El tren está listo para continuar.
+                
+    //         } finally {
+    //             cerrojo.unlock();
+    //         }
+    //     }
+        
+    //     private void iniciarViajeTren() throws InterruptedException {
+    //         iniciarViaje.acquire();
+    //         cerrojo.lock();
+    //         try {
+    //             inicioRecorrido = false;
+    //             Log.escribir("El tren comienza su recorrido con " + pasajerosABordo + " pasajeros a bordo.");
+    //             int cantidadTerminales = listaTerminales.size();
+    //             for (int i = 0; i < cantidadTerminales; i++) {
+    //                 Terminal terminal = listaTerminales.get(i);
+    //                 Log.escribir("Terminal actual: " + terminal.getIdTerminal());
+    //                 try {
+    //                     if (i == cantidadTerminales - 1) {  // Última terminal
+    //                         ultimaTerminal = true;
+    //                     }
+    //                     detenerEnTerminal(terminal);
+    //                 } catch (InterruptedException e) {
+    //                     e.printStackTrace();
+    //                 }
+    //             }
+    //             Log.escribir("Terminó el recorrido del tren");
+    //         } finally {
+    //             cerrojo.unlock();
+    //         }
+    //     }
+        
+    //     private void regresarInicio() throws InterruptedException {
+    //         cerrojo.lock();
+    //         try {
+    //             while (pasajerosABordo > 0) {
+    //                 esperandoBajadaPasajeros.await();
+    //             }
+    //             Log.escribir("El tren regresa vacío al inicio del recorrido.");
+    //             Thread.sleep(2000);  // Simula el tiempo de regreso
+    //             pasajerosABordo = 0;
+    //             inicioRecorrido = true;
+    //             ultimaTerminal = false;
+    //             esperandoNuevoRecorrido.signalAll();
+    //         } finally {
+    //             cerrojo.unlock();
+    //         }
+    //     }
+        
+    //     @Override
+    //     public void run() {
+    //         while (true) {
+    //             try {
+    //                 this.iniciarViajeTren();
+    //                 Log.escribir("Volviendo al inicio del aeropuerto.");
+    //                 this.regresarInicio();
+    //             } catch (InterruptedException e) {
+    //                 e.printStackTrace();
+    //             }
+    //         }
+    //     }
+    // }
 
-        // Pasajero baja del tren
-        // public void bajar(Terminal terminal) throws InterruptedException {
-        //     mutex.acquire();
-
-        //     if(detenidoEnTerminal && terminalActual == terminal){
-        //         espaciosDisponibles.release(); // Liberar espacio en el tren
-        //         pasajerosABordo--;
-        //     }
-        //     mutex.release();
-        // }
 }

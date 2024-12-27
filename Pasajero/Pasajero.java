@@ -43,10 +43,12 @@ public class Pasajero implements Runnable {
         Aeropuerto aeropuerto = this.miReserva.getAeropuerto();
         PuestoAtencion puesto;
         try {
-            aeropuerto.ingresarAeropuerto();
+            aeropuerto.ingresarAeropuerto(this);
             puesto = aeropuerto.ingresarPuestoInforme(this);
             List<Object> terminalYPuertoEmbarque = puesto.ingresarPuestoAtencion(this); // Intenta ingresar al puesto
+            // Log.escribir("Pasajero " + this.idPasajero + " salió del puesto de atencion y se dirige rumbo a la terminal");
             Terminal terminalVuelo = (Terminal) terminalYPuertoEmbarque.get(0);
+            //Log.escribir("Pasajero: " + this.idPasajero + ". Terminal: " + terminalVuelo.getIdTerminal());
             aeropuerto.irTerminal(this, terminalVuelo);
             if (Math.abs(aeropuerto.getReloj().getHora() - this.miReserva.getVuelo().getHora()) > 1) {
                 FreeShop tienda = this.miReserva.getTerminal().getTienda();
@@ -57,16 +59,16 @@ public class Pasajero implements Runnable {
                         double monto = 1000 + (4000 - 1000) * random.nextDouble();
                         tienda.comprar(monto, this);
                     }else{
-                        Log.escribir("Pasajero " + this.getReserva().getIdReserva() + ": solo observó los productos");
-                        System.out.println(this.getReserva().getIdReserva() + " solo observo los productos");
+                        Log.escribir("Pasajero " + this.idPasajero + ": solo observó los productos");
+                        //System.out.println(this.getReserva().getIdReserva() + " solo observo los productos");
                     }
                     tienda.salirFreeShop(this);
                 }
             }
            // this.getReserva().getVuelo().esperarAbordaje();
             terminalVuelo.getPuestoEmbarqueGeneral().esperarAbordaje(this.getReserva().getVuelo());
-            System.out.println(this.getReserva().getIdReserva() + " Subio al avion. Hora de vuelo: " + this.miReserva.getVuelo().getHora()+ ". Hora aeropuerto: "+aeropuerto.getReloj().getHora());
-            Log.escribir("Pasajero " + this.getReserva().getIdReserva() + ": Subio al avion. Hora de vuelo: " + this.miReserva.getVuelo().getHora()+ ". Hora aeropuerto: "+aeropuerto.getReloj().getHora());
+            //System.out.println(this.getReserva().getIdReserva() + " Subio al avion. Hora de vuelo: " + this.miReserva.getVuelo().getHora()+ ". Hora aeropuerto: "+aeropuerto.getReloj().getHora());
+            Log.escribir("Pasajero " + this.getReserva().getIdReserva() + ": Subió al avión. Hora de vuelo: " + this.miReserva.getVuelo().getHora()+ ". Hora aeropuerto: "+aeropuerto.getReloj().getHora());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }      
