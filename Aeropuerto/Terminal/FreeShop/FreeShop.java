@@ -16,8 +16,8 @@ public class FreeShop {
     private Semaphore cajasDisponibles; // Controla la cantidad de cajas disponibles
     private Semaphore mutex; // Exclusión mutua para acceder a las listas de cajas
     
-    private List<Caja> cajasRDisponibles = new LinkedList<>();
-    private List<Caja> cajasOcupadas = new LinkedList<>();
+    // private List<Caja> cajasRDisponibles = new LinkedList<>();
+    // private List<Caja> cajasOcupadas = new LinkedList<>();
     private double balanceTienda;
 
     public FreeShop(int capacidad, int numCajas, String nombreTienda) {
@@ -29,10 +29,10 @@ public class FreeShop {
         this.nombre = nombreTienda;
         this.balanceTienda = ThreadLocalRandom.current().nextDouble(5000, 20000);
 
-        // Crear las cajas registradoras
-        for (int i = 0; i < numCajas; i++) {
-            cajasRDisponibles.add(new Caja(i));
-        }
+        // // Crear las cajas registradoras
+        // for (int i = 0; i < numCajas; i++) {
+        //     cajasRDisponibles.add(new Caja(i));
+        // }
     }
 
     // Método para ingresar al free-shop
@@ -41,10 +41,10 @@ public class FreeShop {
         try {
             if (!capacidadTienda.tryAcquire()) {
                 //System.out.println(Thread.currentThread().getName() + " no pudo ingresar. Free-shop lleno.");
-                Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": no pudo ingresar. Free-shop lleno.");
+                Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": no pudo ingresar." + this.nombre + " lleno.");
                 ingreso = false;
             }
-            Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": ingresó al free-shop.");
+            Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": ingresó a la " + this.nombre);
             //System.out.println(Thread.currentThread().getName() + " ingresó al free-shop.");
             ingreso = true;
         } catch (Exception e) {
@@ -57,7 +57,7 @@ public class FreeShop {
 
     public void salirFreeShop(Pasajero pasajero) {
         //System.out.println(Thread.currentThread().getName() + " salió del free-shop.");
-        Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ": salió del free-shop.");
+        Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": salió de la " + this.nombre);
         capacidadTienda.release(); // Libera un lugar en la tienda
     }
 
@@ -65,12 +65,12 @@ public class FreeShop {
         try {
             cajasDisponibles.acquire(); // Espera por una caja disponible
             //System.out.println(Thread.currentThread().getName() + " está usando una caja.");
-            Log.escribir("Pasajero " + pasajero.getReserva().getIdReserva() + ":  está usando una caja.");
+            Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": está usando una caja. Mostrando un gasto de $" + Math.round(monto));
             mutex.acquire();
             balanceTienda += monto;
             mutex.release();
             Thread.sleep(1000); // Simula el tiempo de uso de la caja
-            Log.escribir(nombre);
+            //Log.escribir(nombre);
             //System.out.println("Pasajero " + pasajero.getReserva().getIdReserva() + ": terminó de usar la caja.");
             cajasDisponibles.release(); // Libera una caja
         } catch (InterruptedException e) {

@@ -72,11 +72,11 @@ public class Aeropuerto{
 
     public synchronized void ingresarAeropuerto(Pasajero pasajero) throws InterruptedException {
         while (!abierto) { // Evaluar la condición
-            Log.escribir("Pasajero " + pasajero.getIdPasajero() + " intenta ingresar pero el aeropuerto todavia no esta abierto");
+            Log.escribir("Pasajero " + pasajero.getIdPasajero() + " intenta ingresar, pero el aeropuerto está cerrado");
             //System.out.println("El aeropuerto todavía no está abierto");
             this.wait(); // Los pasajeros esperan aquí
         }
-        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " entra al aeropuerto.");
+        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " ingresa al aeropuerto.");
         //System.out.println("Pasajero entra al aeropuerto.");
     }
 

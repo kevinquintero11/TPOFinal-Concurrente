@@ -22,7 +22,7 @@ import Utilidades.Reloj;
 public class Main {
     
     //DECLARACION DE VARIABLES
-    final static int CANTIDAD_PASAJEROS = 50;
+    final static int CANTIDAD_PASAJEROS = 100;
     final static int CANTIDAD_TERMINALES = 3; // Segun consigna dice que son 3 terminales: A, B y C.
     final static int CANTIDAD_AEROLINEAS = 6; // CANTIDAD AerolineasXAeropuerto
     final static int CANTIDAD_VUELOS = 3; // CANTIDAD de VuelosxAerolinea
