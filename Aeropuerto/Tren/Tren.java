@@ -208,7 +208,7 @@ import java.util.Map;
                     esperandoNuevoRecorrido.await();
                 }
                 pasajerosABordo++;
-                Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": subió al tren. Pasajeros a bordo: " + pasajerosABordo);
+                Log.escribir("> Pasajero " + pasajero.getIdPasajero() + ": subió al tren. Pasajeros a bordo: " + pasajerosABordo);
                 iniciarViaje.release();
                 // Si el tren está lleno, permite iniciar el viaje
             } finally {
@@ -225,12 +225,12 @@ import java.util.Map;
     
                 // Espera hasta que el tren se detenga en la terminal correspondiente
                 while (!detenidoEnTerminal || !terminalActual.equals(terminal)) {
-                    Log.escribir("Pasajero " + pasajero.getIdPasajero() + " espera para bajar en la terminal " + terminal.getIdTerminal());
+                    Log.escribir("\u23F3 Pasajero " + pasajero.getIdPasajero() + " espera para bajar en la terminal " + terminal.getIdTerminal());
                     conjuntoEesperaPorTerminal.get(indiceTerminal).await();
                 }
     
                 pasajerosABordo--;
-                Log.escribir("Pasajero " + pasajero.getIdPasajero() + " bajó en la terminal " + terminal.getIdTerminal());
+                Log.escribir("< Pasajero " + pasajero.getIdPasajero() + " bajó en la terminal " + terminal.getIdTerminal());
     
                 // Decrementa el contador de pasajeros que deben bajar en esta terminal
                 pasajerosPorTerminal[indiceTerminal]--;
@@ -247,7 +247,7 @@ import java.util.Map;
         private void detenerEnTerminal(Terminal terminal) throws InterruptedException {
             cerrojo.lock();
             try {
-                Log.escribir("El tren se detiene en la terminal: " + terminal.getIdTerminal());
+                Log.escribir("\uD83D\uDEA8 El tren se detiene en la terminal: " + terminal.getIdTerminal());
                 this.terminalActual = terminal;
                 this.detenidoEnTerminal = true;
     
@@ -257,7 +257,7 @@ import java.util.Map;
     
                 // Esperar a que todos los pasajeros bajen
                 while (pasajerosPorTerminal[indiceTerminal] > 0) {
-                    Log.escribir("Esperando a que todos los pasajeros bajen en la terminal " + terminal.getIdTerminal());
+                    Log.escribir("\u23F3 Esperando a que todos los pasajeros bajen en la terminal " + terminal.getIdTerminal());
                     conjuntoEesperaPorTerminal.get(indiceTerminal).await();
                 }
     
@@ -293,14 +293,14 @@ import java.util.Map;
             //cerrojo.lock();
             //try {
                 inicioRecorrido = false;
-                Log.escribir("El tren comienza su recorrido con " + pasajerosABordo + " pasajeros a bordo.");
+                Log.escribir("\uD83D\uDE84 El tren comienza su recorrido con " + pasajerosABordo + " pasajeros a bordo.");
                 int cantidadTerminales = listaTerminales.size();
                 for (int i = 0; i < cantidadTerminales; i++) {
                     Terminal terminal = listaTerminales.get(i);
-                    Log.escribir("Terminal actual: " + terminal.getIdTerminal());
+                    Log.escribir(" Terminal actual: " + terminal.getIdTerminal());
                     detenerEnTerminal(terminal);
                 }
-                Log.escribir("Terminó el recorrido del tren");
+                Log.escribir("\uD83D\uDE84 Terminó el recorrido del tren");
             // } finally {
             //     cerrojo.unlock();
             // }
@@ -312,7 +312,7 @@ import java.util.Map;
                 while (pasajerosABordo > 0) {
                     esperandoBajadaPasajeros.await();
                 }
-                Log.escribir("El tren regresa vacío al inicio del recorrido.");
+                Log.escribir("\uD83D\uDE84 El tren regresa vacío al inicio del recorrido.");
                 Thread.sleep(2000);  // Simula el tiempo de regreso
                 pasajerosABordo = 0;
                 inicioRecorrido = true;

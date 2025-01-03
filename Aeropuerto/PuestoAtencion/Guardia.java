@@ -21,5 +21,9 @@ public class Guardia implements Runnable {
             }
         }
     }
+
+    public PuestoAtencion getPuestoAtencion(){
+        return this.puestoTrabajo;
+    }
     
 }

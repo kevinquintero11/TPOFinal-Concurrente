@@ -76,7 +76,7 @@ public class Aeropuerto{
             //System.out.println("El aeropuerto todavía no está abierto");
             this.wait(); // Los pasajeros esperan aquí
         }
-        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " ingresa al aeropuerto.");
+        Log.escribir("\u2192 Pasajero " + pasajero.getIdPasajero() + " ingresa al aeropuerto.");
         //System.out.println("Pasajero entra al aeropuerto.");
     }
 

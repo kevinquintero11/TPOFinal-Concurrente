@@ -42,14 +42,16 @@ public class Pasajero implements Runnable {
 
         Aeropuerto aeropuerto = this.miReserva.getAeropuerto();
         PuestoAtencion puesto;
-        while(true){
+        //while(true){
             try {
                 aeropuerto.ingresarAeropuerto(this);
                 puesto = aeropuerto.ingresarPuestoInforme(this);
-                List<Object> terminalYPuertoEmbarque = puesto.ingresarPuestoAtencion(this); // Intenta ingresar al puesto
-                // Log.escribir("Pasajero " + this.idPasajero + " salió del puesto de atencion y se dirige rumbo a la terminal");
+                puesto.ingresarPuestoAtencion(this);
+                List<Object> terminalYPuertoEmbarque = puesto.esperarAtencion(this); // Intenta ingresar al puesto
+                //Log.escribir("< Pasajero " + this.getIdPasajero() + " salió del puesto de atencion de " + puesto.getAerolinea().getNombre());
+                //Log.escribir("< Pasajero " + this.idPasajero + " salió del puesto de atencion y se dirige rumbo a la terminal " + terminalYPuertoEmbarque.get(0).);
                 Terminal terminalVuelo = (Terminal) terminalYPuertoEmbarque.get(0);
-                //Log.escribir("Pasajero: " + this.idPasajero + ". Terminal: " + terminalVuelo.getIdTerminal());
+                Log.escribir("< Pasajero " + this.idPasajero + " salió del puesto de atencion y se dirige rumbo a la terminal " + terminalVuelo.getIdTerminal());
                 aeropuerto.irTerminal(this, terminalVuelo);
                 if (Math.abs(aeropuerto.getReloj().getHora() - this.miReserva.getVuelo().getHora()) > 1) {
                     FreeShop tienda = this.miReserva.getTerminal().getTienda();
@@ -73,7 +75,7 @@ public class Pasajero implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }  
-        }
+        //}
             
     }
 }

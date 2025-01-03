@@ -44,7 +44,7 @@ public class FreeShop {
                 Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": no pudo ingresar." + this.nombre + " lleno.");
                 ingreso = false;
             }
-            Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": ingresó a la " + this.nombre);
+            Log.escribir("> Pasajero " + pasajero.getIdPasajero() + ": ingresó a la " + this.nombre);
             //System.out.println(Thread.currentThread().getName() + " ingresó al free-shop.");
             ingreso = true;
         } catch (Exception e) {
@@ -57,7 +57,7 @@ public class FreeShop {
 
     public void salirFreeShop(Pasajero pasajero) {
         //System.out.println(Thread.currentThread().getName() + " salió del free-shop.");
-        Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": salió de la " + this.nombre);
+        Log.escribir("< Pasajero " + pasajero.getIdPasajero() + ": salió de la " + this.nombre);
         capacidadTienda.release(); // Libera un lugar en la tienda
     }
 
