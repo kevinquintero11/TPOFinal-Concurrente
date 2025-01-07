@@ -43,30 +43,27 @@ public class PuestoAtencion implements Runnable {
 
     public void ingresarPuestoAtencion(Pasajero pasajero) throws InterruptedException {
         mutex.acquire();
-        if (cantidadPasajeroEnPuesto == capacidadMax) {
+        if (cantidadPasajeroEnPuesto >= capacidadMax) {
             Log.escribir("\u23F3 Pasajero " + pasajero.getIdPasajero() + " debe esperar en el hall porque el puesto de atención está lleno.");
             this.mutex.release();
             this.hall.esperarEnHall(pasajero, this);
             this.mutex.acquire();
-        }
-
-        // Ingresar al puesto si hay espacio
-        try {
+        }else{
             this.colaPasajeros.add(pasajero);
             this.cantidadPasajeroEnPuesto++;
             Log.escribir("> Pasajero " + pasajero.getIdPasajero() + " ingresó al puesto de atención de: " + aerolinea.getNombre() + " en la posicion: " + cantidadPasajeroEnPuesto);
-        } finally {
-            
+        }
+
             this.mutex.release();
             this.atender.release();
-        }
+       
     }
 
     public void atenderPasajero() throws InterruptedException {
         this.atender.acquire(); // Esperar hasta que haya un pasajero para atender
         //this.mutex.acquire(); // Adquirir el mutex para sincronizar el acceso a la lista de pasajeros
         Pasajero pasajero = colaPasajeros.remove(0); // Extraer al primer pasajero
-
+        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " está siendo atendido");
         // Simulamos el tiempo de atención
         Thread.sleep(2000); 
         //this.mutex.release();
@@ -105,15 +102,16 @@ public class PuestoAtencion implements Runnable {
             if (cola != null && !cola.isEmpty()) {
                 Pasajero pasajero = cola.remove(0); // Extraer el primer pasajero de la cola
                 colaPasajeros.add(pasajero); // Agregar al puesto de atención
-    
+                cantidadPasajeroEnPuesto++;
                 Log.escribir("\uD83D\uDC6E Guardia permitió el ingreso de pasajero " + pasajero.getIdPasajero() + " al puesto de atención de " + this.aerolinea.getNombre() + ". Pasajeros restantes esperando: " + cola.size());
-                
+                Log.escribir("> Pasajero " + pasajero.getIdPasajero() + " ingresó al puesto de atención de: " + aerolinea.getNombre() + " en la posicion: " + cantidadPasajeroEnPuesto);
+               
                 synchronized (pasajero) {
-                    Log.escribir("Se notifica que se libero espacio en: " + this.aerolinea.getNombre());
+                    //Log.escribir("Se notifica que se libero espacio en: " + this.aerolinea.getNombre());
                     pasajero.notify(); // Notificar al pasajero que está ingresando al puesto
                 }
             } else {
-                Log.escribir("No hay pasajeros en la cola del hall para " + aerolinea.getNombre());
+                //Log.escribir("No hay pasajeros en la cola del hall para " + aerolinea.getNombre());
             }
         } finally {
             // No se debe liberar semáforo hasta que el proceso de atención termine

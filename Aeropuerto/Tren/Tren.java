@@ -209,7 +209,10 @@ import java.util.Map;
                 }
                 pasajerosABordo++;
                 Log.escribir("> Pasajero " + pasajero.getIdPasajero() + ": subió al tren. Pasajeros a bordo: " + pasajerosABordo);
-                iniciarViaje.release();
+                if(pasajerosABordo == 1){
+                    iniciarViaje.release();
+                }
+                
                 // Si el tren está lleno, permite iniciar el viaje
             } finally {
                 cerrojo.unlock();
