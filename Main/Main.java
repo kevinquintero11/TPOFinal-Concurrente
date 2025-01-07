@@ -22,7 +22,7 @@ import Utilidades.Reloj;
 public class Main {
     
     //DECLARACION DE VARIABLES
-    final static int CANTIDAD_PASAJEROS = 10;
+    final static int CANTIDAD_PASAJEROS = 5;
     final static int CANTIDAD_TERMINALES = 3; // Segun consigna dice que son 3 terminales: A, B y C.
     final static int CANTIDAD_AEROLINEAS = 1; // CANTIDAD AerolineasXAeropuerto
     final static int CANTIDAD_VUELOS = 2; // CANTIDAD de VuelosxAerolinea
@@ -33,7 +33,7 @@ public class Main {
     final static int CAPMAX_FREESHOP = 6; // Capacidad MAX PasajerosXFreeShop
     final static List<PuestoEmbarque> listaPuestosEmbarques = new LinkedList<>();
     final static List<Terminal> listaTerminales = new LinkedList<>();
-    final static Hall hall = new Hall();
+    //final static Hall hall = new Hall();
     final static List<Aerolinea> listaAerolineas = new LinkedList<>();
     final static List<PuestoAtencion> listaPuestosAtencion = new LinkedList<>();
     // final static Tren tren = new Tren(CAPMAX_TREN, listaTerminales);
@@ -49,7 +49,8 @@ public class Main {
         crearPuestosEmbarque();
         crearTerminales();
         crearAerolineas();
-        crearPuestosAtencion();
+        Hall hall = new Hall(listaAerolineas);
+        crearPuestosAtencion(hall);
         Tren tren = new Tren(CAPMAX_TREN, listaTerminales);
         aeropuerto = new Aeropuerto("Viaje Bonito", listaAerolineas, listaTerminales, listaPuestosAtencion, tren, reloj);
         reloj.setAeropuerto(aeropuerto);
@@ -130,7 +131,7 @@ public class Main {
         }
     }
 
-    public static void crearPuestosAtencion(){
+    public static void crearPuestosAtencion(Hall hall){
 
         for(int i = 0; i < CANTIDAD_PUESTOS; i++){
             PuestoAtencion puesto = new PuestoAtencion(listaAerolineas.get(i), hall, CAPMAX_PUESTOATENCION);

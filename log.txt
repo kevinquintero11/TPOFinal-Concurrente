@@ -1,320 +1,149 @@
-12:51:03 Pasajero 0 intenta ingresar, pero el aeropuerto está cerrado
-12:51:03 Pasajero 9 intenta ingresar, pero el aeropuerto está cerrado
-12:51:03 Pasajero 8 intenta ingresar, pero el aeropuerto está cerrado
-12:51:03 Pasajero 7 intenta ingresar, pero el aeropuerto está cerrado
-12:51:03 Pasajero 6 intenta ingresar, pero el aeropuerto está cerrado
-12:51:03 Pasajero 5 intenta ingresar, pero el aeropuerto está cerrado
-12:51:03 Pasajero 3 intenta ingresar, pero el aeropuerto está cerrado
-12:51:03 Pasajero 4 intenta ingresar, pero el aeropuerto está cerrado
-12:51:03 Pasajero 2 intenta ingresar, pero el aeropuerto está cerrado
-12:51:03 Pasajero 1 intenta ingresar, pero el aeropuerto está cerrado
-12:51:08 Hola actual Aeropuerto: 6hs
-12:51:08 El aeropuerto está ahora abierto.
-12:51:08 → Pasajero 0 ingresa al aeropuerto.
-12:51:08 → Pasajero 1 ingresa al aeropuerto.
-12:51:08 Pasajero 0 esta siendo atendido en el puesto de informes.
-12:51:08 → Pasajero 2 ingresa al aeropuerto.
-12:51:08 → Pasajero 4 ingresa al aeropuerto.
-12:51:08 → Pasajero 3 ingresa al aeropuerto.
-12:51:08 → Pasajero 5 ingresa al aeropuerto.
-12:51:08 → Pasajero 6 ingresa al aeropuerto.
-12:51:08 → Pasajero 7 ingresa al aeropuerto.
-12:51:08 → Pasajero 8 ingresa al aeropuerto.
-12:51:08 → Pasajero 9 ingresa al aeropuerto.
-12:51:09 Pasajero 0 se tiene que dirigir al puesto Aerolíneas Argentinas
-12:51:09 Pasajero 1 esta siendo atendido en el puesto de informes.
-12:51:09 > Pasajero 0 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
-12:51:09 Pasajero 0 está siendo atendido
-12:51:10 Pasajero 1 se tiene que dirigir al puesto Aerolíneas Argentinas
-12:51:10 Pasajero 2 esta siendo atendido en el puesto de informes.
-12:51:10 ⏳ Pasajero 1 debe esperar en el hall porque el puesto de atención está lleno.
-12:51:10 Pasajero 1 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
-12:51:11 Pasajero 2 se tiene que dirigir al puesto Aerolíneas Argentinas
-12:51:11 Pasajero 4 esta siendo atendido en el puesto de informes.
-12:51:11 ⏳ Pasajero 2 debe esperar en el hall porque el puesto de atención está lleno.
-12:51:11 Pasajero 2 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 2
-12:51:11 ✅ Pasajero 0 fue atendido exitosamente en: Aerolíneas Argentinas
-12:51:11 👮 Guardia permitió el ingreso de pasajero 1 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 1
-12:51:11 > Pasajero 1 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
-12:51:11 Se desbloquea el pasajero: 1 para el puesto: Aerolíneas Argentinas
-12:51:11 < Pasajero 0 salió del puesto de atencion y se dirige rumbo a la terminal C
-12:51:11 > Pasajero 0: subió al tren. Pasajeros a bordo: 1
-12:51:11 ⏳ Pasajero 0 espera para bajar en la terminal C
-12:51:11 Pasajero 1 está siendo atendido
-12:51:12 Pasajero 4 se tiene que dirigir al puesto Aerolíneas Argentinas
-12:51:12 Pasajero 3 esta siendo atendido en el puesto de informes.
-12:51:12 ⏳ Pasajero 4 debe esperar en el hall porque el puesto de atención está lleno.
-12:51:12 Pasajero 4 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 2
-12:51:13 Hola actual Aeropuerto: 7hs
-12:51:13 Pasajero 3 se tiene que dirigir al puesto Aerolíneas Argentinas
-12:51:13 Pasajero 5 esta siendo atendido en el puesto de informes.
-12:51:13 ⏳ Pasajero 3 debe esperar en el hall porque el puesto de atención está lleno.
-12:51:13 Pasajero 3 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 3
-12:51:13 🚄 El tren comienza su recorrido con 1 pasajeros a bordo.
-12:51:13  Terminal actual: A
-12:51:13 🚨 El tren se detiene en la terminal: A
-12:51:14 ✅ Pasajero 1 fue atendido exitosamente en: Aerolíneas Argentinas
-12:51:14 👮 Guardia permitió el ingreso de pasajero 2 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 2
-12:51:14 > Pasajero 2 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
-12:51:14 < Pasajero 1 salió del puesto de atencion y se dirige rumbo a la terminal C
-12:51:14 Se desbloquea el pasajero: 2 para el puesto: Aerolíneas Argentinas
-12:51:14 Pasajero 2 está siendo atendido
-12:51:14 Pasajero 5 se tiene que dirigir al puesto Aerolíneas Argentinas
-12:51:14 Pasajero 6 esta siendo atendido en el puesto de informes.
-12:51:14 ⏳ Pasajero 5 debe esperar en el hall porque el puesto de atención está lleno.
-12:51:14 Pasajero 5 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 3
-12:51:15 Pasajero 6 se tiene que dirigir al puesto Aerolíneas Argentinas
-12:51:15 Pasajero 7 esta siendo atendido en el puesto de informes.
-12:51:15 ⏳ Pasajero 6 debe esperar en el hall porque el puesto de atención está lleno.
-12:51:15 Pasajero 6 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 4
-12:51:15  Terminal actual: B
-12:51:15 Pasajero 1 intenta subir al tren, pero no puede.
-12:51:15 🚨 El tren se detiene en la terminal: B
-12:51:16 ✅ Pasajero 2 fue atendido exitosamente en: Aerolíneas Argentinas
-12:51:16 < Pasajero 2 salió del puesto de atencion y se dirige rumbo a la terminal B
-12:51:16 👮 Guardia permitió el ingreso de pasajero 4 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 3
-12:51:16 > Pasajero 4 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
-12:51:16 Se desbloquea el pasajero: 4 para el puesto: Aerolíneas Argentinas
-12:51:16 Pasajero 4 está siendo atendido
-12:51:16 Pasajero 7 se tiene que dirigir al puesto Aerolíneas Argentinas
-12:51:16 Pasajero 8 esta siendo atendido en el puesto de informes.
-12:51:16 ⏳ Pasajero 7 debe esperar en el hall porque el puesto de atención está lleno.
-12:51:16 Pasajero 7 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 4
-12:51:17 Pasajero 8 se tiene que dirigir al puesto Aerolíneas Argentinas
-12:51:17  Terminal actual: C
-12:51:17 Pasajero 2 intenta subir al tren, pero no puede.
-12:51:17 ⏳ Pasajero 8 debe esperar en el hall porque el puesto de atención está lleno.
-12:51:17 Pasajero 9 esta siendo atendido en el puesto de informes.
-12:51:17 Pasajero 8 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 5
-12:51:17 🚨 El tren se detiene en la terminal: C
-12:51:17 ⏳ Esperando a que todos los pasajeros bajen en la terminal C
-12:51:17 < Pasajero 0 bajó en la terminal C
-12:51:17 Pasajero 0: Subió al avión con destino: París. Hora de vuelo: 7. Hora aeropuerto: 7
-12:51:18 ✅ Pasajero 4 fue atendido exitosamente en: Aerolíneas Argentinas
-12:51:18 < Pasajero 4 salió del puesto de atencion y se dirige rumbo a la terminal A
-12:51:18 👮 Guardia permitió el ingreso de pasajero 3 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 4
-12:51:18 > Pasajero 3 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
-12:51:18 Se desbloquea el pasajero: 3 para el puesto: Aerolíneas Argentinas
-12:51:18 Pasajero 3 está siendo atendido
-12:51:18 Hola actual Aeropuerto: 8hs
-12:51:18 Pasajero 9 se tiene que dirigir al puesto Aerolíneas Argentinas
-12:51:18 ⏳ Pasajero 9 debe esperar en el hall porque el puesto de atención está lleno.
-12:51:18 Pasajero 9 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 5
-12:51:19 🚄 Terminó el recorrido del tren
-12:51:19 Pasajero 4 intenta subir al tren, pero no puede.
-12:51:19 🚄 El tren regresa vacío al inicio del recorrido.
-12:51:20 ✅ Pasajero 3 fue atendido exitosamente en: Aerolíneas Argentinas
-12:51:20 < Pasajero 3 salió del puesto de atencion y se dirige rumbo a la terminal A
-12:51:20 👮 Guardia permitió el ingreso de pasajero 5 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 4
-12:51:20 > Pasajero 5 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
-12:51:20 Se desbloquea el pasajero: 5 para el puesto: Aerolíneas Argentinas
-12:51:20 Pasajero 5 está siendo atendido
-12:51:21 > Pasajero 3: subió al tren. Pasajeros a bordo: 1
-12:51:21 ⏳ Pasajero 3 espera para bajar en la terminal A
-12:51:21 > Pasajero 1: subió al tren. Pasajeros a bordo: 2
-12:51:21 ⏳ Pasajero 1 espera para bajar en la terminal C
-12:51:22 > Pasajero 2: subió al tren. Pasajeros a bordo: 3
-12:51:22 ⏳ Pasajero 2 espera para bajar en la terminal B
-12:51:22 > Pasajero 4: subió al tren. Pasajeros a bordo: 4
-12:51:22 ⏳ Pasajero 4 espera para bajar en la terminal A
-12:51:22 👮 Guardia permitió el ingreso de pasajero 6 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 3
-12:51:22 ✅ Pasajero 5 fue atendido exitosamente en: Aerolíneas Argentinas
-12:51:22 > Pasajero 6 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
-12:51:22 < Pasajero 5 salió del puesto de atencion y se dirige rumbo a la terminal C
-12:51:22 Se desbloquea el pasajero: 6 para el puesto: Aerolíneas Argentinas
-12:51:22 > Pasajero 5: subió al tren. Pasajeros a bordo: 5
-12:51:22 ⏳ Pasajero 5 espera para bajar en la terminal C
-12:51:22 Pasajero 6 está siendo atendido
-12:51:23 Hola actual Aeropuerto: 9hs
-12:51:24 🚄 El tren comienza su recorrido con 5 pasajeros a bordo.
-12:51:24  Terminal actual: A
-12:51:24 🚨 El tren se detiene en la terminal: A
-12:51:24 ⏳ Esperando a que todos los pasajeros bajen en la terminal A
-12:51:24 < Pasajero 3 bajó en la terminal A
-12:51:24 < Pasajero 4 bajó en la terminal A
-12:51:24 > Pasajero 3: ingresó a la Tienda Terminal A
-12:51:24 > Pasajero 4: ingresó a la Tienda Terminal A
-12:51:24 Pasajero 4: está usando una caja. Mostrando un gasto de $3388
-12:51:24 Pasajero 3: está usando una caja. Mostrando un gasto de $1483
-12:51:24 ✅ Pasajero 6 fue atendido exitosamente en: Aerolíneas Argentinas
-12:51:24 👮 Guardia permitió el ingreso de pasajero 7 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 2
-12:51:24 < Pasajero 6 salió del puesto de atencion y se dirige rumbo a la terminal C
-12:51:24 > Pasajero 7 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
-12:51:24 Se desbloquea el pasajero: 7 para el puesto: Aerolíneas Argentinas
-12:51:24 Pasajero 7 está siendo atendido
-12:51:25 < Pasajero 4: salió de la Tienda Terminal A
-12:51:25 < Pasajero 3: salió de la Tienda Terminal A
-12:51:26  Terminal actual: B
-12:51:26 Pasajero 6 intenta subir al tren, pero no puede.
-12:51:26 🚨 El tren se detiene en la terminal: B
-12:51:26 ⏳ Esperando a que todos los pasajeros bajen en la terminal B
-12:51:26 < Pasajero 2 bajó en la terminal B
-12:51:26 > Pasajero 2: ingresó a la Tienda Terminal B
-12:51:26 Pasajero 2: solo observó los productos
-12:51:26 < Pasajero 2: salió de la Tienda Terminal B
-12:51:26 ✅ Pasajero 7 fue atendido exitosamente en: Aerolíneas Argentinas
-12:51:26 < Pasajero 7 salió del puesto de atencion y se dirige rumbo a la terminal C
-12:51:26 👮 Guardia permitió el ingreso de pasajero 8 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 1
-12:51:26 > Pasajero 8 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
-12:51:26 Se desbloquea el pasajero: 8 para el puesto: Aerolíneas Argentinas
-12:51:26 Pasajero 8 está siendo atendido
-12:51:28  Terminal actual: C
-12:51:28 Pasajero 7 intenta subir al tren, pero no puede.
-12:51:28 🚨 El tren se detiene en la terminal: C
-12:51:28 ⏳ Esperando a que todos los pasajeros bajen en la terminal C
-12:51:28 < Pasajero 1 bajó en la terminal C
-12:51:28 > Pasajero 1: ingresó a la Tienda Terminal C
-12:51:28 < Pasajero 5 bajó en la terminal C
-12:51:28 Pasajero 1: está usando una caja. Mostrando un gasto de $2869
-12:51:28 > Pasajero 5: ingresó a la Tienda Terminal C
-12:51:28 Pasajero 5: está usando una caja. Mostrando un gasto de $1192
-12:51:28 Hola actual Aeropuerto: 10hs
-12:51:28 ✅ Pasajero 8 fue atendido exitosamente en: Aerolíneas Argentinas
-12:51:28 < Pasajero 8 salió del puesto de atencion y se dirige rumbo a la terminal C
-12:51:28 👮 Guardia permitió el ingreso de pasajero 9 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
-12:51:28 > Pasajero 9 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
-12:51:28 Se desbloquea el pasajero: 9 para el puesto: Aerolíneas Argentinas
-12:51:29 Pasajero 9 está siendo atendido
-12:51:29 < Pasajero 1: salió de la Tienda Terminal C
-12:51:29 < Pasajero 5: salió de la Tienda Terminal C
-12:51:30 🚄 Terminó el recorrido del tren
-12:51:30 Pasajero 8 intenta subir al tren, pero no puede.
-12:51:30 🚄 El tren regresa vacío al inicio del recorrido.
-12:51:31 ✅ Pasajero 9 fue atendido exitosamente en: Aerolíneas Argentinas
-12:51:31 < Pasajero 9 salió del puesto de atencion y se dirige rumbo a la terminal A
-12:51:32 > Pasajero 9: subió al tren. Pasajeros a bordo: 1
-12:51:32 ⏳ Pasajero 9 espera para bajar en la terminal A
-12:51:32 > Pasajero 6: subió al tren. Pasajeros a bordo: 2
-12:51:32 > Pasajero 7: subió al tren. Pasajeros a bordo: 3
-12:51:32 > Pasajero 8: subió al tren. Pasajeros a bordo: 4
-12:51:32 ⏳ Pasajero 6 espera para bajar en la terminal C
-12:51:32 ⏳ Pasajero 7 espera para bajar en la terminal C
-12:51:32 ⏳ Pasajero 8 espera para bajar en la terminal C
-12:51:33 Hola actual Aeropuerto: 11hs
-12:51:34 🚄 El tren comienza su recorrido con 4 pasajeros a bordo.
-12:51:34  Terminal actual: A
-12:51:34 🚨 El tren se detiene en la terminal: A
-12:51:34 ⏳ Esperando a que todos los pasajeros bajen en la terminal A
-12:51:34 < Pasajero 9 bajó en la terminal A
-12:51:34 > Pasajero 9: ingresó a la Tienda Terminal A
-12:51:34 Pasajero 9: está usando una caja. Mostrando un gasto de $1024
-12:51:35 < Pasajero 9: salió de la Tienda Terminal A
-12:51:36  Terminal actual: B
-12:51:36 🚨 El tren se detiene en la terminal: B
-12:51:38  Terminal actual: C
-12:51:38 🚨 El tren se detiene en la terminal: C
-12:51:38 ⏳ Esperando a que todos los pasajeros bajen en la terminal C
-12:51:38 < Pasajero 6 bajó en la terminal C
-12:51:38 > Pasajero 6: ingresó a la Tienda Terminal C
-12:51:38 < Pasajero 7 bajó en la terminal C
-12:51:38 Pasajero 6: solo observó los productos
-12:51:38 < Pasajero 8 bajó en la terminal C
-12:51:38 > Pasajero 8: ingresó a la Tienda Terminal C
-12:51:38 Pasajero 8: está usando una caja. Mostrando un gasto de $3616
-12:51:38 > Pasajero 7: ingresó a la Tienda Terminal C
-12:51:38 Pasajero 7: está usando una caja. Mostrando un gasto de $2050
-12:51:38 < Pasajero 6: salió de la Tienda Terminal C
-12:51:38 Hola actual Aeropuerto: 12hs
-12:51:39 < Pasajero 7: salió de la Tienda Terminal C
-12:51:39 < Pasajero 8: salió de la Tienda Terminal C
-12:51:40 🚄 Terminó el recorrido del tren
-12:51:40 🚄 El tren regresa vacío al inicio del recorrido.
-12:51:43 Hola actual Aeropuerto: 13hs
-12:51:44 🚄 El tren comienza su recorrido con 0 pasajeros a bordo.
-12:51:44  Terminal actual: A
-12:51:44 🚨 El tren se detiene en la terminal: A
-12:51:46  Terminal actual: B
-12:51:46 🚨 El tren se detiene en la terminal: B
-12:51:48  Terminal actual: C
-12:51:48 🚨 El tren se detiene en la terminal: C
-12:51:48 Hola actual Aeropuerto: 14hs
-12:51:50 🚄 Terminó el recorrido del tren
-12:51:50 🚄 El tren regresa vacío al inicio del recorrido.
-12:51:53 Hola actual Aeropuerto: 15hs
-12:51:54 🚄 El tren comienza su recorrido con 0 pasajeros a bordo.
-12:51:54  Terminal actual: A
-12:51:54 🚨 El tren se detiene en la terminal: A
-12:51:56  Terminal actual: B
-12:51:56 🚨 El tren se detiene en la terminal: B
-12:51:58  Terminal actual: C
-12:51:58 🚨 El tren se detiene en la terminal: C
-12:51:58 Hola actual Aeropuerto: 16hs
-12:52:00 🚄 Terminó el recorrido del tren
-12:52:00 🚄 El tren regresa vacío al inicio del recorrido.
-12:52:03 Hola actual Aeropuerto: 17hs
-12:52:04 🚄 El tren comienza su recorrido con 0 pasajeros a bordo.
-12:52:04  Terminal actual: A
-12:52:04 🚨 El tren se detiene en la terminal: A
-12:52:06  Terminal actual: B
-12:52:06 🚨 El tren se detiene en la terminal: B
-12:52:08  Terminal actual: C
-12:52:08 🚨 El tren se detiene en la terminal: C
-12:52:08 Hola actual Aeropuerto: 18hs
-12:52:10 🚄 Terminó el recorrido del tren
-12:52:10 🚄 El tren regresa vacío al inicio del recorrido.
-12:52:13 Hola actual Aeropuerto: 19hs
-12:52:14 🚄 El tren comienza su recorrido con 0 pasajeros a bordo.
-12:52:14  Terminal actual: A
-12:52:14 🚨 El tren se detiene en la terminal: A
-12:52:16  Terminal actual: B
-12:52:16 🚨 El tren se detiene en la terminal: B
-12:52:18  Terminal actual: C
-12:52:18 🚨 El tren se detiene en la terminal: C
-12:52:18 Hola actual Aeropuerto: 20hs
-12:52:18 Pasajero 4: Subió al avión con destino: Tokio. Hora de vuelo: 20. Hora aeropuerto: 20
-12:52:18 Pasajero 2: Subió al avión con destino: Tokio. Hora de vuelo: 20. Hora aeropuerto: 20
-12:52:19 Pasajero 1: Subió al avión con destino: Tokio. Hora de vuelo: 20. Hora aeropuerto: 20
-12:52:19 Pasajero 7: Subió al avión con destino: Tokio. Hora de vuelo: 20. Hora aeropuerto: 20
-12:52:19 Pasajero 8: Subió al avión con destino: Tokio. Hora de vuelo: 20. Hora aeropuerto: 20
-12:52:20 🚄 Terminó el recorrido del tren
-12:52:20 🚄 El tren regresa vacío al inicio del recorrido.
-12:52:24 Hola actual Aeropuerto: 21hs
-12:52:24 🚄 El tren comienza su recorrido con 0 pasajeros a bordo.
-12:52:24  Terminal actual: A
-12:52:24 🚨 El tren se detiene en la terminal: A
-12:52:26  Terminal actual: B
-12:52:26 🚨 El tren se detiene en la terminal: B
-12:52:28  Terminal actual: C
-12:52:28 🚨 El tren se detiene en la terminal: C
-12:52:29 Hola actual Aeropuerto: 22hs
-12:52:29 El aeropuerto esta ahora cerrado
-12:52:30 🚄 Terminó el recorrido del tren
-12:52:30 🚄 El tren regresa vacío al inicio del recorrido.
-12:52:34 Hola actual Aeropuerto: 5hs
-12:52:34 🚄 El tren comienza su recorrido con 0 pasajeros a bordo.
-12:52:34  Terminal actual: A
-12:52:34 🚨 El tren se detiene en la terminal: A
-12:52:36  Terminal actual: B
-12:52:36 🚨 El tren se detiene en la terminal: B
-12:52:38  Terminal actual: C
-12:52:38 🚨 El tren se detiene en la terminal: C
-12:52:39 Hola actual Aeropuerto: 6hs
-12:52:39 El aeropuerto está ahora abierto.
-12:52:40 🚄 Terminó el recorrido del tren
-12:52:40 🚄 El tren regresa vacío al inicio del recorrido.
-12:52:44 Hola actual Aeropuerto: 7hs
-12:52:44 Pasajero 6: Subió al avión con destino: París. Hora de vuelo: 7. Hora aeropuerto: 7
-12:52:44 Pasajero 5: Subió al avión con destino: París. Hora de vuelo: 7. Hora aeropuerto: 7
-12:52:44 Pasajero 9: Subió al avión con destino: París. Hora de vuelo: 7. Hora aeropuerto: 7
-12:52:44 Pasajero 3: Subió al avión con destino: París. Hora de vuelo: 7. Hora aeropuerto: 7
-12:52:44 🚄 El tren comienza su recorrido con 0 pasajeros a bordo.
-12:52:44  Terminal actual: A
-12:52:44 🚨 El tren se detiene en la terminal: A
-12:52:46  Terminal actual: B
-12:52:46 🚨 El tren se detiene en la terminal: B
-12:52:48  Terminal actual: C
-12:52:48 🚨 El tren se detiene en la terminal: C
-12:52:49 Hola actual Aeropuerto: 8hs
-12:52:50 🚄 Terminó el recorrido del tren
-12:52:50 🚄 El tren regresa vacío al inicio del recorrido.
-12:52:54 Hola actual Aeropuerto: 9hs
-12:52:59 Hola actual Aeropuerto: 10hs
-12:53:04 Hola actual Aeropuerto: 11hs
-12:53:09 Hola actual Aeropuerto: 12hs
-12:53:14 Hola actual Aeropuerto: 13hs
-12:53:19 Hola actual Aeropuerto: 14hs
-12:53:24 Hola actual Aeropuerto: 15hs
-12:53:29 Hola actual Aeropuerto: 16hs
-12:53:34 Hola actual Aeropuerto: 17hs
-12:53:39 Hola actual Aeropuerto: 18hs
-12:53:44 Hola actual Aeropuerto: 19hs
+14:04:22 Pasajero 0 intenta ingresar, pero el aeropuerto está cerrado
+14:04:22 Pasajero 4 intenta ingresar, pero el aeropuerto está cerrado
+14:04:22 Pasajero 3 intenta ingresar, pero el aeropuerto está cerrado
+14:04:22 Pasajero 2 intenta ingresar, pero el aeropuerto está cerrado
+14:04:22 Pasajero 1 intenta ingresar, pero el aeropuerto está cerrado
+14:04:27 Hola actual Aeropuerto: 6hs
+14:04:27 El aeropuerto está ahora abierto.
+14:04:27 → Pasajero 0 ingresa al aeropuerto.
+14:04:27 → Pasajero 1 ingresa al aeropuerto.
+14:04:27 Pasajero 0 esta siendo atendido en el puesto de informes.
+14:04:27 → Pasajero 2 ingresa al aeropuerto.
+14:04:27 → Pasajero 3 ingresa al aeropuerto.
+14:04:27 → Pasajero 4 ingresa al aeropuerto.
+14:04:28 Pasajero 0 se tiene que dirigir al puesto Aerolíneas Argentinas
+14:04:28 Pasajero 1 esta siendo atendido en el puesto de informes.
+14:04:28 > Pasajero 0 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
+14:04:28 Pasajero 0 está siendo atendido
+14:04:29 Pasajero 1 se tiene que dirigir al puesto Aerolíneas Argentinas
+14:04:29 Pasajero 2 esta siendo atendido en el puesto de informes.
+14:04:29 ⏳ Pasajero 1 debe esperar en el hall porque el puesto de atención está lleno.
+14:04:29 Pasajero 1 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+14:04:30 Pasajero 2 se tiene que dirigir al puesto Aerolíneas Argentinas
+14:04:30 👮 Guardia permitió el ingreso de pasajero 1 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+14:04:30 ✅ Pasajero 0 fue atendido exitosamente en: Aerolíneas Argentinas
+14:04:30 > Pasajero 1 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
+14:04:30 ⏳ Pasajero 2 debe esperar en el hall porque el puesto de atención está lleno.
+14:04:30 Pasajero 3 esta siendo atendido en el puesto de informes.
+14:04:30 Pasajero 2 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+14:04:30 Se desbloquea el pasajero: 1 para el puesto: Aerolíneas Argentinas
+14:04:30 < Pasajero 0 salió del puesto de atencion y se dirige rumbo a la terminal C
+14:04:30 > Pasajero 0: subió al tren. Pasajeros a bordo: 1
+14:04:30 ⏳ Pasajero 0 espera para bajar en la terminal C
+14:04:31 Pasajero 1 está siendo atendido
+14:04:31 Pasajero 3 se tiene que dirigir al puesto Aerolíneas Argentinas
+14:04:31 Pasajero 4 esta siendo atendido en el puesto de informes.
+14:04:31 ⏳ Pasajero 3 debe esperar en el hall porque el puesto de atención está lleno.
+14:04:31 Pasajero 3 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 2
+14:04:32 Hola actual Aeropuerto: 7hs
+14:04:32 Pasajero 4 se tiene que dirigir al puesto Aerolíneas Argentinas
+14:04:32 ⏳ Pasajero 4 debe esperar en el hall porque el puesto de atención está lleno.
+14:04:32 Pasajero 4 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 3
+14:04:33 🚄 El tren comienza su recorrido con 1 pasajeros a bordo.
+14:04:33  Terminal actual: A
+14:04:33 🚨 El tren se detiene en la terminal: A
+14:04:33 ✅ Pasajero 1 fue atendido exitosamente en: Aerolíneas Argentinas
+14:04:33 👮 Guardia permitió el ingreso de pasajero 2 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 2
+14:04:33 < Pasajero 1 salió del puesto de atencion y se dirige rumbo a la terminal C
+14:04:33 > Pasajero 2 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
+14:04:33 Se desbloquea el pasajero: 2 para el puesto: Aerolíneas Argentinas
+14:04:33 Pasajero 2 está siendo atendido
+14:04:35  Terminal actual: B
+14:04:35 Pasajero 1 intenta subir al tren, pero no puede.
+14:04:35 🚨 El tren se detiene en la terminal: B
+14:04:35 ✅ Pasajero 2 fue atendido exitosamente en: Aerolíneas Argentinas
+14:04:35 < Pasajero 2 salió del puesto de atencion y se dirige rumbo a la terminal A
+14:04:35 👮 Guardia permitió el ingreso de pasajero 3 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 1
+14:04:35 > Pasajero 3 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
+14:04:35 Se desbloquea el pasajero: 3 para el puesto: Aerolíneas Argentinas
+14:04:35 Pasajero 3 está siendo atendido
+14:04:37  Terminal actual: C
+14:04:37 Pasajero 2 intenta subir al tren, pero no puede.
+14:04:37 🚨 El tren se detiene en la terminal: C
+14:04:37 ⏳ Esperando a que todos los pasajeros bajen en la terminal C
+14:04:37 < Pasajero 0 bajó en la terminal C
+14:04:37 > Pasajero 0: ingresó a la Tienda Terminal C
+14:04:37 Pasajero 0: solo observó los productos
+14:04:37 < Pasajero 0: salió de la Tienda Terminal C
+14:04:37 ✅ Pasajero 3 fue atendido exitosamente en: Aerolíneas Argentinas
+14:04:37 👮 Guardia permitió el ingreso de pasajero 4 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+14:04:37 > Pasajero 4 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
+14:04:37 < Pasajero 3 salió del puesto de atencion y se dirige rumbo a la terminal C
+14:04:37 Se desbloquea el pasajero: 4 para el puesto: Aerolíneas Argentinas
+14:04:37 Pasajero 4 está siendo atendido
+14:04:37 Hola actual Aeropuerto: 8hs
+14:04:39 Pasajero 3 intenta subir al tren, pero no puede.
+14:04:39 🚄 Terminó el recorrido del tren
+14:04:39 🚄 El tren regresa vacío al inicio del recorrido.
+14:04:39 ✅ Pasajero 4 fue atendido exitosamente en: Aerolíneas Argentinas
+14:04:39 < Pasajero 4 salió del puesto de atencion y se dirige rumbo a la terminal C
+14:04:41 > Pasajero 4: subió al tren. Pasajeros a bordo: 1
+14:04:41 ⏳ Pasajero 4 espera para bajar en la terminal C
+14:04:41 > Pasajero 1: subió al tren. Pasajeros a bordo: 2
+14:04:41 ⏳ Pasajero 1 espera para bajar en la terminal C
+14:04:41 > Pasajero 2: subió al tren. Pasajeros a bordo: 3
+14:04:41 ⏳ Pasajero 2 espera para bajar en la terminal A
+14:04:41 > Pasajero 3: subió al tren. Pasajeros a bordo: 4
+14:04:41 ⏳ Pasajero 3 espera para bajar en la terminal C
+14:04:42 Hola actual Aeropuerto: 9hs
+14:04:43 🚄 El tren comienza su recorrido con 4 pasajeros a bordo.
+14:04:43  Terminal actual: A
+14:04:43 🚨 El tren se detiene en la terminal: A
+14:04:43 ⏳ Esperando a que todos los pasajeros bajen en la terminal A
+14:04:43 < Pasajero 2 bajó en la terminal A
+14:04:43 > Pasajero 2: ingresó a la Tienda Terminal A
+14:04:43 Pasajero 2: está usando una caja. Mostrando un gasto de $3234
+14:04:44 < Pasajero 2: salió de la Tienda Terminal A
+14:04:45  Terminal actual: B
+14:04:45 🚨 El tren se detiene en la terminal: B
+14:04:47  Terminal actual: C
+14:04:47 🚨 El tren se detiene en la terminal: C
+14:04:47 ⏳ Esperando a que todos los pasajeros bajen en la terminal C
+14:04:47 < Pasajero 4 bajó en la terminal C
+14:04:47 > Pasajero 4: ingresó a la Tienda Terminal C
+14:04:47 < Pasajero 1 bajó en la terminal C
+14:04:47 > Pasajero 1: ingresó a la Tienda Terminal C
+14:04:47 Pasajero 1: está usando una caja. Mostrando un gasto de $1977
+14:04:47 Pasajero 4: solo observó los productos
+14:04:47 < Pasajero 3 bajó en la terminal C
+14:04:47 > Pasajero 3: ingresó a la Tienda Terminal C
+14:04:47 < Pasajero 4: salió de la Tienda Terminal C
+14:04:47 Pasajero 3: está usando una caja. Mostrando un gasto de $3658
+14:04:47 Hola actual Aeropuerto: 10hs
+14:04:48 < Pasajero 1: salió de la Tienda Terminal C
+14:04:48 < Pasajero 3: salió de la Tienda Terminal C
+14:04:49 🚄 Terminó el recorrido del tren
+14:04:49 🚄 El tren regresa vacío al inicio del recorrido.
+14:04:52 Hola actual Aeropuerto: 11hs
+14:04:57 Hola actual Aeropuerto: 12hs
+14:05:02 Hola actual Aeropuerto: 13hs
+14:05:07 Hola actual Aeropuerto: 14hs
+14:05:12 Hola actual Aeropuerto: 15hs
+14:05:12 Pasajero 4: Subió al avión con destino: Berlin. Hora de vuelo: 15. Hora aeropuerto: 15
+14:05:12 Pasajero 1: Subió al avión con destino: Berlin. Hora de vuelo: 15. Hora aeropuerto: 15
+14:05:12 Pasajero 3: Subió al avión con destino: Berlin. Hora de vuelo: 15. Hora aeropuerto: 15
+14:05:17 Hola actual Aeropuerto: 16hs
+14:05:22 Hola actual Aeropuerto: 17hs
+14:05:27 Hola actual Aeropuerto: 18hs
+14:05:33 Hola actual Aeropuerto: 19hs
+14:05:38 Hola actual Aeropuerto: 20hs
+14:05:38 Pasajero 2: Subió al avión con destino: Madrid. Hora de vuelo: 20. Hora aeropuerto: 20
+14:05:38 Pasajero 0: Subió al avión con destino: Madrid. Hora de vuelo: 20. Hora aeropuerto: 20
+14:05:43 Hola actual Aeropuerto: 21hs
+14:05:48 Hola actual Aeropuerto: 22hs
+14:05:48 El aeropuerto esta ahora cerrado
+14:05:53 Hola actual Aeropuerto: 5hs
+14:05:58 Hola actual Aeropuerto: 6hs
+14:05:58 El aeropuerto está ahora abierto.
+14:06:03 Hola actual Aeropuerto: 7hs
+14:06:08 Hola actual Aeropuerto: 8hs
+14:06:13 Hola actual Aeropuerto: 9hs
+14:06:18 Hola actual Aeropuerto: 10hs
+14:06:23 Hola actual Aeropuerto: 11hs
+14:06:28 Hola actual Aeropuerto: 12hs
+14:06:33 Hola actual Aeropuerto: 13hs
+14:06:38 Hola actual Aeropuerto: 14hs
+14:06:43 Hola actual Aeropuerto: 15hs
+14:06:48 Hola actual Aeropuerto: 16hs
+14:06:53 Hola actual Aeropuerto: 17hs
+14:06:58 Hola actual Aeropuerto: 18hs
