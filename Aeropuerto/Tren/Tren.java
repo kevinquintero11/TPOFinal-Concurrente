@@ -208,7 +208,7 @@ import java.util.Map;
                     esperandoNuevoRecorrido.await();
                 }
                 pasajerosABordo++;
-                Log.escribir("> Pasajero " + pasajero.getIdPasajero() + ": subió al tren. Pasajeros a bordo: " + pasajerosABordo);
+                Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": subió al tren. Pasajeros a bordo: " + pasajerosABordo);
                 if(pasajerosABordo == 1){
                     iniciarViaje.release();
                 }
@@ -228,12 +228,12 @@ import java.util.Map;
     
                 // Espera hasta que el tren se detenga en la terminal correspondiente
                 while (!detenidoEnTerminal || !terminalActual.equals(terminal)) {
-                    Log.escribir("\u23F3 Pasajero " + pasajero.getIdPasajero() + " espera para bajar en la terminal " + terminal.getIdTerminal());
+                    Log.escribir("Pasajero " + pasajero.getIdPasajero() + " espera para bajar en la terminal " + terminal.getIdTerminal());
                     conjuntoEesperaPorTerminal.get(indiceTerminal).await();
                 }
     
                 pasajerosABordo--;
-                Log.escribir("< Pasajero " + pasajero.getIdPasajero() + " bajó en la terminal " + terminal.getIdTerminal());
+                Log.escribir("Pasajero " + pasajero.getIdPasajero() + " bajó en la terminal " + terminal.getIdTerminal());
     
                 // Decrementa el contador de pasajeros que deben bajar en esta terminal
                 pasajerosPorTerminal[indiceTerminal]--;
@@ -260,7 +260,7 @@ import java.util.Map;
     
                 // Esperar a que todos los pasajeros bajen
                 while (pasajerosPorTerminal[indiceTerminal] > 0) {
-                    Log.escribir("\u23F3 Esperando a que todos los pasajeros bajen en la terminal " + terminal.getIdTerminal());
+                    Log.escribir("Esperando a que todos los pasajeros bajen en la terminal " + terminal.getIdTerminal() + "...");
                     conjuntoEesperaPorTerminal.get(indiceTerminal).await();
                 }
     

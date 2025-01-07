@@ -36,9 +36,9 @@ public class Hall {
             
             try {
                 pasajero.wait(); // Bloquear el hilo del pasajero hasta que sea notificado
-                Log.escribir("Se desbloquea el pasajero: " + pasajero.getIdPasajero() + " para el puesto: " + puestoAtencion.getAerolinea().getNombre());
+              //  Log.escribir("Se desbloquea el pasajero: " + pasajero.getIdPasajero() + " para el puesto: " + puestoAtencion.getAerolinea().getNombre());
             } catch (InterruptedException e) {
-                Thread.currentThread().interrupt(); // Restaurar el estado de interrupción
+                //Thread.currentThread().interrupt(); // Restaurar el estado de interrupción
             }
         }
     }

@@ -44,12 +44,11 @@ public class PuestoAtencion implements Runnable {
     public void ingresarPuestoAtencion(Pasajero pasajero) throws InterruptedException {
         mutex.acquire();
         if (cantidadPasajeroEnPuesto == capacidadMax) {
-            Log.escribir("\u23F3 Pasajero " + pasajero.getIdPasajero() + " debe esperar en el hall porque el puesto de atención está lleno.");
             this.mutex.release();
             this.hall.esperarEnHall(pasajero, this);
             this.mutex.acquire();
         }else{
-            this.colaPasajeros.add(pasajero);
+            this.colaPasajeros.put(pasajero);
             this.cantidadPasajeroEnPuesto++;
             Log.escribir("> Pasajero " + pasajero.getIdPasajero() + " ingresó al puesto de atención de: " + aerolinea.getNombre() + " en la posicion: " + cantidadPasajeroEnPuesto);
         }
@@ -79,19 +78,22 @@ public class PuestoAtencion implements Runnable {
         //this.mutex.release();
     
         // Permitir que el guardia libere el puesto para otros pasajeros
+        Log.escribir("< Pasajero " + pasajero.getIdPasajero() + " salió del puesto de atencion y se dirige rumbo a la terminal ");
         this.semaforoGuardia.release(); // Liberar semáforo guardia solo cuando el proceso de atención se complete
     }
 
     public List<Object> esperarAtencion(Pasajero pasajero) throws InterruptedException{
         List<Object> terminalYPuertoEmbarque = new LinkedList<>();
         synchronized (pasajero) {
+            Terminal terminal = pasajero.getReserva().getTerminal();
+            PuestoEmbarque puesto = pasajero.getReserva().getTerminal().getPuestoEmbarqueGeneral(); 
+            terminalYPuertoEmbarque.add(terminal);
+            terminalYPuertoEmbarque.add(puesto);
             pasajero.wait(); // Esperar hasta ser notificado
-            Log.escribir("\u2705 Pasajero " + pasajero.getIdPasajero() + " fue atendido exitosamente en: " + this.aerolinea.getNombre());
+            Log.escribir("Pasajero " + pasajero.getIdPasajero() + " fue atendido exitosamente en: " + this.aerolinea.getNombre());
+            // Log.escribir("< Pasajero " + pasajero.getIdPasajero() + " salió del puesto de atencion y se dirige rumbo a la terminal " + terminal.getIdTerminal());
         }
-        Terminal terminal = pasajero.getReserva().getTerminal();
-        PuestoEmbarque puesto = pasajero.getReserva().getTerminal().getPuestoEmbarqueGeneral(); 
-        terminalYPuertoEmbarque.add(terminal);
-        terminalYPuertoEmbarque.add(puesto);
+        
         return terminalYPuertoEmbarque;
     }
     
@@ -103,7 +105,7 @@ public class PuestoAtencion implements Runnable {
 
             colaPasajeros.put(pasajero); // Agregar al puesto de atención
             cantidadPasajeroEnPuesto++;
-            Log.escribir("\uD83D\uDC6E Guardia permitió el ingreso de pasajero " + pasajero.getIdPasajero() + " al puesto de atención de " + this.aerolinea.getNombre() + ". Pasajeros restantes esperando: " + cola.size());
+            Log.escribir("Guardia permitió el ingreso de pasajero " + pasajero.getIdPasajero() + " al puesto de atención de " + this.aerolinea.getNombre() + ". Pasajeros restantes esperando: " + cola.size());
             Log.escribir("> Pasajero " + pasajero.getIdPasajero() + " ingresó al puesto de atención de: " + aerolinea.getNombre() + " en la posicion: " + cantidadPasajeroEnPuesto);
                
                 synchronized (pasajero) {
