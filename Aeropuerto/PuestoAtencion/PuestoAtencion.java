@@ -1,11 +1,10 @@
 package Aeropuerto.PuestoAtencion;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
+
 import java.util.concurrent.Semaphore;
 
 import Aeropuerto.Aerolinea.Aerolinea;
@@ -21,8 +20,6 @@ public class PuestoAtencion implements Runnable {
     private final int capacidadMax;
     private final BlockingQueue<Pasajero> colaPasajeros;
     private final Semaphore mutex;
-    private final Semaphore espacioDisponible;
-    private final Semaphore atender;
     private final Semaphore semaforoGuardia = new Semaphore(0);
     private  int cantidadPasajeroEnPuesto = 0;
 
@@ -32,8 +29,6 @@ public class PuestoAtencion implements Runnable {
         this.capacidadMax = capacidadMax;
         this.colaPasajeros = new ArrayBlockingQueue<>(capacidadMax);
         this.mutex = new Semaphore(1);
-        this.espacioDisponible = new Semaphore(capacidadMax);
-        this.atender = new Semaphore(0);
         
     }
 
@@ -54,14 +49,13 @@ public class PuestoAtencion implements Runnable {
         }
 
             this.mutex.release();
-            this.atender.release();
+            //this.atender.release();
        
     }
 
     public void atenderPasajero() throws InterruptedException {
-        this.atender.acquire(); // Esperar hasta que haya un pasajero para atender
-        //this.mutex.acquire(); // Adquirir el mutex para sincronizar el acceso a la lista de pasajeros
-        Pasajero pasajero = colaPasajeros.remove(); // Extraer al primer pasajero
+       
+        Pasajero pasajero = colaPasajeros.take(); // Extraer al primer pasajero
         Log.escribir("Pasajero " + pasajero.getIdPasajero() + " está siendo atendido");
         // Simulamos el tiempo de atención
         Thread.sleep(2000); 
@@ -73,12 +67,11 @@ public class PuestoAtencion implements Runnable {
         }
     
         // Actualizamos el número de pasajeros en el puesto
-        //this.mutex.acquire();
+       
         this.cantidadPasajeroEnPuesto--;
-        //this.mutex.release();
+      
     
         // Permitir que el guardia libere el puesto para otros pasajeros
-        Log.escribir("< Pasajero " + pasajero.getIdPasajero() + " salió del puesto de atencion y se dirige rumbo a la terminal ");
         this.semaforoGuardia.release(); // Liberar semáforo guardia solo cuando el proceso de atención se complete
     }
 
@@ -91,7 +84,6 @@ public class PuestoAtencion implements Runnable {
             terminalYPuertoEmbarque.add(puesto);
             pasajero.wait(); // Esperar hasta ser notificado
             Log.escribir("Pasajero " + pasajero.getIdPasajero() + " fue atendido exitosamente en: " + this.aerolinea.getNombre());
-            // Log.escribir("< Pasajero " + pasajero.getIdPasajero() + " salió del puesto de atencion y se dirige rumbo a la terminal " + terminal.getIdTerminal());
         }
         
         return terminalYPuertoEmbarque;
@@ -99,22 +91,19 @@ public class PuestoAtencion implements Runnable {
     
     public void permitirIngresoDesdeHall() throws InterruptedException {
         this.semaforoGuardia.acquire(); // Espera hasta que el guardia pueda permitir el ingreso
-        try {
-            Pasajero pasajero = hall.getColaEspera(aerolinea.getNombre()).take();
+        Log.escribir("Pasajeros en puesto: " + cantidadPasajeroEnPuesto + " colaPasajeros: " + colaPasajeros.size());
+        if(cantidadPasajeroEnPuesto == capacidadMax-1) {   
             BlockingQueue<Pasajero> cola = hall.getColaEspera(aerolinea.getNombre());
-
-            colaPasajeros.put(pasajero); // Agregar al puesto de atención
-            cantidadPasajeroEnPuesto++;
-            Log.escribir("Guardia permitió el ingreso de pasajero " + pasajero.getIdPasajero() + " al puesto de atención de " + this.aerolinea.getNombre() + ". Pasajeros restantes esperando: " + cola.size());
-            Log.escribir("> Pasajero " + pasajero.getIdPasajero() + " ingresó al puesto de atención de: " + aerolinea.getNombre() + " en la posicion: " + cantidadPasajeroEnPuesto);
-               
+            if (cola != null && !cola.isEmpty()) {
+                Pasajero pasajero = cola.remove(); // Remueve solo si hay elementos
+                colaPasajeros.put(pasajero); // Agregar al puesto de atención
+                cantidadPasajeroEnPuesto++;
+                Log.escribir("Guardia permitió el ingreso de pasajero " + pasajero.getIdPasajero() + " al puesto de atención de " + this.aerolinea.getNombre() + ". Pasajeros restantes esperando: " + cola.size());
+                Log.escribir("> Pasajero " + pasajero.getIdPasajero() + " ingresó al puesto de atención de: " + aerolinea.getNombre() + " en la posicion: " + cantidadPasajeroEnPuesto);
                 synchronized (pasajero) {
-                    //Log.escribir("Se notifica que se libero espacio en: " + this.aerolinea.getNombre());
                     pasajero.notify(); // Notificar al pasajero que está ingresando al puesto
                 }
-            
-        } finally {
-            // No se debe liberar semáforo hasta que el proceso de atención termine
+            }
         }
     }
 

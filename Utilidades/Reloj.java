@@ -24,8 +24,8 @@ public class Reloj implements Runnable {
         } else {
             this.hora++;
         }
-        Log.escribir("Hola actual Aeropuerto: " + this.hora + "hs");
-        //System.out.println("Hora actual: " + this.hora);
+        Log.escribir("Hora actual Aeropuerto: " + this.hora + "hs");
+      
         this.notifyAll(); // Notificar a los posibles hilos esperando el cambio de hora
     }
 

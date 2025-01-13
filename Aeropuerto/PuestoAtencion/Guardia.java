@@ -1,6 +1,5 @@
 package Aeropuerto.PuestoAtencion;
 
-import Pasajero.Pasajero;
 
 public class Guardia implements Runnable {
 

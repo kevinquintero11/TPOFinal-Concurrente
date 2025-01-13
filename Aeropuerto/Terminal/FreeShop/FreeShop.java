@@ -11,7 +11,6 @@ import Utilidades.Log;
 public class FreeShop {
 
     private String nombre;
-    private int capacidadMax;
     private Semaphore capacidadTienda; // Controla el acceso a la tienda
     private Semaphore cajasDisponibles; // Controla la cantidad de cajas disponibles
     private Semaphore mutex; // Exclusión mutua para acceder a las listas de cajas
@@ -21,7 +20,6 @@ public class FreeShop {
     private double balanceTienda;
 
     public FreeShop(int capacidad, int numCajas, String nombreTienda) {
-        this.capacidadMax = capacidad;
         this.capacidadTienda = new Semaphore(capacidad);
         this.cajasDisponibles = new Semaphore(numCajas);
         this.mutex = new Semaphore(1);
@@ -29,10 +27,6 @@ public class FreeShop {
         this.nombre = nombreTienda;
         this.balanceTienda = ThreadLocalRandom.current().nextDouble(5000, 20000);
 
-        // // Crear las cajas registradoras
-        // for (int i = 0; i < numCajas; i++) {
-        //     cajasRDisponibles.add(new Caja(i));
-        // }
     }
 
     // Método para ingresar al free-shop
@@ -40,12 +34,10 @@ public class FreeShop {
         boolean ingreso = false;
         try {
             if (!capacidadTienda.tryAcquire()) {
-                //System.out.println(Thread.currentThread().getName() + " no pudo ingresar. Free-shop lleno.");
                 Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": no pudo ingresar." + this.nombre + " lleno.");
                 ingreso = false;
             }
             Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": ingresó a la " + this.nombre);
-            //System.out.println(Thread.currentThread().getName() + " ingresó al free-shop.");
             ingreso = true;
         } catch (Exception e) {
             e.printStackTrace();
@@ -56,7 +48,7 @@ public class FreeShop {
     }
 
     public void salirFreeShop(Pasajero pasajero) {
-        //System.out.println(Thread.currentThread().getName() + " salió del free-shop.");
+       
         Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": salió de la " + this.nombre);
         capacidadTienda.release(); // Libera un lugar en la tienda
     }
@@ -64,54 +56,17 @@ public class FreeShop {
     public void comprar(double monto, Pasajero pasajero) {
         try {
             cajasDisponibles.acquire(); // Espera por una caja disponible
-            //System.out.println(Thread.currentThread().getName() + " está usando una caja.");
+            
             Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": está usando una caja. Mostrando un gasto de $" + Math.round(monto));
             mutex.acquire();
             balanceTienda += monto;
             mutex.release();
             Thread.sleep(1000); // Simula el tiempo de uso de la caja
-            //Log.escribir(nombre);
-            //System.out.println("Pasajero " + pasajero.getReserva().getIdReserva() + ": terminó de usar la caja.");
+            
             cajasDisponibles.release(); // Libera una caja
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
-
-    
-
-    // Método para usar una caja registradora
-    // public void usarCaja() {
-    //     try {
-    //         cajasDisponibles.acquire(); // Espera por una caja disponible
-
-    //         // Obtener una caja de la lista
-    //         Caja caja;
-    //         mutex.acquire(); // Exclusión mutua para acceder a las listas
-    //         try {
-    //             caja = cajasRDisponibles.remove(0); // Tomar una caja disponible
-    //             cajasOcupadas.add(caja); // Mover a la lista de ocupadas
-    //         } finally {
-    //             mutex.release();
-    //         }
-
-    //         System.out.println(Thread.currentThread().getName() + " está usando la caja " + caja.getIdCaja());
-    //         Thread.sleep(2000); // Simula el tiempo de uso de la caja
-
-    //         // Liberar la caja
-    //         mutex.acquire();
-    //         try {
-    //             cajasOcupadas.remove(caja); // Quitar de la lista de ocupadas
-    //             cajasRDisponibles.add(caja); // Regresar a la lista de disponibles
-    //         } finally {
-    //             mutex.release();
-    //         }
-    //         System.out.println(Thread.currentThread().getName() + " terminó de usar la caja " + caja.getIdCaja());
-    //         cajasDisponibles.release(); // Libera una caja
-
-    //     } catch (InterruptedException e) {
-    //         e.printStackTrace();
-    //     }
-    // }
 
 }
