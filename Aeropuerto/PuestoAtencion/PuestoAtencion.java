@@ -29,7 +29,6 @@ public class PuestoAtencion implements Runnable {
         this.capacidadMax = capacidadMax;
         this.colaPasajeros = new ArrayBlockingQueue<>(capacidadMax);
         this.mutex = new Semaphore(1);
-        
     }
 
     public Aerolinea getAerolinea() {
@@ -48,31 +47,26 @@ public class PuestoAtencion implements Runnable {
             Log.escribir("> Pasajero " + pasajero.getIdPasajero() + " ingresó al puesto de atención de: " + aerolinea.getNombre() + " en la posicion: " + cantidadPasajeroEnPuesto);
         }
 
-            this.mutex.release();
-            //this.atender.release();
-       
+        this.mutex.release();
+        //this.atender.release();
     }
 
     public void atenderPasajero() throws InterruptedException {
        
         Pasajero pasajero = colaPasajeros.take(); // Extraer al primer pasajero
         Log.escribir("Pasajero " + pasajero.getIdPasajero() + " está siendo atendido");
-        // Simulamos el tiempo de atención
+        
+        // Simula el tiempo de atención
         Thread.sleep(2000); 
         //this.mutex.release();
     
-        // Ahora notificamos al pasajero que se ha completado la atención
         synchronized (pasajero) {
             pasajero.notify(); // Notificar al pasajero que ha sido atendido
         }
     
-        // Actualizamos el número de pasajeros en el puesto
-       
         this.cantidadPasajeroEnPuesto--;
       
-    
-        // Permitir que el guardia libere el puesto para otros pasajeros
-        this.semaforoGuardia.release(); // Liberar semáforo guardia solo cuando el proceso de atención se complete
+        this.semaforoGuardia.release(); // Libera el semáforo del guardia cuando el proceso de atención se complete
     }
 
     public List<Object> esperarAtencion(Pasajero pasajero) throws InterruptedException{
@@ -90,8 +84,7 @@ public class PuestoAtencion implements Runnable {
     }
     
     public void permitirIngresoDesdeHall() throws InterruptedException {
-        this.semaforoGuardia.acquire(); // Espera hasta que el guardia pueda permitir el ingreso
-        //Log.escribir("Pasajeros en puesto: " + cantidadPasajeroEnPuesto + " colaPasajeros: " + colaPasajeros.size());
+        this.semaforoGuardia.acquire(); // Espera a que se le avise al guardia para permitir el ingreso
         if(cantidadPasajeroEnPuesto == capacidadMax-1) {   
             BlockingQueue<Pasajero> cola = hall.getColaEspera(aerolinea.getNombre());
             if (cola != null && !cola.isEmpty()) {
@@ -100,6 +93,7 @@ public class PuestoAtencion implements Runnable {
                 cantidadPasajeroEnPuesto++;
                 Log.escribir("Guardia permitió el ingreso de pasajero " + pasajero.getIdPasajero() + " al puesto de atención de " + this.aerolinea.getNombre() + ". Pasajeros restantes esperando: " + cola.size());
                 Log.escribir("> Pasajero " + pasajero.getIdPasajero() + " ingresó al puesto de atención de: " + aerolinea.getNombre() + " en la posicion: " + cantidadPasajeroEnPuesto);
+                
                 synchronized (pasajero) {
                     pasajero.notify(); // Notificar al pasajero que está ingresando al puesto
                 }
@@ -109,13 +103,11 @@ public class PuestoAtencion implements Runnable {
 
     @Override
     public void run() {
-        // TODO Auto-generated method stub
         while(true){
             try {
                 this.atenderPasajero();
                 Thread.sleep(100);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }

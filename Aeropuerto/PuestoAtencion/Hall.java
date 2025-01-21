@@ -34,10 +34,9 @@ public class Hall {
                          ". Cantidad de personas: " + colasDeEspera.get(nombreAerolinea).size());
             
             try {
-                pasajero.wait(); // Bloquear el hilo del pasajero hasta que sea notificado
-              //  Log.escribir("Se desbloquea el pasajero: " + pasajero.getIdPasajero() + " para el puesto: " + puestoAtencion.getAerolinea().getNombre());
+                pasajero.wait(); // Bloquea al hilo pasajero hasta que sea notificado
             } catch (InterruptedException e) {
-                //Thread.currentThread().interrupt(); // Restaurar el estado de interrupción
+            
             }
         }
     }

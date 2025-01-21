@@ -8,7 +8,6 @@ public class Reloj implements Runnable {
     
         public Reloj(int hora) {
             this.hora = hora;
-           // this.aeropuerto = aeropuerto; // Asignar el aeropuerto
         }
     
         public void setAeropuerto(Aeropuerto aero){
@@ -23,6 +22,7 @@ public class Reloj implements Runnable {
             this.hora = 5; // Reinicia a las 5 para simular el cierre nocturno
         } else {
             this.hora++;
+
         }
         Log.escribir("Hora actual Aeropuerto: " + this.hora + "hs");
       
@@ -32,6 +32,14 @@ public class Reloj implements Runnable {
     public synchronized void verificarHoraVuelo(int horaVuelo) throws InterruptedException {
         while (this.hora != horaVuelo) {
             this.wait(); // Esperar hasta que la hora del vuelo coincida
+        }
+    }
+
+    private void manejarEstadoAeropuerto() {
+        if (hora == 6) {
+            aeropuerto.abrirAeropuerto(); // Abrir el aeropuerto a las 6
+        } else if (hora == 22) {
+            aeropuerto.cerrarAeropuerto(); // Cerrar el aeropuerto a las 22
         }
     }
 
@@ -48,11 +56,5 @@ public class Reloj implements Runnable {
         }
     }
 
-    private void manejarEstadoAeropuerto() {
-        if (hora == 6) {
-            aeropuerto.abrirAeropuerto(); // Abrir el aeropuerto a las 6
-        } else if (hora == 22) {
-            aeropuerto.cerrarAeropuerto(); // Cerrar el aeropuerto a las 22
-        }
-    }
+    
 }

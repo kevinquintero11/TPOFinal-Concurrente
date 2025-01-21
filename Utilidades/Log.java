@@ -25,9 +25,9 @@ public class Log {
     
     public static synchronized void escribir(String texto) {
         String evento = tiempoActual() + " " + texto;
-        System.out.println(evento);//muestra por pantalla
-        log.println(evento);//escribe.
-        log.flush(); //fuerza escritura de buffer.
+        System.out.println(evento); // Muestra por pantalla
+        log.println(evento); // Escribe en el log
+        log.flush(); // Fuerza escritura de buffer
     }
 
     // Devuelve un String con la Hora:Minutos:Segundos actuales.

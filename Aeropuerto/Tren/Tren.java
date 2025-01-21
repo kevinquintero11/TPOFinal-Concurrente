@@ -16,19 +16,13 @@ public class Tren implements Runnable {
     private int capacidadTren;
     private int pasajerosABordo;
     private List<Terminal> listaTerminales;
-
     private boolean detenidoEnTerminal = false;
-
     private Terminal terminalActual;
     private ReentrantLock cerrojo = new ReentrantLock();
-
-    //private Condition esperandoBajadaPasajeros = cerrojo.newCondition();
     private Condition esperandoNuevoRecorrido = cerrojo.newCondition();
     private Condition avanzar = cerrojo.newCondition();
     private boolean inicioRecorrido = true;
-
     private List<Condition> conjuntoEsperaPorTerminal = new ArrayList<>();
-    // Arreglo para llevar cuenta de pasajeros por terminal
     private int[] pasajerosPorTerminal;
     private CyclicBarrier barrera;
 
@@ -40,7 +34,7 @@ public class Tren implements Runnable {
 
         this.barrera = new CyclicBarrier(capacidad+1);
 
-        // Inicializar el mapa de pasajeros por terminal
+        // Inicializa el mapa de pasajeros por terminal
         pasajerosPorTerminal = new int[terminales.size()];
         for (int i = 0; i < terminales.size(); i++) {
             conjuntoEsperaPorTerminal.add(cerrojo.newCondition());
@@ -60,7 +54,6 @@ public class Tren implements Runnable {
             cerrojo.unlock();
             barrera.await();
 
-            // Si el tren está lleno, permite iniciar el viaje
         } catch (BrokenBarrierException e) {
             e.printStackTrace();
         }
@@ -87,7 +80,6 @@ public class Tren implements Runnable {
 
             // Si no quedan más pasajeros por bajar en esta terminal, señaliza al tren
             if (pasajerosPorTerminal[indiceTerminal] == 0) {
-                //conjuntoEsperaPorTerminal.get(indiceTerminal).signalAll();
                 avanzar.signal();
             }
         } finally {
@@ -110,7 +102,6 @@ public class Tren implements Runnable {
             // Esperar a que todos los pasajeros bajen
             while (pasajerosPorTerminal[indiceTerminal] > 0) {
                 Log.escribir("Esperando a que todos los pasajeros bajen en la terminal " + terminal.getIdTerminal() + "...");
-                //conjuntoEsperaPorTerminal.get(indiceTerminal).await();
                 avanzar.await();
             }
 

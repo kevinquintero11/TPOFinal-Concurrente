@@ -42,12 +42,12 @@ public class Pasajero implements Runnable {
 
         Aeropuerto aeropuerto = this.miReserva.getAeropuerto();
         PuestoAtencion puesto;
-        while(true){
+        //while(true){
             try {
                 aeropuerto.ingresarAeropuerto(this);
                 puesto = aeropuerto.ingresarPuestoInforme(this);
                 puesto.ingresarPuestoAtencion(this);
-                List<Object> terminalYPuertoEmbarque = puesto.esperarAtencion(this); // Intenta ingresar al puesto
+                List<Object> terminalYPuertoEmbarque = puesto.esperarAtencion(this);
                 Terminal terminalVuelo = (Terminal) terminalYPuertoEmbarque.get(0);
                 Log.escribir("< Pasajero " + this.idPasajero + " salió del puesto de atencion y se dirige rumbo a la terminal " + terminalVuelo.getIdTerminal());
                 aeropuerto.irTerminal(this, terminalVuelo);
@@ -68,13 +68,12 @@ public class Pasajero implements Runnable {
                     }
                 }
                
-                terminalVuelo.getPuestoEmbarqueGeneral().esperarAbordaje(this.getReserva().getVuelo());
-               
-                Log.escribir("Pasajero " + this.idPasajero + ": Subió al avión con destino: " +  this.miReserva.getVuelo().getDestino() + ". Hora de vuelo: " + this.miReserva.getVuelo().getHora()+ ". Hora aeropuerto: "+aeropuerto.getReloj().getHora());
+                terminalVuelo.getPuestoEmbarqueGeneral().esperarAbordaje(this.getReserva().getVuelo(), this);
+                Log.escribir("Pasajero " + this.idPasajero + ": Subió al avión con destino: " +  this.miReserva.getVuelo().getDestino() + ". Hora de vuelo: " + this.miReserva.getVuelo().getHora()+ "hs.");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }  
-        }
+        //}
             
     }
 }

@@ -1,6 +1,8 @@
 package Aeropuerto.Terminal;
 
 import Aeropuerto.Aerolinea.Vuelo;
+import Pasajero.Pasajero;
+import Utilidades.Log;
 
 public class PuestoEmbarque {
     
@@ -14,7 +16,8 @@ public class PuestoEmbarque {
         return this.idPuesto;
     }
 
-    public void esperarAbordaje(Vuelo vuelo) throws InterruptedException{
+    public void esperarAbordaje(Vuelo vuelo, Pasajero pasajero) throws InterruptedException{
+        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " está esperando al abordaje del vuelo: " + vuelo.getDestino());
         vuelo.esperarDespegue();
     }
     

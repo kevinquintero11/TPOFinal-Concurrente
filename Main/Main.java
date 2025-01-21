@@ -3,6 +3,7 @@ package Main;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.CountDownLatch;
 
 import Aeropuerto.Aeropuerto;
 import Aeropuerto.Aerolinea.Aerolinea;
@@ -77,8 +78,6 @@ public class Main {
             "Iberia", "KLM Royal Dutch Airlines"
         };
 
-        Random random = new Random();
-
         for(int i = 0; i < CANTIDAD_AEROLINEAS; i++){       
             List<Vuelo> listaVuelos = crearVuelos();
             Aerolinea aerolinea = new Aerolinea(AEROLINEAS[i],  listaVuelos);
@@ -88,29 +87,30 @@ public class Main {
     }
     
     public static List<Vuelo> crearVuelos(){
-        List<Vuelo> listaVuelos = new LinkedList<>();
-        
+          
         String[] DESTINOS = {
             "Buenos Aires", "Madrid", "Nueva York", "Tokio", "Londres",
             "París", "Roma", "Sídney", "Dubai", "Berlin"
         };
 
+        List<Vuelo> listaVuelos = new LinkedList<>();
         Random random = new Random();
         
         for(int i = 0; i < CANTIDAD_VUELOS; i++){
             int indiceDestino = random.nextInt(DESTINOS.length);
-            int horaSalida = 7 + random.nextInt(16);
+            int horaSalida = 8 + random.nextInt(14);
             int numAleatorio = random.nextInt(2) + 1;
             PuestoEmbarque puesto = listaPuestosEmbarques.get(numAleatorio);
-            
-            Vuelo vuelo = new Vuelo(horaSalida, DESTINOS[indiceDestino], puesto, reloj);
+            CountDownLatch latchDespegue = new CountDownLatch(1);
+            Vuelo vuelo = new Vuelo(horaSalida, DESTINOS[indiceDestino], puesto, reloj, latchDespegue);
+            Thread hiloVuelo = new Thread(vuelo);
+            listaHilos.add(hiloVuelo);
             listaVuelos.add(vuelo);
         }
         return  listaVuelos;
     }
 
     public static void crearPuestosEmbarque(){
-
         for(int i = 0; i < CANTIDAD_TERMINALES; i++){
             PuestoEmbarque puerto = new PuestoEmbarque(i);
             listaPuestosEmbarques.add(puerto);
@@ -158,7 +158,8 @@ public class Main {
             Pasajero pasajero = new Pasajero(i, reserva);
             listaPasajeros.add(pasajero);
             Thread pasajeroHilo = new Thread(pasajero);
-            //agrego el pasajero a la lista de hilos de la clase Aerop.
+           
+            // Agrego el pasajero a la lista de hilos
             listaHilos.add(pasajeroHilo);
            
         }
