@@ -42,7 +42,7 @@ public class Pasajero implements Runnable {
 
         Aeropuerto aeropuerto = this.miReserva.getAeropuerto();
         PuestoAtencion puesto;
-        //while(true){
+        while(true){
             try {
                 aeropuerto.ingresarAeropuerto(this);
                 puesto = aeropuerto.ingresarPuestoInforme(this);
@@ -74,7 +74,7 @@ public class Pasajero implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }  
-        //}
+        }
             
     }
 }
