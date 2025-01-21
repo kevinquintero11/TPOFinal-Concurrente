@@ -91,7 +91,7 @@ public class PuestoAtencion implements Runnable {
     
     public void permitirIngresoDesdeHall() throws InterruptedException {
         this.semaforoGuardia.acquire(); // Espera hasta que el guardia pueda permitir el ingreso
-        Log.escribir("Pasajeros en puesto: " + cantidadPasajeroEnPuesto + " colaPasajeros: " + colaPasajeros.size());
+        //Log.escribir("Pasajeros en puesto: " + cantidadPasajeroEnPuesto + " colaPasajeros: " + colaPasajeros.size());
         if(cantidadPasajeroEnPuesto == capacidadMax-1) {   
             BlockingQueue<Pasajero> cola = hall.getColaEspera(aerolinea.getNombre());
             if (cola != null && !cola.isEmpty()) {

@@ -3,14 +3,12 @@ package Aeropuerto.Tren;
 import java.util.List;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.Semaphore;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 import Aeropuerto.Terminal.Terminal;
 import Pasajero.Pasajero;
 import Utilidades.Log;
-
 import java.util.ArrayList;
 
 
@@ -24,10 +22,10 @@ public class Tren implements Runnable {
     private Terminal terminalActual;
     private ReentrantLock cerrojo = new ReentrantLock();
 
-    private Condition esperandoBajadaPasajeros = cerrojo.newCondition();
+    //private Condition esperandoBajadaPasajeros = cerrojo.newCondition();
     private Condition esperandoNuevoRecorrido = cerrojo.newCondition();
+    private Condition avanzar = cerrojo.newCondition();
     private boolean inicioRecorrido = true;
-    private boolean trenLleno = false;
 
     private List<Condition> conjuntoEsperaPorTerminal = new ArrayList<>();
     // Arreglo para llevar cuenta de pasajeros por terminal
@@ -53,13 +51,12 @@ public class Tren implements Runnable {
     public void subir(Pasajero pasajero) throws InterruptedException {
         cerrojo.lock();
         try {
-            while (!inicioRecorrido || pasajerosABordo >= capacidadTren) {
+            while (!inicioRecorrido || pasajerosABordo == capacidadTren) {
                 Log.escribir("Pasajero " + pasajero.getIdPasajero() + " intenta subir al tren, pero no puede.");
                 esperandoNuevoRecorrido.await();
             }
             pasajerosABordo++;
-            Log.escribir(
-                    "Pasajero " + pasajero.getIdPasajero() + ": subió al tren. Pasajeros a bordo: " + pasajerosABordo);
+            Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": subió al tren. Pasajeros a bordo: " + pasajerosABordo);
             cerrojo.unlock();
             barrera.await();
 
@@ -78,8 +75,7 @@ public class Tren implements Runnable {
 
             // Espera hasta que el tren se detenga en la terminal correspondiente
             while (!detenidoEnTerminal || !terminalActual.equals(terminal)) {
-                Log.escribir("Pasajero " + pasajero.getIdPasajero() + " espera para bajar en la terminal "
-                        + terminal.getIdTerminal());
+                Log.escribir("Pasajero " + pasajero.getIdPasajero() + " espera para bajar en la terminal " + terminal.getIdTerminal());
                 conjuntoEsperaPorTerminal.get(indiceTerminal).await();
             }
 
@@ -91,7 +87,8 @@ public class Tren implements Runnable {
 
             // Si no quedan más pasajeros por bajar en esta terminal, señaliza al tren
             if (pasajerosPorTerminal[indiceTerminal] == 0) {
-                conjuntoEsperaPorTerminal.get(indiceTerminal).signalAll();
+                //conjuntoEsperaPorTerminal.get(indiceTerminal).signalAll();
+                avanzar.signal();
             }
         } finally {
             cerrojo.unlock();
@@ -112,9 +109,9 @@ public class Tren implements Runnable {
 
             // Esperar a que todos los pasajeros bajen
             while (pasajerosPorTerminal[indiceTerminal] > 0) {
-                Log.escribir(
-                        "Esperando a que todos los pasajeros bajen en la terminal " + terminal.getIdTerminal() + "...");
-                conjuntoEsperaPorTerminal.get(indiceTerminal).await();
+                Log.escribir("Esperando a que todos los pasajeros bajen en la terminal " + terminal.getIdTerminal() + "...");
+                //conjuntoEsperaPorTerminal.get(indiceTerminal).await();
+                avanzar.await();
             }
 
             Thread.sleep(2000); // Simula el tiempo de detención
@@ -125,40 +122,32 @@ public class Tren implements Runnable {
     }
 
     private void iniciarViajeTren() throws InterruptedException {
-
         try {
             barrera.await();
         } catch (InterruptedException | BrokenBarrierException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
-        }
-        if (!trenLleno) {
-            Thread.sleep(2000);
         }
 
         inicioRecorrido = false;
-        Log.escribir("\uD83D\uDE84 El tren comienza su recorrido con " + pasajerosABordo + " pasajeros a bordo.");
+
+        Log.escribir("El tren comienza su recorrido con " + pasajerosABordo + " pasajeros a bordo.");
+        
         int cantidadTerminales = listaTerminales.size();
         for (int i = 0; i < cantidadTerminales; i++) {
             Terminal terminal = listaTerminales.get(i);
             Log.escribir(" Terminal actual: " + terminal.getIdTerminal());
             detenerEnTerminal(terminal);
         }
-        Log.escribir("\uD83D\uDE84 Terminó el recorrido del tren");
+        Log.escribir("Terminó el recorrido del tren.");
     }
 
     private void regresarInicio() throws InterruptedException {
         cerrojo.lock();
         try {
-            while (pasajerosABordo > 0) {
-                esperandoBajadaPasajeros.await();
-            }
-            Log.escribir("\uD83D\uDE84 El tren regresa vacío al inicio del recorrido.");
+            Log.escribir("Tren volviendo al inicio del aeropuerto...");
             Thread.sleep(2000); // Simula el tiempo de regreso
             pasajerosABordo = 0;
             inicioRecorrido = true;
-            trenLleno = false;
-            // ultimaTerminal = false;
             esperandoNuevoRecorrido.signalAll();
         } finally {
             cerrojo.unlock();
@@ -170,7 +159,6 @@ public class Tren implements Runnable {
         while (true) {
             try {
                 this.iniciarViajeTren();
-                // Log.escribir("Volviendo al inicio del aeropuerto.");
                 this.regresarInicio();
             } catch (InterruptedException e) {
                 e.printStackTrace();
