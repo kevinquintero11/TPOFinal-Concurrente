@@ -2,6 +2,8 @@ package Aeropuerto.Terminal;
 
 import Aeropuerto.Terminal.FreeShop.FreeShop;
 
+// CLASE QUE SIMULA LAS TERMINALES DEL AEROPUERTO
+
 public class Terminal {
 
     private char idTerminal;
@@ -12,7 +14,6 @@ public class Terminal {
         this.puestoEmbarqueGeneral = puesto;
         this.idTerminal = id;
         this.tienda = tiendaTerminal;
-
     }
 
     public char getIdTerminal(){

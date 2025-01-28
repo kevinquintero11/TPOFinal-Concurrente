@@ -1,7 +1,6 @@
 package Aeropuerto;
 
 import java.util.List;
-
 import Aeropuerto.Aerolinea.Aerolinea;
 import Aeropuerto.PuestoAtencion.PuestoAtencion;
 import Aeropuerto.Terminal.Terminal;
@@ -9,6 +8,8 @@ import Aeropuerto.Tren.Tren;
 import Pasajero.Pasajero;
 import Utilidades.Log;
 import Utilidades.Reloj;
+
+// CLASE QUE SIMULA UN AEROPUERTO
 
 public class Aeropuerto{
     private String nombreAeropuerto;
@@ -73,17 +74,15 @@ public class Aeropuerto{
     public synchronized void ingresarAeropuerto(Pasajero pasajero) throws InterruptedException {
         while (!abierto) { 
             Log.escribir("Pasajero " + pasajero.getIdPasajero() + " intenta ingresar, pero el aeropuerto está cerrado");
-            this.wait();
+            this.wait(); // Si el aeropuerto esta cerrado, los pasajeros se quedan esperando a que abra
         }
         Log.escribir("\u2192 Pasajero " + pasajero.getIdPasajero() + " ingresa al aeropuerto.");
-        
     }
 
     public synchronized void abrirAeropuerto() {
         if (!abierto) { 
             abierto = true; 
             Log.escribir("El aeropuerto está ahora abierto.");
-           
             this.notifyAll(); 
         }
     }

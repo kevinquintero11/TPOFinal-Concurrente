@@ -11,6 +11,7 @@ import Pasajero.Pasajero;
 import Utilidades.Log;
 import java.util.ArrayList;
 
+// CLASE QUE SIMULA EL FUNCIONAMIENTO DEL TREN DEL AEROPUERTO
 
 public class Tren implements Runnable {
     private int capacidadTren;
@@ -21,7 +22,7 @@ public class Tren implements Runnable {
     private ReentrantLock cerrojo = new ReentrantLock();
     private Condition esperandoNuevoRecorrido = cerrojo.newCondition();
     private Condition avanzar = cerrojo.newCondition();
-    private boolean inicioRecorrido = true;
+    private boolean inicioRecorrido = false;
     private List<Condition> conjuntoEsperaPorTerminal = new ArrayList<>();
     private int[] pasajerosPorTerminal;
     private CyclicBarrier barrera;
@@ -31,8 +32,7 @@ public class Tren implements Runnable {
         this.listaTerminales = terminales;
         this.pasajerosABordo = 0;
         this.terminalActual = terminales.get(0);
-
-        this.barrera = new CyclicBarrier(capacidad+1);
+        this.barrera = new CyclicBarrier(capacidad+1); // El +1 es por el hilo tren
 
         // Inicializa el mapa de pasajeros por terminal
         pasajerosPorTerminal = new int[terminales.size()];
@@ -42,17 +42,19 @@ public class Tren implements Runnable {
         }
     }
 
+    // Método ejecutado por los hilos pasajero
     public void subir(Pasajero pasajero) throws InterruptedException {
         cerrojo.lock();
         try {
-            while (!inicioRecorrido || pasajerosABordo == capacidadTren) {
+            // Verifica si ya inicio el viaje del tren o si ya está lleno
+            while (inicioRecorrido || pasajerosABordo == capacidadTren) {
                 Log.escribir("Pasajero " + pasajero.getIdPasajero() + " intenta subir al tren, pero no puede.");
                 esperandoNuevoRecorrido.await();
             }
             pasajerosABordo++;
             Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": subió al tren. Pasajeros a bordo: " + pasajerosABordo);
             cerrojo.unlock();
-            barrera.await();
+            barrera.await(); // Toma un permiso de la barrera
 
         } catch (BrokenBarrierException e) {
             e.printStackTrace();
@@ -63,7 +65,7 @@ public class Tren implements Runnable {
         cerrojo.lock();
         try {
             int indiceTerminal = listaTerminales.indexOf(terminal);
-            // Incrementamos el contador de pasajeros para esta terminal
+            // Incrementam el contador de pasajeros para esta terminal
             pasajerosPorTerminal[indiceTerminal]++;
 
             // Espera hasta que el tren se detenga en la terminal correspondiente
@@ -78,7 +80,7 @@ public class Tren implements Runnable {
             // Decrementa el contador de pasajeros que deben bajar en esta terminal
             pasajerosPorTerminal[indiceTerminal]--;
 
-            // Si no quedan más pasajeros por bajar en esta terminal, señaliza al tren
+            // Si no quedan más pasajeros por bajar en esta terminal, avisa al tren para seguir el recorrido
             if (pasajerosPorTerminal[indiceTerminal] == 0) {
                 avanzar.signal();
             }
@@ -93,16 +95,15 @@ public class Tren implements Runnable {
             Log.escribir("El tren se detiene en la terminal: " + terminal.getIdTerminal());
             this.terminalActual = terminal;
             this.detenidoEnTerminal = true;
-
             int indiceTerminal = listaTerminales.indexOf(terminal);
             
-            // Notificar a los pasajeros de esta terminal
+            // Notifica a todos los pasajeros de esta terminal para que bajen
             conjuntoEsperaPorTerminal.get(indiceTerminal).signalAll();
 
-            // Esperar a que todos los pasajeros bajen
-            while (pasajerosPorTerminal[indiceTerminal] > 0) {
+            // Espera a que todos los pasajeros bajen
+            if (pasajerosPorTerminal[indiceTerminal] > 0) {
                 Log.escribir("Esperando a que todos los pasajeros bajen en la terminal " + terminal.getIdTerminal() + "...");
-                avanzar.await();
+                avanzar.await(); // Espera la señal para avanzar
             }
 
             Thread.sleep(2000); // Simula el tiempo de detención
@@ -114,16 +115,16 @@ public class Tren implements Runnable {
 
     private void iniciarViajeTren() throws InterruptedException {
         try {
-            barrera.await();
+            barrera.await(); // Toma un permiso de la barrera
         } catch (InterruptedException | BrokenBarrierException e) {
             e.printStackTrace();
         }
 
-        inicioRecorrido = false;
-
+        inicioRecorrido = true;
         Log.escribir("El tren comienza su recorrido con " + pasajerosABordo + " pasajeros a bordo.");
-        
         int cantidadTerminales = listaTerminales.size();
+
+        // Se ejecuta para detenerse en cada terminal del aeropuerto
         for (int i = 0; i < cantidadTerminales; i++) {
             Terminal terminal = listaTerminales.get(i);
             Log.escribir(" Terminal actual: " + terminal.getIdTerminal());
@@ -138,7 +139,7 @@ public class Tren implements Runnable {
             Log.escribir("Tren volviendo al inicio del aeropuerto...");
             Thread.sleep(2000); // Simula el tiempo de regreso
             pasajerosABordo = 0;
-            inicioRecorrido = true;
+            inicioRecorrido = false;
             esperandoNuevoRecorrido.signalAll();
         } finally {
             cerrojo.unlock();
@@ -156,6 +157,5 @@ public class Tren implements Runnable {
             }
         }
     }
-    // }
 
 }

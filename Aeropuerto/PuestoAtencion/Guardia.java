@@ -1,5 +1,6 @@
 package Aeropuerto.PuestoAtencion;
 
+// CLASE QUE SIMULA EL FUNCIONAMIENTO DE UN GUARDIA
 
 public class Guardia implements Runnable {
 
@@ -9,19 +10,21 @@ public class Guardia implements Runnable {
         this.puestoTrabajo = puesto;
     }
 
+    public PuestoAtencion getPuestoAtencion(){
+        return this.puestoTrabajo;
+    }
+
     @Override
     public void run() {
         while (true) {
             try {
-                puestoTrabajo.permitirIngresoDesdeHall(); // Permitir ingreso desde el hall central
+                puestoTrabajo.permitirIngresoDesdeHall(); 
             } catch (InterruptedException e) {
                 break;
             }
         }
     }
 
-    public PuestoAtencion getPuestoAtencion(){
-        return this.puestoTrabajo;
-    }
+   
     
 }

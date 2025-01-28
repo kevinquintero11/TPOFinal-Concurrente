@@ -4,14 +4,14 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-
 import java.util.concurrent.Semaphore;
-
 import Aeropuerto.Aerolinea.Aerolinea;
 import Aeropuerto.Terminal.PuestoEmbarque;
 import Aeropuerto.Terminal.Terminal;
 import Pasajero.Pasajero;
 import Utilidades.Log;
+
+// CLASE QUE SIMULA EL PUESTO DE ATENCIÓN DE CADA AEROLINEA
 
 public class PuestoAtencion implements Runnable {
     
@@ -37,7 +37,7 @@ public class PuestoAtencion implements Runnable {
 
     public void ingresarPuestoAtencion(Pasajero pasajero) throws InterruptedException {
         mutex.acquire();
-        if (cantidadPasajeroEnPuesto == capacidadMax) {
+        if (this.cantidadPasajeroEnPuesto == this.capacidadMax) {
             this.mutex.release();
             this.hall.esperarEnHall(pasajero, this);
             this.mutex.acquire();
@@ -48,27 +48,25 @@ public class PuestoAtencion implements Runnable {
         }
 
         this.mutex.release();
-        //this.atender.release();
     }
 
+    // Método ejecutado por los hilos puestoAtencion
     public void atenderPasajero() throws InterruptedException {
-       
-        Pasajero pasajero = colaPasajeros.take(); // Extraer al primer pasajero
+        Pasajero pasajero = colaPasajeros.take(); // Toma al primer pasajero ubicado en la cola de espera
         Log.escribir("Pasajero " + pasajero.getIdPasajero() + " está siendo atendido");
         
         // Simula el tiempo de atención
-        Thread.sleep(2000); 
-        //this.mutex.release();
-    
+        Thread.sleep(1000); 
+
         synchronized (pasajero) {
-            pasajero.notify(); // Notificar al pasajero que ha sido atendido
+            pasajero.notify(); // Notifica al pasajero que ha sido atendido
         }
     
         this.cantidadPasajeroEnPuesto--;
-      
-        this.semaforoGuardia.release(); // Libera el semáforo del guardia cuando el proceso de atención se complete
+        this.semaforoGuardia.release(); // Libera el semáforo del guardia para avisar que se liberó un espacio en la fila
     }
 
+    // Método ejecutado por los hilos pasajero
     public List<Object> esperarAtencion(Pasajero pasajero) throws InterruptedException{
         List<Object> terminalYPuertoEmbarque = new LinkedList<>();
         synchronized (pasajero) {
@@ -76,26 +74,27 @@ public class PuestoAtencion implements Runnable {
             PuestoEmbarque puesto = pasajero.getReserva().getTerminal().getPuestoEmbarqueGeneral(); 
             terminalYPuertoEmbarque.add(terminal);
             terminalYPuertoEmbarque.add(puesto);
-            pasajero.wait(); // Esperar hasta ser notificado
+            pasajero.wait(); // Espera hasta ser notificado de que fue atendido
             Log.escribir("Pasajero " + pasajero.getIdPasajero() + " fue atendido exitosamente en: " + this.aerolinea.getNombre());
         }
         
         return terminalYPuertoEmbarque;
     }
     
+    // Método ejecutado por los hilos guardia
     public void permitirIngresoDesdeHall() throws InterruptedException {
         this.semaforoGuardia.acquire(); // Espera a que se le avise al guardia para permitir el ingreso
         if(cantidadPasajeroEnPuesto == capacidadMax-1) {   
             BlockingQueue<Pasajero> cola = hall.getColaEspera(aerolinea.getNombre());
-            if (cola != null && !cola.isEmpty()) {
-                Pasajero pasajero = cola.remove(); // Remueve solo si hay elementos
-                colaPasajeros.put(pasajero); // Agregar al puesto de atención
+            if (!cola.isEmpty()) {
+                Pasajero pasajero = cola.remove(); // Quita al pasjero de la cola de espera del hall
+                colaPasajeros.put(pasajero); // Agrega al pasajero a la cola del puesto de atención
                 cantidadPasajeroEnPuesto++;
                 Log.escribir("Guardia permitió el ingreso de pasajero " + pasajero.getIdPasajero() + " al puesto de atención de " + this.aerolinea.getNombre() + ". Pasajeros restantes esperando: " + cola.size());
                 Log.escribir("> Pasajero " + pasajero.getIdPasajero() + " ingresó al puesto de atención de: " + aerolinea.getNombre() + " en la posicion: " + cantidadPasajeroEnPuesto);
                 
                 synchronized (pasajero) {
-                    pasajero.notify(); // Notificar al pasajero que está ingresando al puesto
+                    pasajero.notify(); // Notifica al pasajero que está ingresando al puesto
                 }
             }
         }
@@ -106,7 +105,6 @@ public class PuestoAtencion implements Runnable {
         while(true){
             try {
                 this.atenderPasajero();
-                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

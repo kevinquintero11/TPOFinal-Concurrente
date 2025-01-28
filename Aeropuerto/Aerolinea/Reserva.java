@@ -2,6 +2,8 @@ package Aeropuerto.Aerolinea;
 import Aeropuerto.Aeropuerto;
 import Aeropuerto.Terminal.Terminal;
 
+// CLASE QUE SIMULA LA RESERVA DE UN PASAJERO PARA UN VUELO
+
 public class Reserva {
     private Aerolinea aerolinea;
     private Terminal terminal;

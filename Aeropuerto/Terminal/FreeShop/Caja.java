@@ -1,5 +1,7 @@
 package Aeropuerto.Terminal.FreeShop;
 
+// CLASE QUE SIMULA UNA CAJA REGISTRADORA DE UNA TIENDA
+
 public class Caja {
     private int idCaja;
     private double balance;

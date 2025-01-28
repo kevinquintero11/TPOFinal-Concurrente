@@ -5,6 +5,8 @@ import Aeropuerto.Terminal.PuestoEmbarque;
 import Utilidades.Log;
 import Utilidades.Reloj;
 
+// CLASE QUE SIMULA UN VUELO DE UNA AEROLINEA
+
 public class Vuelo implements Runnable{
 
     private int horaDespegue;
@@ -12,6 +14,7 @@ public class Vuelo implements Runnable{
     private PuestoEmbarque puestoSalida;
     private Reloj relojAeropuerto;
     private CountDownLatch latchDespegue;
+    private boolean partioRumbo;
 
     public Vuelo(int hs, String nombreDestino, PuestoEmbarque puesto, Reloj reloj, CountDownLatch despegue){
         this.horaDespegue = hs;
@@ -19,6 +22,7 @@ public class Vuelo implements Runnable{
         this.puestoSalida = puesto;
         this.relojAeropuerto = reloj;
         this.latchDespegue = despegue;
+        this.partioRumbo = false;
     }
 
     public String getDestino(){
@@ -34,19 +38,23 @@ public class Vuelo implements Runnable{
     }
 
     public void esperarDespegue() throws InterruptedException{
-       this.latchDespegue.await();
+       this.latchDespegue.await(); // Los pasajeros esperan acá, hasta que el latch llegue a 0
+    }
+
+    public boolean inicioViaje(){
+        return this.partioRumbo;
     }
 
     @Override
     public void run() {
         try {
-            relojAeropuerto.verificarHoraVuelo(horaDespegue);
+            relojAeropuerto.verificarHoraVuelo(horaDespegue); // Verifica si ya es hora de despegar
             Log.escribir("Comienza el abordaje del vuelo con destino: " + this.destino);
             latchDespegue.countDown();
-            Thread.sleep(3000);
+            Thread.sleep(10000); // Se da un tiempo de una hora para el abordaje de los pasajeros
+            this.partioRumbo = true;
             Log.escribir("Despega el vuelo con destino: " + this.destino);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

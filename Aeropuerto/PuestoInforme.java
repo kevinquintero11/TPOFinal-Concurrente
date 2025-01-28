@@ -2,11 +2,12 @@ package Aeropuerto;
 
 import java.util.List;
 import java.util.concurrent.Semaphore;
-
 import Aeropuerto.Aerolinea.Aerolinea;
 import Aeropuerto.PuestoAtencion.PuestoAtencion;
 import Pasajero.Pasajero;
 import Utilidades.Log;
+
+// CLASE QUE SIMULA EL PUESTO DE INFORME PARA DARLE INDICACIONES A LOS PASAJEROS
 
 public class PuestoInforme {
     
@@ -24,7 +25,6 @@ public class PuestoInforme {
         Log.escribir("Pasajero " + pasajero.getIdPasajero() + " se tiene que dirigir al puesto " + puesto.getAerolinea().getNombre());
         mutex.release();
         return puesto;
-
     }
 
     private PuestoAtencion indicarPuesto(Pasajero pasajero, List<PuestoAtencion> puestos){
@@ -42,6 +42,5 @@ public class PuestoInforme {
             i++;
         }
         return puestoEncontrado;
-
     }
 }

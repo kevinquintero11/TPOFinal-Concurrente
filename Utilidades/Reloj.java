@@ -2,9 +2,11 @@ package Utilidades;
 
 import Aeropuerto.Aeropuerto;
 
+// CLASE QUE SIMULA EL RELOJ DEL AEROPUERTO
+
 public class Reloj implements Runnable {
     private int hora;
-    private Aeropuerto aeropuerto; // Referencia al aeropuerto
+    private Aeropuerto aeropuerto; 
     
         public Reloj(int hora) {
             this.hora = hora;
@@ -24,14 +26,14 @@ public class Reloj implements Runnable {
             this.hora++;
 
         }
-        Log.escribir("Hora actual Aeropuerto: " + this.hora + "hs");
-      
-        this.notifyAll(); // Notificar a los posibles hilos esperando el cambio de hora
+        Log.escribir("HORA ACTUAL DEL AEROPUERTO: " + this.hora + "HS");
+    
+        this.notifyAll(); // Notifica a los hilos vuelo esperando el cambio de hora
     }
 
     public synchronized void verificarHoraVuelo(int horaVuelo) throws InterruptedException {
         while (this.hora != horaVuelo) {
-            this.wait(); // Esperar hasta que la hora del vuelo coincida
+            this.wait(); // Espera hasta que la hora del vuelo coincida
         }
     }
 
@@ -47,7 +49,7 @@ public class Reloj implements Runnable {
     public void run() {
         while (true) {
             try {
-                Thread.sleep(5000); // Simula 1 hora con un intervalo de 10 segundos
+                Thread.sleep(10000); // Simula 1 hora con un intervalo de 10 segundos
                 avanzarTiempo(); // Incrementa la hora
                 manejarEstadoAeropuerto(); // Verifica si debe abrir o cerrar el aeropuerto
             } catch (InterruptedException e) {

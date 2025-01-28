@@ -8,7 +8,6 @@ import Aeropuerto.Aerolinea.Reserva;
 import Aeropuerto.PuestoAtencion.PuestoAtencion;
 import Aeropuerto.Terminal.Terminal;
 import Aeropuerto.Terminal.FreeShop.FreeShop;
-//import Aeropuerto.Terminal.FreeShop.Producto;
 import Utilidades.Log;
 
 public class Pasajero implements Runnable {
@@ -42,7 +41,6 @@ public class Pasajero implements Runnable {
 
         Aeropuerto aeropuerto = this.miReserva.getAeropuerto();
         PuestoAtencion puesto;
-        //while(true){
             try {
                 aeropuerto.ingresarAeropuerto(this);
                 puesto = aeropuerto.ingresarPuestoInforme(this);
@@ -62,18 +60,18 @@ public class Pasajero implements Runnable {
                             tienda.comprar(monto, this);
                         }else{
                             Log.escribir("Pasajero " + this.idPasajero + ": solo observó los productos");
-                           
                         }
                         tienda.salirFreeShop(this);
                     }
                 }
-               
-                terminalVuelo.getPuestoEmbarqueGeneral().esperarAbordaje(this.getReserva().getVuelo(), this);
-                Log.escribir("Pasajero " + this.idPasajero + ": Subió al avión con destino: " +  this.miReserva.getVuelo().getDestino() + ". Hora de vuelo: " + this.miReserva.getVuelo().getHora()+ "hs.");
+                if(this.miReserva.getVuelo().inicioViaje()){
+                    Log.escribir("Pasajero " + this.idPasajero + ": Perdió el avión con destino: " + this.miReserva.getVuelo().getDestino());
+                }else{
+                    terminalVuelo.getPuestoEmbarqueGeneral().esperarAbordaje(this.getReserva().getVuelo(), this);
+                    Log.escribir("Pasajero " + this.idPasajero + ": Subió al avión con destino: " +  this.miReserva.getVuelo().getDestino() + ". Hora de vuelo: " + this.miReserva.getVuelo().getHora()+ "hs.");
+                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }  
-        //}
-            
+            }       
     }
 }
