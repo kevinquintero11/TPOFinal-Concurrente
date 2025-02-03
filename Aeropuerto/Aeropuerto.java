@@ -76,7 +76,7 @@ public class Aeropuerto{
             Log.escribir("Pasajero " + pasajero.getIdPasajero() + " intenta ingresar, pero el aeropuerto está cerrado");
             this.wait(); // Si el aeropuerto esta cerrado, los pasajeros se quedan esperando a que abra
         }
-        Log.escribir("\u2192 Pasajero " + pasajero.getIdPasajero() + " ingresa al aeropuerto.");
+        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " ingresa al aeropuerto.");
     }
 
     public synchronized void abrirAeropuerto() {

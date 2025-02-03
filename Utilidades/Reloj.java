@@ -20,14 +20,12 @@ public class Reloj implements Runnable {
     }
 
     public synchronized void avanzarTiempo() {
-        if (this.hora == 22) {
-            this.hora = 5; // Reinicia a las 5 para simular el cierre nocturno
+        if (this.hora == 24) {
+            this.hora = 1; 
         } else {
             this.hora++;
-
         }
-        Log.escribir("HORA ACTUAL DEL AEROPUERTO: " + this.hora + "HS");
-    
+        Log.escribir("HORA ACTUAL DEL AEROPUERTO: " + this.hora + ":00hs");
         this.notifyAll(); // Notifica a los hilos vuelo esperando el cambio de hora
     }
 

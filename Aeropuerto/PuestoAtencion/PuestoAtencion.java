@@ -56,7 +56,7 @@ public class PuestoAtencion implements Runnable {
         Log.escribir("Pasajero " + pasajero.getIdPasajero() + " está siendo atendido");
         
         // Simula el tiempo de atención
-        Thread.sleep(1000); 
+        Thread.sleep(3000); 
 
         synchronized (pasajero) {
             pasajero.notify(); // Notifica al pasajero que ha sido atendido

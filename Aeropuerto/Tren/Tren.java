@@ -127,7 +127,7 @@ public class Tren implements Runnable {
         // Se ejecuta para detenerse en cada terminal del aeropuerto
         for (int i = 0; i < cantidadTerminales; i++) {
             Terminal terminal = listaTerminales.get(i);
-            Log.escribir(" Terminal actual: " + terminal.getIdTerminal());
+            //Log.escribir(" Terminal actual: " + terminal.getIdTerminal());
             detenerEnTerminal(terminal);
         }
         Log.escribir("Terminó el recorrido del tren.");

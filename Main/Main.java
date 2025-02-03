@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.CountDownLatch;
-
 import Aeropuerto.Aeropuerto;
 import Aeropuerto.Aerolinea.Aerolinea;
 import Aeropuerto.Aerolinea.Reserva;
@@ -22,22 +21,18 @@ import Utilidades.Reloj;
 
 public class Main {
     
-    //DECLARACION DE VARIABLES
-    final static int CANTIDAD_PASAJEROS = 80;
-    final static int CANTIDAD_TERMINALES = 3; // Segun consigna dice que son 3 terminales: A, B y C.
-    final static int CANTIDAD_AEROLINEAS = 2; // CANTIDAD AerolineasXAeropuerto
-    final static int CANTIDAD_VUELOS = 2; // CANTIDAD de VuelosxAerolinea
-    final static int CANTIDAD_PUESTOS = CANTIDAD_AEROLINEAS;
-    final static int CANTIDAD_RESERVAS = CANTIDAD_PASAJEROS;
-    final static int CAPMAX_PUESTOATENCION = 3; // Capacidad MAX PasajerosXPA
-    final static int CAPMAX_TREN = 8; //Capacidad MAX PasajerosXTren
-    final static int CAPMAX_FREESHOP = 6; // Capacidad MAX PasajerosXFreeShop
+    final static int CANTIDAD_PASAJEROS = 80; 
+    final static int CANTIDAD_TERMINALES = 3; // Terminales A, B y C segun enunciado
+    final static int CANTIDAD_AEROLINEAS = 3;  
+    final static int CANTIDAD_VUELOS = 2; // Cantidad de vuelos por aerolinea
+    final static int CANTIDAD_PUESTOSATENCION = CANTIDAD_AEROLINEAS; // Un puesto por cada aerolinea
+    final static int CAPACIDAD_PUESTOATENCION = 2; // Capacidad de pasajeros que pueden haber esperando en la cola de cada puesto
+    final static int CAPACIDAD_TREN = 8; // Cantidad de pasajeros que soporta el tren
+    final static int CAPACIDAD_FREESHOP = 6; // Cantidad de lugares disponibles en las tiendas
     final static List<PuestoEmbarque> listaPuestosEmbarques = new LinkedList<>();
     final static List<Terminal> listaTerminales = new LinkedList<>();
-    //final static Hall hall = new Hall();
     final static List<Aerolinea> listaAerolineas = new LinkedList<>();
     final static List<PuestoAtencion> listaPuestosAtencion = new LinkedList<>();
-    // final static Tren tren = new Tren(CAPMAX_TREN, listaTerminales);
     final static List<Pasajero> listaPasajeros = new LinkedList<>();
     final static List<Thread> listaHilos = new LinkedList<>();
     final static Reloj reloj = new Reloj(5);
@@ -52,7 +47,7 @@ public class Main {
         crearAerolineas();
         Hall hall = new Hall(listaAerolineas);
         crearPuestosAtencion(hall);
-        Tren tren = new Tren(CAPMAX_TREN, listaTerminales);
+        Tren tren = new Tren(CAPACIDAD_TREN, listaTerminales);
         aeropuerto = new Aeropuerto("Viaje Bonito", listaAerolineas, listaTerminales, listaPuestosAtencion, tren, reloj);
         reloj.setAeropuerto(aeropuerto);
         crearPasajeros(aeropuerto);
@@ -125,7 +120,7 @@ public class Main {
         };     
         
         for(int i = 0; i < CANTIDAD_TERMINALES; i++){
-            FreeShop tienda = new FreeShop(CAPMAX_FREESHOP,  2, "Tienda Terminal " + nombresTerminales[i]);
+            FreeShop tienda = new FreeShop(CAPACIDAD_FREESHOP,  2, "Tienda Terminal " + nombresTerminales[i]);
             Terminal terminal = new Terminal(listaPuestosEmbarques.get(i), nombresTerminales[i], tienda);
             listaTerminales.add(terminal);
         }
@@ -133,8 +128,8 @@ public class Main {
 
     public static void crearPuestosAtencion(Hall hall){
 
-        for(int i = 0; i < CANTIDAD_PUESTOS; i++){
-            PuestoAtencion puesto = new PuestoAtencion(listaAerolineas.get(i), hall, CAPMAX_PUESTOATENCION);
+        for(int i = 0; i < CANTIDAD_PUESTOSATENCION; i++){
+            PuestoAtencion puesto = new PuestoAtencion(listaAerolineas.get(i), hall, CAPACIDAD_PUESTOATENCION);
             Thread hiloPuesto = new Thread(puesto);
             Guardia guardia = new Guardia(puesto);
             Thread hiloGuardia = new Thread(guardia);
@@ -160,8 +155,7 @@ public class Main {
             Thread pasajeroHilo = new Thread(pasajero);
            
             // Agrego el pasajero a la lista de hilos
-            listaHilos.add(pasajeroHilo);
-           
+            listaHilos.add(pasajeroHilo);  
         }
     }
 
