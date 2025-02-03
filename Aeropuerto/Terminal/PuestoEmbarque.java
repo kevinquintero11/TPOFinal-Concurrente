@@ -20,7 +20,7 @@ public class PuestoEmbarque {
 
     // Método ejecutado por los hilos pasajero
     public void esperarAbordaje(Vuelo vuelo, Pasajero pasajero) throws InterruptedException{
-        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " está esperando al abordaje del vuelo: " + vuelo.getDestino());
+        Log.escribir("Pasajero " + pasajero.getIdPasajero() + " está esperando al abordaje del vuelo '" + vuelo.getDestino() + "' de la aerolinea '" + vuelo.getAerolinea().getNombre() + "'" );
         vuelo.esperarDespegue();
     }
     

@@ -63,7 +63,7 @@ public class PuestoAtencion implements Runnable {
         }
     
         this.cantidadPasajeroEnPuesto--;
-        this.semaforoGuardia.release(); // Libera el semáforo del guardia para avisar que se liberó un espacio en la fila
+        this.semaforoGuardia.release(); // Libera el semáforo del guardia para avisar que se desocupo un espacio en la fila
     }
 
     // Método ejecutado por los hilos pasajero
@@ -84,7 +84,7 @@ public class PuestoAtencion implements Runnable {
     // Método ejecutado por los hilos guardia
     public void permitirIngresoDesdeHall() throws InterruptedException {
         this.semaforoGuardia.acquire(); // Espera a que se le avise al guardia para permitir el ingreso
-        if(cantidadPasajeroEnPuesto == capacidadMax-1) {   
+        if(cantidadPasajeroEnPuesto == capacidadMax - 1) { // Verifica si hay un espacio libre
             BlockingQueue<Pasajero> cola = hall.getColaEspera(aerolinea.getNombre());
             if (!cola.isEmpty()) {
                 Pasajero pasajero = cola.remove(); // Quita al pasjero de la cola de espera del hall

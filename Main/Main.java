@@ -74,14 +74,15 @@ public class Main {
         };
 
         for(int i = 0; i < CANTIDAD_AEROLINEAS; i++){       
-            List<Vuelo> listaVuelos = crearVuelos();
-            Aerolinea aerolinea = new Aerolinea(AEROLINEAS[i],  listaVuelos);
+            Aerolinea aerolinea = new Aerolinea(AEROLINEAS[i],  null);
+            List<Vuelo> listaVuelos = crearVuelos(aerolinea);
+            aerolinea.setVuelos(listaVuelos);
             listaAerolineas.add(aerolinea);
         }
 
     }
     
-    public static List<Vuelo> crearVuelos(){
+    public static List<Vuelo> crearVuelos(Aerolinea aerolinea){
           
         String[] DESTINOS = {
             "Buenos Aires", "Madrid", "Nueva York", "Tokio", "Londres",
@@ -97,7 +98,7 @@ public class Main {
             int numAleatorio = random.nextInt(2) + 1;
             PuestoEmbarque puesto = listaPuestosEmbarques.get(numAleatorio);
             CountDownLatch latchDespegue = new CountDownLatch(1);
-            Vuelo vuelo = new Vuelo(horaSalida, DESTINOS[indiceDestino], puesto, reloj, latchDespegue);
+            Vuelo vuelo = new Vuelo(horaSalida, DESTINOS[indiceDestino], puesto, reloj, latchDespegue, aerolinea);
             Thread hiloVuelo = new Thread(vuelo);
             listaHilos.add(hiloVuelo);
             listaVuelos.add(vuelo);

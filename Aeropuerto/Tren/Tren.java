@@ -138,6 +138,7 @@ public class Tren implements Runnable {
         try {
             Log.escribir("Tren volviendo al inicio del aeropuerto...");
             Thread.sleep(2000); // Simula el tiempo de regreso
+            Log.escribir("El tren está listo a la espera de pasajeros para un nuevo recorrido");
             pasajerosABordo = 0;
             inicioRecorrido = false;
             esperandoNuevoRecorrido.signalAll();

@@ -1,0 +1,1488 @@
+11:04:12 Pasajero 0 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 79 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 78 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 77 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 76 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 75 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 74 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 72 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 73 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 70 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 71 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 69 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 68 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 67 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 66 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 65 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 64 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 63 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 62 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 61 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 60 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 59 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 57 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 58 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 56 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 55 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 54 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 53 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 52 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 51 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 50 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 49 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 48 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 47 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 46 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 45 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 44 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 43 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 33 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 42 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 41 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 40 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 39 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 38 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 37 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 35 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 36 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 34 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 32 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 31 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 30 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 29 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 28 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 27 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 26 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 25 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 20 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 24 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 23 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 22 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 21 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 18 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 19 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 17 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 16 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 14 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 15 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 13 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 12 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 11 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 10 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 8 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 9 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 7 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 5 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 6 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 4 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 3 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 2 intenta ingresar, pero el aeropuerto está cerrado
+11:04:12 Pasajero 1 intenta ingresar, pero el aeropuerto está cerrado
+11:04:22 HORA ACTUAL DEL AEROPUERTO: 6:00hs
+11:04:22 El aeropuerto está ahora abierto.
+11:04:22 Pasajero 0 ingresa al aeropuerto.
+11:04:22 Pasajero 1 ingresa al aeropuerto.
+11:04:22 Pasajero 2 ingresa al aeropuerto.
+11:04:22 Pasajero 0 esta siendo atendido en el puesto de informes.
+11:04:22 Pasajero 3 ingresa al aeropuerto.
+11:04:22 Pasajero 4 ingresa al aeropuerto.
+11:04:22 Pasajero 6 ingresa al aeropuerto.
+11:04:22 Pasajero 5 ingresa al aeropuerto.
+11:04:22 Pasajero 7 ingresa al aeropuerto.
+11:04:22 Pasajero 9 ingresa al aeropuerto.
+11:04:22 Pasajero 8 ingresa al aeropuerto.
+11:04:22 Pasajero 10 ingresa al aeropuerto.
+11:04:22 Pasajero 11 ingresa al aeropuerto.
+11:04:22 Pasajero 12 ingresa al aeropuerto.
+11:04:22 Pasajero 13 ingresa al aeropuerto.
+11:04:22 Pasajero 15 ingresa al aeropuerto.
+11:04:22 Pasajero 14 ingresa al aeropuerto.
+11:04:22 Pasajero 16 ingresa al aeropuerto.
+11:04:22 Pasajero 17 ingresa al aeropuerto.
+11:04:22 Pasajero 19 ingresa al aeropuerto.
+11:04:22 Pasajero 18 ingresa al aeropuerto.
+11:04:22 Pasajero 21 ingresa al aeropuerto.
+11:04:22 Pasajero 22 ingresa al aeropuerto.
+11:04:22 Pasajero 23 ingresa al aeropuerto.
+11:04:22 Pasajero 24 ingresa al aeropuerto.
+11:04:22 Pasajero 20 ingresa al aeropuerto.
+11:04:22 Pasajero 25 ingresa al aeropuerto.
+11:04:22 Pasajero 26 ingresa al aeropuerto.
+11:04:22 Pasajero 27 ingresa al aeropuerto.
+11:04:22 Pasajero 28 ingresa al aeropuerto.
+11:04:22 Pasajero 29 ingresa al aeropuerto.
+11:04:22 Pasajero 30 ingresa al aeropuerto.
+11:04:22 Pasajero 31 ingresa al aeropuerto.
+11:04:22 Pasajero 32 ingresa al aeropuerto.
+11:04:22 Pasajero 34 ingresa al aeropuerto.
+11:04:22 Pasajero 36 ingresa al aeropuerto.
+11:04:22 Pasajero 35 ingresa al aeropuerto.
+11:04:22 Pasajero 37 ingresa al aeropuerto.
+11:04:22 Pasajero 38 ingresa al aeropuerto.
+11:04:22 Pasajero 39 ingresa al aeropuerto.
+11:04:22 Pasajero 40 ingresa al aeropuerto.
+11:04:22 Pasajero 41 ingresa al aeropuerto.
+11:04:22 Pasajero 42 ingresa al aeropuerto.
+11:04:22 Pasajero 33 ingresa al aeropuerto.
+11:04:22 Pasajero 43 ingresa al aeropuerto.
+11:04:22 Pasajero 44 ingresa al aeropuerto.
+11:04:22 Pasajero 45 ingresa al aeropuerto.
+11:04:22 Pasajero 46 ingresa al aeropuerto.
+11:04:22 Pasajero 47 ingresa al aeropuerto.
+11:04:22 Pasajero 48 ingresa al aeropuerto.
+11:04:22 Pasajero 49 ingresa al aeropuerto.
+11:04:22 Pasajero 50 ingresa al aeropuerto.
+11:04:22 Pasajero 51 ingresa al aeropuerto.
+11:04:22 Pasajero 52 ingresa al aeropuerto.
+11:04:22 Pasajero 53 ingresa al aeropuerto.
+11:04:22 Pasajero 54 ingresa al aeropuerto.
+11:04:22 Pasajero 55 ingresa al aeropuerto.
+11:04:22 Pasajero 56 ingresa al aeropuerto.
+11:04:22 Pasajero 58 ingresa al aeropuerto.
+11:04:22 Pasajero 57 ingresa al aeropuerto.
+11:04:22 Pasajero 59 ingresa al aeropuerto.
+11:04:22 Pasajero 60 ingresa al aeropuerto.
+11:04:22 Pasajero 61 ingresa al aeropuerto.
+11:04:22 Pasajero 62 ingresa al aeropuerto.
+11:04:22 Pasajero 63 ingresa al aeropuerto.
+11:04:22 Pasajero 64 ingresa al aeropuerto.
+11:04:22 Pasajero 65 ingresa al aeropuerto.
+11:04:22 Pasajero 66 ingresa al aeropuerto.
+11:04:22 Pasajero 67 ingresa al aeropuerto.
+11:04:22 Pasajero 68 ingresa al aeropuerto.
+11:04:22 Pasajero 69 ingresa al aeropuerto.
+11:04:22 Pasajero 71 ingresa al aeropuerto.
+11:04:22 Pasajero 70 ingresa al aeropuerto.
+11:04:22 Pasajero 73 ingresa al aeropuerto.
+11:04:22 Pasajero 72 ingresa al aeropuerto.
+11:04:22 Pasajero 74 ingresa al aeropuerto.
+11:04:22 Pasajero 75 ingresa al aeropuerto.
+11:04:22 Pasajero 76 ingresa al aeropuerto.
+11:04:22 Pasajero 77 ingresa al aeropuerto.
+11:04:22 Pasajero 78 ingresa al aeropuerto.
+11:04:22 Pasajero 79 ingresa al aeropuerto.
+11:04:23 Pasajero 0 se tiene que dirigir al puesto British Airways
+11:04:23 Pasajero 1 esta siendo atendido en el puesto de informes.
+11:04:23 Pasajero 0 está siendo atendido
+11:04:23 > Pasajero 0 ingresó al puesto de atención de: British Airways en la posicion: 1
+11:04:24 Pasajero 1 se tiene que dirigir al puesto British Airways
+11:04:24 Pasajero 2 esta siendo atendido en el puesto de informes.
+11:04:24 > Pasajero 1 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:04:25 Pasajero 2 se tiene que dirigir al puesto American Airlines
+11:04:25 Pasajero 3 esta siendo atendido en el puesto de informes.
+11:04:25 Pasajero 2 está siendo atendido
+11:04:25 > Pasajero 2 ingresó al puesto de atención de: American Airlines en la posicion: 1
+11:04:26 Pasajero 1 está siendo atendido
+11:04:26 Pasajero 0 fue atendido exitosamente en: British Airways
+11:04:26 Pasajero 3 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:26 Pasajero 4 esta siendo atendido en el puesto de informes.
+11:04:26 Pasajero 3 está siendo atendido
+11:04:26 > Pasajero 3 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
+11:04:26 < Pasajero 0 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:26 Pasajero 0: subió al tren. Pasajeros a bordo: 1
+11:04:27 Pasajero 4 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:27 Pasajero 6 esta siendo atendido en el puesto de informes.
+11:04:27 > Pasajero 4 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:04:28 Pasajero 2 fue atendido exitosamente en: American Airlines
+11:04:28 < Pasajero 2 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:28 Pasajero 2: subió al tren. Pasajeros a bordo: 2
+11:04:28 Pasajero 6 se tiene que dirigir al puesto British Airways
+11:04:28 > Pasajero 6 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:04:28 Pasajero 5 esta siendo atendido en el puesto de informes.
+11:04:29 Pasajero 1 fue atendido exitosamente en: British Airways
+11:04:29 Pasajero 6 está siendo atendido
+11:04:29 < Pasajero 1 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:04:29 Pasajero 1: subió al tren. Pasajeros a bordo: 3
+11:04:29 Pasajero 3 fue atendido exitosamente en: Aerolíneas Argentinas
+11:04:29 Pasajero 4 está siendo atendido
+11:04:29 < Pasajero 3 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:04:29 Pasajero 3: subió al tren. Pasajeros a bordo: 4
+11:04:29 Pasajero 5 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:29 Pasajero 7 esta siendo atendido en el puesto de informes.
+11:04:29 > Pasajero 5 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:04:30 Pasajero 7 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:30 Pasajero 9 esta siendo atendido en el puesto de informes.
+11:04:30 Pasajero 7 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+11:04:31 Pasajero 9 se tiene que dirigir al puesto British Airways
+11:04:31 Pasajero 8 esta siendo atendido en el puesto de informes.
+11:04:31 > Pasajero 9 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:04:32 HORA ACTUAL DEL AEROPUERTO: 7:00hs
+11:04:32 Pasajero 6 fue atendido exitosamente en: British Airways
+11:04:32 Pasajero 9 está siendo atendido
+11:04:32 < Pasajero 6 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:32 Pasajero 6: subió al tren. Pasajeros a bordo: 5
+11:04:32 Pasajero 5 está siendo atendido
+11:04:32 Pasajero 4 fue atendido exitosamente en: Aerolíneas Argentinas
+11:04:32 Guardia permitió el ingreso de pasajero 7 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+11:04:32 < Pasajero 4 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:04:32 Pasajero 4: subió al tren. Pasajeros a bordo: 6
+11:04:32 > Pasajero 7 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:04:32 Pasajero 8 se tiene que dirigir al puesto British Airways
+11:04:32 Pasajero 10 esta siendo atendido en el puesto de informes.
+11:04:32 > Pasajero 8 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:04:33 Pasajero 10 se tiene que dirigir al puesto American Airlines
+11:04:33 Pasajero 11 esta siendo atendido en el puesto de informes.
+11:04:33 > Pasajero 10 ingresó al puesto de atención de: American Airlines en la posicion: 1
+11:04:33 Pasajero 10 está siendo atendido
+11:04:34 Pasajero 11 se tiene que dirigir al puesto British Airways
+11:04:34 Pasajero 12 esta siendo atendido en el puesto de informes.
+11:04:34 Pasajero 11 está esperando en la cola del hall para British Airways. Cantidad de personas: 1
+11:04:35 Pasajero 8 está siendo atendido
+11:04:35 Guardia permitió el ingreso de pasajero 11 al puesto de atención de British Airways. Pasajeros restantes esperando: 0
+11:04:35 Pasajero 9 fue atendido exitosamente en: British Airways
+11:04:35 > Pasajero 11 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:04:35 < Pasajero 9 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:04:35 Pasajero 9: subió al tren. Pasajeros a bordo: 7
+11:04:35 Pasajero 5 fue atendido exitosamente en: Aerolíneas Argentinas
+11:04:35 < Pasajero 5 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:35 Pasajero 7 está siendo atendido
+11:04:35 Pasajero 5: subió al tren. Pasajeros a bordo: 8
+11:04:35 El tren comienza su recorrido con 8 pasajeros a bordo.
+11:04:35 Pasajero 5 espera para bajar en la terminal B
+11:04:35 Pasajero 0 espera para bajar en la terminal B
+11:04:35 Pasajero 2 espera para bajar en la terminal B
+11:04:35 Pasajero 1 espera para bajar en la terminal C
+11:04:35 Pasajero 3 espera para bajar en la terminal A
+11:04:35 Pasajero 6 espera para bajar en la terminal B
+11:04:35 Pasajero 4 espera para bajar en la terminal C
+11:04:35 Pasajero 9 espera para bajar en la terminal A
+11:04:35 El tren se detiene en la terminal: A
+11:04:35 Esperando a que todos los pasajeros bajen en la terminal A...
+11:04:35 Pasajero 3 bajó en la terminal A
+11:04:35 Pasajero 9 bajó en la terminal A
+11:04:35 Pasajero 12 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:35 Pasajero 13 esta siendo atendido en el puesto de informes.
+11:04:35 > Pasajero 12 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:04:36 Pasajero 9: ingresó a la Tienda Terminal A
+11:04:36 Pasajero 13 se tiene que dirigir al puesto American Airlines
+11:04:36 Pasajero 3: ingresó a la Tienda Terminal A
+11:04:36 Pasajero 15 esta siendo atendido en el puesto de informes.
+11:04:36 > Pasajero 13 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:04:36 Pasajero 9: solo observó los productos
+11:04:36 Pasajero 9: salió de la Tienda Terminal A
+11:04:36 Pasajero 10 fue atendido exitosamente en: American Airlines
+11:04:36 < Pasajero 10 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:36 Pasajero 13 está siendo atendido
+11:04:36 Pasajero 9 está esperando al abordaje del vuelo 'Buenos Aires' de la aerolinea 'British Airways'
+11:04:36 Pasajero 3: está usando una caja. Mostrando un gasto de $3235
+11:04:37 El tren se detiene en la terminal: B
+11:04:37 Esperando a que todos los pasajeros bajen en la terminal B...
+11:04:37 Pasajero 10 intenta subir al tren, pero no puede.
+11:04:37 Pasajero 5 bajó en la terminal B
+11:04:37 Pasajero 0 bajó en la terminal B
+11:04:37 Pasajero 2 bajó en la terminal B
+11:04:37 Pasajero 6 bajó en la terminal B
+11:04:37 Pasajero 15 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:37 Pasajero 15 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+11:04:37 Pasajero 14 esta siendo atendido en el puesto de informes.
+11:04:37 Pasajero 3: salió de la Tienda Terminal A
+11:04:37 Pasajero 3 está esperando al abordaje del vuelo 'París' de la aerolinea 'Aerolíneas Argentinas'
+11:04:38 Pasajero 11 está siendo atendido
+11:04:38 Pasajero 8 fue atendido exitosamente en: British Airways
+11:04:38 < Pasajero 8 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:38 Pasajero 7 fue atendido exitosamente en: Aerolíneas Argentinas
+11:04:38 < Pasajero 7 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:04:38 Pasajero 12 está siendo atendido
+11:04:38 Guardia permitió el ingreso de pasajero 15 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+11:04:38 > Pasajero 15 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:04:38 Pasajero 2: ingresó a la Tienda Terminal B
+11:04:38 Pasajero 5: ingresó a la Tienda Terminal B
+11:04:38 Pasajero 0: ingresó a la Tienda Terminal B
+11:04:38 Pasajero 6: ingresó a la Tienda Terminal B
+11:04:38 Pasajero 0: solo observó los productos
+11:04:38 Pasajero 0: salió de la Tienda Terminal B
+11:04:38 Pasajero 5: está usando una caja. Mostrando un gasto de $3100
+11:04:38 Pasajero 2: solo observó los productos
+11:04:38 Pasajero 0 está esperando al abordaje del vuelo 'Buenos Aires' de la aerolinea 'British Airways'
+11:04:38 Pasajero 6: está usando una caja. Mostrando un gasto de $2549
+11:04:38 Pasajero 2: salió de la Tienda Terminal B
+11:04:38 Pasajero 2 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:04:38 Pasajero 14 se tiene que dirigir al puesto American Airlines
+11:04:38 Pasajero 16 esta siendo atendido en el puesto de informes.
+11:04:38 > Pasajero 14 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:04:39 Pasajero 5: salió de la Tienda Terminal B
+11:04:39 El tren se detiene en la terminal: C
+11:04:39 Pasajero 6: salió de la Tienda Terminal B
+11:04:39 Pasajero 5 está esperando al abordaje del vuelo 'París' de la aerolinea 'Aerolíneas Argentinas'
+11:04:39 Pasajero 6 está esperando al abordaje del vuelo 'Buenos Aires' de la aerolinea 'British Airways'
+11:04:39 Esperando a que todos los pasajeros bajen en la terminal C...
+11:04:39 Pasajero 8 intenta subir al tren, pero no puede.
+11:04:39 Pasajero 16 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:39 Pasajero 7 intenta subir al tren, pero no puede.
+11:04:39 Pasajero 16 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+11:04:39 Pasajero 17 esta siendo atendido en el puesto de informes.
+11:04:39 Pasajero 1 bajó en la terminal C
+11:04:39 Pasajero 4 bajó en la terminal C
+11:04:39 Pasajero 13 fue atendido exitosamente en: American Airlines
+11:04:39 Pasajero 14 está siendo atendido
+11:04:39 < Pasajero 13 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:04:40 Pasajero 1: ingresó a la Tienda Terminal C
+11:04:40 Pasajero 17 se tiene que dirigir al puesto American Airlines
+11:04:40 Pasajero 4: ingresó a la Tienda Terminal C
+11:04:40 Pasajero 19 esta siendo atendido en el puesto de informes.
+11:04:40 > Pasajero 17 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:04:40 Pasajero 1: está usando una caja. Mostrando un gasto de $3695
+11:04:40 Pasajero 4: está usando una caja. Mostrando un gasto de $3825
+11:04:41 Pasajero 11 fue atendido exitosamente en: British Airways
+11:04:41 < Pasajero 11 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:04:41 Pasajero 12 fue atendido exitosamente en: Aerolíneas Argentinas
+11:04:41 Pasajero 15 está siendo atendido
+11:04:41 < Pasajero 12 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:04:41 Guardia permitió el ingreso de pasajero 16 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+11:04:41 > Pasajero 16 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:04:41 Pasajero 13 intenta subir al tren, pero no puede.
+11:04:41 Terminó el recorrido del tren.
+11:04:41 Pasajero 11 intenta subir al tren, pero no puede.
+11:04:41 Pasajero 12 intenta subir al tren, pero no puede.
+11:04:41 Tren volviendo al inicio del aeropuerto...
+11:04:41 Pasajero 4: salió de la Tienda Terminal C
+11:04:41 Pasajero 19 se tiene que dirigir al puesto American Airlines
+11:04:41 Pasajero 18 esta siendo atendido en el puesto de informes.
+11:04:41 Pasajero 1: salió de la Tienda Terminal C
+11:04:41 Pasajero 19 está esperando en la cola del hall para American Airlines. Cantidad de personas: 1
+11:04:41 Pasajero 4 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'Aerolíneas Argentinas'
+11:04:41 Pasajero 1 está esperando al abordaje del vuelo 'París' de la aerolinea 'British Airways'
+11:04:42 HORA ACTUAL DEL AEROPUERTO: 8:00hs
+11:04:42 Pasajero 18 se tiene que dirigir al puesto British Airways
+11:04:42 Guardia permitió el ingreso de pasajero 19 al puesto de atención de American Airlines. Pasajeros restantes esperando: 0
+11:04:42 > Pasajero 19 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:04:42 Pasajero 17 está siendo atendido
+11:04:42 Pasajero 14 fue atendido exitosamente en: American Airlines
+11:04:42 < Pasajero 14 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:42 Pasajero 18 está siendo atendido
+11:04:42 > Pasajero 18 ingresó al puesto de atención de: British Airways en la posicion: 1
+11:04:42 Pasajero 21 esta siendo atendido en el puesto de informes.
+11:04:43 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:04:43 Pasajero 14: subió al tren. Pasajeros a bordo: 1
+11:04:43 Pasajero 10: subió al tren. Pasajeros a bordo: 2
+11:04:43 Pasajero 8: subió al tren. Pasajeros a bordo: 3
+11:04:43 Pasajero 7: subió al tren. Pasajeros a bordo: 4
+11:04:43 Pasajero 13: subió al tren. Pasajeros a bordo: 5
+11:04:43 Pasajero 11: subió al tren. Pasajeros a bordo: 6
+11:04:43 Pasajero 12: subió al tren. Pasajeros a bordo: 7
+11:04:43 Pasajero 21 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:43 Pasajero 22 esta siendo atendido en el puesto de informes.
+11:04:43 Pasajero 21 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+11:04:44 Pasajero 16 está siendo atendido
+11:04:44 Guardia permitió el ingreso de pasajero 21 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+11:04:44 Pasajero 15 fue atendido exitosamente en: Aerolíneas Argentinas
+11:04:44 > Pasajero 21 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:04:44 < Pasajero 15 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:04:44 Pasajero 15: subió al tren. Pasajeros a bordo: 8
+11:04:44 Pasajero 15 espera para bajar en la terminal C
+11:04:44 El tren comienza su recorrido con 8 pasajeros a bordo.
+11:04:44 Pasajero 14 espera para bajar en la terminal B
+11:04:44 Pasajero 10 espera para bajar en la terminal B
+11:04:44 Pasajero 8 espera para bajar en la terminal B
+11:04:44 Pasajero 7 espera para bajar en la terminal C
+11:04:44 Pasajero 13 espera para bajar en la terminal A
+11:04:44 Pasajero 11 espera para bajar en la terminal C
+11:04:44 Pasajero 12 espera para bajar en la terminal A
+11:04:44 El tren se detiene en la terminal: A
+11:04:44 Esperando a que todos los pasajeros bajen en la terminal A...
+11:04:44 Pasajero 13 bajó en la terminal A
+11:04:44 Pasajero 12 bajó en la terminal A
+11:04:44 Pasajero 22 se tiene que dirigir al puesto British Airways
+11:04:44 > Pasajero 22 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:04:44 Pasajero 23 esta siendo atendido en el puesto de informes.
+11:04:45 Pasajero 13: ingresó a la Tienda Terminal A
+11:04:45 Pasajero 12: ingresó a la Tienda Terminal A
+11:04:45 Pasajero 13: solo observó los productos
+11:04:45 Pasajero 12: está usando una caja. Mostrando un gasto de $1576
+11:04:45 Pasajero 13: salió de la Tienda Terminal A
+11:04:45 Pasajero 13 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:04:45 Pasajero 17 fue atendido exitosamente en: American Airlines
+11:04:45 Pasajero 19 está siendo atendido
+11:04:45 < Pasajero 17 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:04:45 Pasajero 18 fue atendido exitosamente en: British Airways
+11:04:45 Pasajero 22 está siendo atendido
+11:04:45 < Pasajero 18 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:45 Pasajero 23 se tiene que dirigir al puesto American Airlines
+11:04:45 Pasajero 24 esta siendo atendido en el puesto de informes.
+11:04:45 > Pasajero 23 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:04:46 Pasajero 17 intenta subir al tren, pero no puede.
+11:04:46 Pasajero 18 intenta subir al tren, pero no puede.
+11:04:46 El tren se detiene en la terminal: B
+11:04:46 Esperando a que todos los pasajeros bajen en la terminal B...
+11:04:46 Pasajero 14 bajó en la terminal B
+11:04:46 Pasajero 10 bajó en la terminal B
+11:04:46 Pasajero 8 bajó en la terminal B
+11:04:46 Pasajero 12: salió de la Tienda Terminal A
+11:04:46 Pasajero 12 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'Aerolíneas Argentinas'
+11:04:46 Pasajero 24 se tiene que dirigir al puesto British Airways
+11:04:46 Pasajero 20 esta siendo atendido en el puesto de informes.
+11:04:46 > Pasajero 24 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:04:47 Pasajero 21 está siendo atendido
+11:04:47 Pasajero 16 fue atendido exitosamente en: Aerolíneas Argentinas
+11:04:47 < Pasajero 16 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:04:47 Pasajero 14: ingresó a la Tienda Terminal B
+11:04:47 Pasajero 14: está usando una caja. Mostrando un gasto de $3391
+11:04:47 Pasajero 10: ingresó a la Tienda Terminal B
+11:04:47 Pasajero 10: solo observó los productos
+11:04:47 Pasajero 10: salió de la Tienda Terminal B
+11:04:47 Pasajero 10 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:04:47 Pasajero 8: ingresó a la Tienda Terminal B
+11:04:47 Pasajero 8: está usando una caja. Mostrando un gasto de $1380
+11:04:47 Pasajero 20 se tiene que dirigir al puesto American Airlines
+11:04:47 Pasajero 25 esta siendo atendido en el puesto de informes.
+11:04:47 Pasajero 20 está esperando en la cola del hall para American Airlines. Cantidad de personas: 1
+11:04:48 Pasajero 14: salió de la Tienda Terminal B
+11:04:48 Pasajero 16 intenta subir al tren, pero no puede.
+11:04:48 Pasajero 14 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:04:48 El tren se detiene en la terminal: C
+11:04:48 Esperando a que todos los pasajeros bajen en la terminal C...
+11:04:48 Pasajero 15 bajó en la terminal C
+11:04:48 Pasajero 7 bajó en la terminal C
+11:04:48 Pasajero 11 bajó en la terminal C
+11:04:48 Pasajero 8: salió de la Tienda Terminal B
+11:04:48 Pasajero 8 está esperando al abordaje del vuelo 'París' de la aerolinea 'British Airways'
+11:04:48 Pasajero 19 fue atendido exitosamente en: American Airlines
+11:04:48 Guardia permitió el ingreso de pasajero 20 al puesto de atención de American Airlines. Pasajeros restantes esperando: 0
+11:04:48 Pasajero 23 está siendo atendido
+11:04:48 > Pasajero 20 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:04:48 < Pasajero 19 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:04:48 Pasajero 22 fue atendido exitosamente en: British Airways
+11:04:48 < Pasajero 22 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:04:48 Pasajero 24 está siendo atendido
+11:04:48 Pasajero 25 se tiene que dirigir al puesto British Airways
+11:04:48 Pasajero 26 esta siendo atendido en el puesto de informes.
+11:04:48 > Pasajero 25 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:04:49 Pasajero 15: ingresó a la Tienda Terminal C
+11:04:49 Pasajero 11 está esperando al abordaje del vuelo 'Buenos Aires' de la aerolinea 'British Airways'
+11:04:49 Pasajero 7: ingresó a la Tienda Terminal C
+11:04:49 Pasajero 7: está usando una caja. Mostrando un gasto de $2286
+11:04:49 Pasajero 15: está usando una caja. Mostrando un gasto de $2964
+11:04:49 Pasajero 26 se tiene que dirigir al puesto American Airlines
+11:04:49 Pasajero 27 esta siendo atendido en el puesto de informes.
+11:04:49 Pasajero 26 está esperando en la cola del hall para American Airlines. Cantidad de personas: 1
+11:04:50 Pasajero 21 fue atendido exitosamente en: Aerolíneas Argentinas
+11:04:50 < Pasajero 21 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:04:50 Terminó el recorrido del tren.
+11:04:50 Pasajero 19 intenta subir al tren, pero no puede.
+11:04:50 Pasajero 22 intenta subir al tren, pero no puede.
+11:04:50 Pasajero 21 intenta subir al tren, pero no puede.
+11:04:50 Tren volviendo al inicio del aeropuerto...
+11:04:50 Pasajero 15: salió de la Tienda Terminal C
+11:04:50 Pasajero 7: salió de la Tienda Terminal C
+11:04:50 Pasajero 15 está esperando al abordaje del vuelo 'París' de la aerolinea 'Aerolíneas Argentinas'
+11:04:50 Pasajero 7 está esperando al abordaje del vuelo 'París' de la aerolinea 'Aerolíneas Argentinas'
+11:04:50 Pasajero 27 se tiene que dirigir al puesto British Airways
+11:04:50 Pasajero 27 está esperando en la cola del hall para British Airways. Cantidad de personas: 1
+11:04:50 Pasajero 28 esta siendo atendido en el puesto de informes.
+11:04:51 Pasajero 23 fue atendido exitosamente en: American Airlines
+11:04:51 Guardia permitió el ingreso de pasajero 26 al puesto de atención de American Airlines. Pasajeros restantes esperando: 0
+11:04:51 Pasajero 20 está siendo atendido
+11:04:51 > Pasajero 26 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:04:51 < Pasajero 23 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:04:51 Pasajero 24 fue atendido exitosamente en: British Airways
+11:04:51 Guardia permitió el ingreso de pasajero 27 al puesto de atención de British Airways. Pasajeros restantes esperando: 0
+11:04:51 Pasajero 25 está siendo atendido
+11:04:51 > Pasajero 27 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:04:51 < Pasajero 24 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:04:51 Pasajero 28 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:51 Pasajero 29 esta siendo atendido en el puesto de informes.
+11:04:51 > Pasajero 28 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
+11:04:51 Pasajero 28 está siendo atendido
+11:04:52 HORA ACTUAL DEL AEROPUERTO: 9:00hs
+11:04:52 Comienza el abordaje del vuelo con destino 'Buenos Aires de la aerolinea 'British Airways'
+11:04:52 Pasajero 0: Subió al avión con destino: Buenos Aires. Hora de vuelo: 9hs.
+11:04:52 Pasajero 11: Subió al avión con destino: Buenos Aires. Hora de vuelo: 9hs.
+11:04:52 Pasajero 6: Subió al avión con destino: Buenos Aires. Hora de vuelo: 9hs.
+11:04:52 Pasajero 9: Subió al avión con destino: Buenos Aires. Hora de vuelo: 9hs.
+11:04:52 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:04:52 Pasajero 23: subió al tren. Pasajeros a bordo: 1
+11:04:52 Pasajero 24: subió al tren. Pasajeros a bordo: 2
+11:04:52 Pasajero 17: subió al tren. Pasajeros a bordo: 3
+11:04:52 Pasajero 18: subió al tren. Pasajeros a bordo: 4
+11:04:52 Pasajero 16: subió al tren. Pasajeros a bordo: 5
+11:04:52 Pasajero 19: subió al tren. Pasajeros a bordo: 6
+11:04:52 Pasajero 22: subió al tren. Pasajeros a bordo: 7
+11:04:52 Pasajero 21: subió al tren. Pasajeros a bordo: 8
+11:04:52 Pasajero 21 espera para bajar en la terminal A
+11:04:52 El tren comienza su recorrido con 8 pasajeros a bordo.
+11:04:52 Pasajero 23 espera para bajar en la terminal A
+11:04:52 Pasajero 24 espera para bajar en la terminal A
+11:04:52 Pasajero 17 espera para bajar en la terminal A
+11:04:52 Pasajero 18 espera para bajar en la terminal B
+11:04:52 Pasajero 19 espera para bajar en la terminal C
+11:04:52 Pasajero 16 espera para bajar en la terminal C
+11:04:52 Pasajero 22 espera para bajar en la terminal C
+11:04:52 El tren se detiene en la terminal: A
+11:04:52 Esperando a que todos los pasajeros bajen en la terminal A...
+11:04:52 Pasajero 21 bajó en la terminal A
+11:04:52 Pasajero 23 bajó en la terminal A
+11:04:52 Pasajero 24 bajó en la terminal A
+11:04:52 Pasajero 17 bajó en la terminal A
+11:04:52 Pasajero 29 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:52 Pasajero 30 esta siendo atendido en el puesto de informes.
+11:04:52 > Pasajero 29 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:04:53 Pasajero 24 está esperando al abordaje del vuelo 'Buenos Aires' de la aerolinea 'British Airways'
+11:04:53 Pasajero 23: ingresó a la Tienda Terminal A
+11:04:53 Pasajero 17: ingresó a la Tienda Terminal A
+11:04:53 Pasajero 21: ingresó a la Tienda Terminal A
+11:04:53 Pasajero 17: solo observó los productos
+11:04:53 Pasajero 23: está usando una caja. Mostrando un gasto de $2740
+11:04:53 Pasajero 24: Subió al avión con destino: Buenos Aires. Hora de vuelo: 9hs.
+11:04:53 Pasajero 17: salió de la Tienda Terminal A
+11:04:53 Pasajero 21: está usando una caja. Mostrando un gasto de $1169
+11:04:53 Pasajero 17 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:04:53 Pasajero 30 se tiene que dirigir al puesto American Airlines
+11:04:53 Pasajero 31 esta siendo atendido en el puesto de informes.
+11:04:53 Pasajero 30 está esperando en la cola del hall para American Airlines. Cantidad de personas: 1
+11:04:54 El tren se detiene en la terminal: B
+11:04:54 Pasajero 23: salió de la Tienda Terminal A
+11:04:54 Esperando a que todos los pasajeros bajen en la terminal B...
+11:04:54 Pasajero 23 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:04:54 Pasajero 18 bajó en la terminal B
+11:04:54 Pasajero 20 fue atendido exitosamente en: American Airlines
+11:04:54 Pasajero 21: salió de la Tienda Terminal A
+11:04:54 Pasajero 26 está siendo atendido
+11:04:54 Guardia permitió el ingreso de pasajero 30 al puesto de atención de American Airlines. Pasajeros restantes esperando: 0
+11:04:54 > Pasajero 30 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:04:54 Pasajero 21 está esperando al abordaje del vuelo 'París' de la aerolinea 'Aerolíneas Argentinas'
+11:04:54 < Pasajero 20 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:04:54 Pasajero 25 fue atendido exitosamente en: British Airways
+11:04:54 Pasajero 27 está siendo atendido
+11:04:54 < Pasajero 25 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:04:54 Pasajero 29 está siendo atendido
+11:04:54 Pasajero 28 fue atendido exitosamente en: Aerolíneas Argentinas
+11:04:54 < Pasajero 28 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:54 Pasajero 31 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:54 Pasajero 32 esta siendo atendido en el puesto de informes.
+11:04:54 > Pasajero 31 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:04:55 Pasajero 18 está esperando al abordaje del vuelo 'Buenos Aires' de la aerolinea 'British Airways'
+11:04:55 Pasajero 18: Subió al avión con destino: Buenos Aires. Hora de vuelo: 9hs.
+11:04:55 Pasajero 32 se tiene que dirigir al puesto American Airlines
+11:04:55 Pasajero 34 esta siendo atendido en el puesto de informes.
+11:04:55 Pasajero 32 está esperando en la cola del hall para American Airlines. Cantidad de personas: 1
+11:04:56 El tren se detiene en la terminal: C
+11:04:56 Esperando a que todos los pasajeros bajen en la terminal C...
+11:04:56 Pasajero 20 intenta subir al tren, pero no puede.
+11:04:56 Pasajero 25 intenta subir al tren, pero no puede.
+11:04:56 Pasajero 28 intenta subir al tren, pero no puede.
+11:04:56 Pasajero 19 bajó en la terminal C
+11:04:56 Pasajero 16 bajó en la terminal C
+11:04:56 Pasajero 22 bajó en la terminal C
+11:04:56 Pasajero 34 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:04:56 Pasajero 36 esta siendo atendido en el puesto de informes.
+11:04:56 Pasajero 34 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+11:04:57 Pasajero 19: ingresó a la Tienda Terminal C
+11:04:57 Pasajero 22: ingresó a la Tienda Terminal C
+11:04:57 Guardia permitió el ingreso de pasajero 32 al puesto de atención de American Airlines. Pasajeros restantes esperando: 0
+11:04:57 > Pasajero 32 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:04:57 Pasajero 30 está siendo atendido
+11:04:57 Pasajero 16: ingresó a la Tienda Terminal C
+11:04:57 Pasajero 26 fue atendido exitosamente en: American Airlines
+11:04:57 < Pasajero 26 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:57 Pasajero 16: está usando una caja. Mostrando un gasto de $1787
+11:04:57 Pasajero 22: está usando una caja. Mostrando un gasto de $2638
+11:04:57 Pasajero 19: solo observó los productos
+11:04:57 Pasajero 19: salió de la Tienda Terminal C
+11:04:57 Pasajero 19 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:04:57 Pasajero 27 fue atendido exitosamente en: British Airways
+11:04:57 < Pasajero 27 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:57 Pasajero 29 fue atendido exitosamente en: Aerolíneas Argentinas
+11:04:57 < Pasajero 29 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:04:57 Pasajero 31 está siendo atendido
+11:04:57 Guardia permitió el ingreso de pasajero 34 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+11:04:57 > Pasajero 34 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:04:57 Pasajero 36 se tiene que dirigir al puesto British Airways
+11:04:57 Pasajero 35 esta siendo atendido en el puesto de informes.
+11:04:57 Pasajero 36 está siendo atendido
+11:04:57 > Pasajero 36 ingresó al puesto de atención de: British Airways en la posicion: 1
+11:04:58 Pasajero 26 intenta subir al tren, pero no puede.
+11:04:58 Pasajero 16: salió de la Tienda Terminal C
+11:04:58 Terminó el recorrido del tren.
+11:04:58 Pasajero 16 está esperando al abordaje del vuelo 'París' de la aerolinea 'Aerolíneas Argentinas'
+11:04:58 Pasajero 27 intenta subir al tren, pero no puede.
+11:04:58 Pasajero 29 intenta subir al tren, pero no puede.
+11:04:58 Tren volviendo al inicio del aeropuerto...
+11:04:58 Pasajero 22: salió de la Tienda Terminal C
+11:04:58 Pasajero 22 está esperando al abordaje del vuelo 'París' de la aerolinea 'British Airways'
+11:04:58 Pasajero 35 se tiene que dirigir al puesto British Airways
+11:04:59 Pasajero 37 esta siendo atendido en el puesto de informes.
+11:04:59 > Pasajero 35 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:00 Pasajero 37 se tiene que dirigir al puesto British Airways
+11:05:00 Pasajero 38 esta siendo atendido en el puesto de informes.
+11:05:00 Pasajero 37 está esperando en la cola del hall para British Airways. Cantidad de personas: 1
+11:05:00 Pasajero 30 fue atendido exitosamente en: American Airlines
+11:05:00 < Pasajero 30 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:00 Pasajero 32 está siendo atendido
+11:05:00 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:05:00 Pasajero 30: subió al tren. Pasajeros a bordo: 1
+11:05:00 Pasajero 20: subió al tren. Pasajeros a bordo: 2
+11:05:00 Pasajero 25: subió al tren. Pasajeros a bordo: 3
+11:05:00 Pasajero 28: subió al tren. Pasajeros a bordo: 4
+11:05:00 Pasajero 26: subió al tren. Pasajeros a bordo: 5
+11:05:00 Pasajero 27: subió al tren. Pasajeros a bordo: 6
+11:05:00 Pasajero 29: subió al tren. Pasajeros a bordo: 7
+11:05:00 Pasajero 31 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:00 < Pasajero 31 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:00 Pasajero 34 está siendo atendido
+11:05:00 Pasajero 31: subió al tren. Pasajeros a bordo: 8
+11:05:00 Pasajero 31 espera para bajar en la terminal B
+11:05:00 El tren comienza su recorrido con 8 pasajeros a bordo.
+11:05:00 Pasajero 30 espera para bajar en la terminal B
+11:05:00 Pasajero 20 espera para bajar en la terminal C
+11:05:00 Pasajero 25 espera para bajar en la terminal C
+11:05:00 Pasajero 28 espera para bajar en la terminal B
+11:05:00 Pasajero 26 espera para bajar en la terminal B
+11:05:00 Pasajero 27 espera para bajar en la terminal B
+11:05:00 Pasajero 29 espera para bajar en la terminal B
+11:05:00 El tren se detiene en la terminal: A
+11:05:00 Pasajero 36 fue atendido exitosamente en: British Airways
+11:05:00 Pasajero 35 está siendo atendido
+11:05:00 Guardia permitió el ingreso de pasajero 37 al puesto de atención de British Airways. Pasajeros restantes esperando: 0
+11:05:00 < Pasajero 36 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:05:00 > Pasajero 37 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:01 Pasajero 38 se tiene que dirigir al puesto British Airways
+11:05:01 Pasajero 39 esta siendo atendido en el puesto de informes.
+11:05:01 Pasajero 38 está esperando en la cola del hall para British Airways. Cantidad de personas: 1
+11:05:02 Pasajero 39 se tiene que dirigir al puesto American Airlines
+11:05:02 > Pasajero 39 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:02 Pasajero 40 esta siendo atendido en el puesto de informes.
+11:05:02 HORA ACTUAL DEL AEROPUERTO: 10:00hs
+11:05:02 Despega el vuelo con destino 'Buenos Aires de la aerolinea 'British Airways'
+11:05:02 El tren se detiene en la terminal: B
+11:05:02 Esperando a que todos los pasajeros bajen en la terminal B...
+11:05:02 Pasajero 36 intenta subir al tren, pero no puede.
+11:05:02 Pasajero 31 bajó en la terminal B
+11:05:02 Pasajero 30 bajó en la terminal B
+11:05:02 Pasajero 28 bajó en la terminal B
+11:05:02 Pasajero 26 bajó en la terminal B
+11:05:02 Pasajero 27 bajó en la terminal B
+11:05:02 Pasajero 29 bajó en la terminal B
+11:05:03 Pasajero 40 se tiene que dirigir al puesto British Airways
+11:05:03 Pasajero 41 esta siendo atendido en el puesto de informes.
+11:05:03 Pasajero 40 está esperando en la cola del hall para British Airways. Cantidad de personas: 2
+11:05:03 Pasajero 32 fue atendido exitosamente en: American Airlines
+11:05:03 < Pasajero 32 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:03 Pasajero 39 está siendo atendido
+11:05:03 Pasajero 34 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:03 < Pasajero 34 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:03 Pasajero 29: ingresó a la Tienda Terminal B
+11:05:03 Pasajero 30: ingresó a la Tienda Terminal B
+11:05:03 Pasajero 31: ingresó a la Tienda Terminal B
+11:05:03 Pasajero 31: solo observó los productos
+11:05:03 Pasajero 28: ingresó a la Tienda Terminal B
+11:05:03 Pasajero 26: ingresó a la Tienda Terminal B
+11:05:03 Pasajero 27: ingresó a la Tienda Terminal B
+11:05:03 Pasajero 35 fue atendido exitosamente en: British Airways
+11:05:03 Pasajero 26: está usando una caja. Mostrando un gasto de $3603
+11:05:03 Pasajero 28: solo observó los productos
+11:05:03 Pasajero 28: salió de la Tienda Terminal B
+11:05:03 Pasajero 31: salió de la Tienda Terminal B
+11:05:03 Pasajero 30: solo observó los productos
+11:05:03 Pasajero 29: está usando una caja. Mostrando un gasto de $2018
+11:05:03 Pasajero 30: salió de la Tienda Terminal B
+11:05:03 Pasajero 30 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:05:03 Pasajero 31 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'Aerolíneas Argentinas'
+11:05:03 Pasajero 28 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'Aerolíneas Argentinas'
+11:05:03 < Pasajero 35 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:03 Pasajero 37 está siendo atendido
+11:05:03 Guardia permitió el ingreso de pasajero 38 al puesto de atención de British Airways. Pasajeros restantes esperando: 1
+11:05:03 > Pasajero 38 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:04 Pasajero 41 se tiene que dirigir al puesto British Airways
+11:05:04 Pasajero 42 esta siendo atendido en el puesto de informes.
+11:05:04 Pasajero 41 está esperando en la cola del hall para British Airways. Cantidad de personas: 2
+11:05:04 Pasajero 32 intenta subir al tren, pero no puede.
+11:05:04 Pasajero 34 intenta subir al tren, pero no puede.
+11:05:04 Pasajero 35 intenta subir al tren, pero no puede.
+11:05:04 El tren se detiene en la terminal: C
+11:05:04 Esperando a que todos los pasajeros bajen en la terminal C...
+11:05:05 Pasajero 26: salió de la Tienda Terminal B
+11:05:05 Pasajero 26 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:05:05 Pasajero 29: salió de la Tienda Terminal B
+11:05:05 Pasajero 27: está usando una caja. Mostrando un gasto de $3509
+11:05:05 Pasajero 29 está esperando al abordaje del vuelo 'París' de la aerolinea 'Aerolíneas Argentinas'
+11:05:05 Pasajero 42 se tiene que dirigir al puesto American Airlines
+11:05:05 Pasajero 20 bajó en la terminal C
+11:05:05 Pasajero 33 esta siendo atendido en el puesto de informes.
+11:05:05 > Pasajero 42 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:05 Pasajero 25 bajó en la terminal C
+11:05:06 Pasajero 27: salió de la Tienda Terminal B
+11:05:06 Pasajero 27 está esperando al abordaje del vuelo 'París' de la aerolinea 'British Airways'
+11:05:06 Pasajero 20: ingresó a la Tienda Terminal C
+11:05:06 Pasajero 20: solo observó los productos
+11:05:06 Pasajero 20: salió de la Tienda Terminal C
+11:05:06 Pasajero 25: ingresó a la Tienda Terminal C
+11:05:06 Pasajero 33 se tiene que dirigir al puesto American Airlines
+11:05:06 Pasajero 20 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:05:06 Pasajero 33 está esperando en la cola del hall para American Airlines. Cantidad de personas: 1
+11:05:06 Pasajero 43 esta siendo atendido en el puesto de informes.
+11:05:06 Pasajero 25: solo observó los productos
+11:05:06 Pasajero 25: salió de la Tienda Terminal C
+11:05:06 Pasajero 25 está esperando al abordaje del vuelo 'París' de la aerolinea 'British Airways'
+11:05:06 Pasajero 39 fue atendido exitosamente en: American Airlines
+11:05:06 Guardia permitió el ingreso de pasajero 33 al puesto de atención de American Airlines. Pasajeros restantes esperando: 0
+11:05:06 > Pasajero 33 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:06 Pasajero 42 está siendo atendido
+11:05:06 < Pasajero 39 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:06 Pasajero 37 fue atendido exitosamente en: British Airways
+11:05:06 Pasajero 38 está siendo atendido
+11:05:06 Guardia permitió el ingreso de pasajero 40 al puesto de atención de British Airways. Pasajeros restantes esperando: 1
+11:05:06 > Pasajero 40 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:06 < Pasajero 37 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:05:07 Terminó el recorrido del tren.
+11:05:07 Pasajero 39 intenta subir al tren, pero no puede.
+11:05:07 Pasajero 37 intenta subir al tren, pero no puede.
+11:05:07 Tren volviendo al inicio del aeropuerto...
+11:05:07 Pasajero 43 se tiene que dirigir al puesto British Airways
+11:05:07 Pasajero 44 esta siendo atendido en el puesto de informes.
+11:05:07 Pasajero 43 está esperando en la cola del hall para British Airways. Cantidad de personas: 2
+11:05:08 Pasajero 44 se tiene que dirigir al puesto American Airlines
+11:05:08 Pasajero 45 esta siendo atendido en el puesto de informes.
+11:05:08 Pasajero 44 está esperando en la cola del hall para American Airlines. Cantidad de personas: 1
+11:05:09 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:05:09 Pasajero 36: subió al tren. Pasajeros a bordo: 1
+11:05:09 Pasajero 32: subió al tren. Pasajeros a bordo: 2
+11:05:09 Pasajero 34: subió al tren. Pasajeros a bordo: 3
+11:05:09 Pasajero 35: subió al tren. Pasajeros a bordo: 4
+11:05:09 Pasajero 39: subió al tren. Pasajeros a bordo: 5
+11:05:09 Pasajero 37: subió al tren. Pasajeros a bordo: 6
+11:05:09 Pasajero 45 se tiene que dirigir al puesto American Airlines
+11:05:09 Pasajero 46 esta siendo atendido en el puesto de informes.
+11:05:09 Pasajero 45 está esperando en la cola del hall para American Airlines. Cantidad de personas: 2
+11:05:09 Pasajero 42 fue atendido exitosamente en: American Airlines
+11:05:09 Pasajero 33 está siendo atendido
+11:05:09 Guardia permitió el ingreso de pasajero 44 al puesto de atención de American Airlines. Pasajeros restantes esperando: 1
+11:05:09 < Pasajero 42 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:05:09 > Pasajero 44 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:09 Pasajero 42: subió al tren. Pasajeros a bordo: 7
+11:05:09 Pasajero 40 está siendo atendido
+11:05:10 Guardia permitió el ingreso de pasajero 41 al puesto de atención de British Airways. Pasajeros restantes esperando: 1
+11:05:10 Pasajero 38 fue atendido exitosamente en: British Airways
+11:05:10 > Pasajero 41 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:10 < Pasajero 38 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:10 Pasajero 38: subió al tren. Pasajeros a bordo: 8
+11:05:10 Pasajero 38 espera para bajar en la terminal B
+11:05:10 El tren comienza su recorrido con 8 pasajeros a bordo.
+11:05:10 Pasajero 36 espera para bajar en la terminal C
+11:05:10 Pasajero 32 espera para bajar en la terminal A
+11:05:10 Pasajero 34 espera para bajar en la terminal A
+11:05:10 Pasajero 35 espera para bajar en la terminal B
+11:05:10 Pasajero 39 espera para bajar en la terminal B
+11:05:10 Pasajero 37 espera para bajar en la terminal C
+11:05:10 Pasajero 42 espera para bajar en la terminal C
+11:05:10 El tren se detiene en la terminal: A
+11:05:10 Esperando a que todos los pasajeros bajen en la terminal A...
+11:05:10 Pasajero 32 bajó en la terminal A
+11:05:10 Pasajero 34 bajó en la terminal A
+11:05:10 Pasajero 46 se tiene que dirigir al puesto American Airlines
+11:05:10 Pasajero 47 esta siendo atendido en el puesto de informes.
+11:05:10 Pasajero 46 está esperando en la cola del hall para American Airlines. Cantidad de personas: 2
+11:05:11 Pasajero 32: ingresó a la Tienda Terminal A
+11:05:11 Pasajero 34: ingresó a la Tienda Terminal A
+11:05:11 Pasajero 32: está usando una caja. Mostrando un gasto de $2115
+11:05:11 Pasajero 34: está usando una caja. Mostrando un gasto de $1158
+11:05:11 Pasajero 47 se tiene que dirigir al puesto British Airways
+11:05:11 Pasajero 48 esta siendo atendido en el puesto de informes.
+11:05:11 Pasajero 47 está esperando en la cola del hall para British Airways. Cantidad de personas: 2
+11:05:12 El tren se detiene en la terminal: B
+11:05:12 Esperando a que todos los pasajeros bajen en la terminal B...
+11:05:12 Pasajero 32: salió de la Tienda Terminal A
+11:05:12 Pasajero 32 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:05:12 Pasajero 38 bajó en la terminal B
+11:05:12 Pasajero 35 bajó en la terminal B
+11:05:12 Pasajero 39 bajó en la terminal B
+11:05:12 Pasajero 34: salió de la Tienda Terminal A
+11:05:12 Pasajero 34 está esperando al abordaje del vuelo 'París' de la aerolinea 'Aerolíneas Argentinas'
+11:05:12 Pasajero 48 se tiene que dirigir al puesto British Airways
+11:05:12 Pasajero 49 esta siendo atendido en el puesto de informes.
+11:05:12 Pasajero 48 está esperando en la cola del hall para British Airways. Cantidad de personas: 3
+11:05:12 HORA ACTUAL DEL AEROPUERTO: 11:00hs
+11:05:12 Pasajero 33 fue atendido exitosamente en: American Airlines
+11:05:12 < Pasajero 33 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:05:12 Guardia permitió el ingreso de pasajero 45 al puesto de atención de American Airlines. Pasajeros restantes esperando: 1
+11:05:12 Pasajero 44 está siendo atendido
+11:05:12 > Pasajero 45 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:13 Pasajero 41 está siendo atendido
+11:05:13 Guardia permitió el ingreso de pasajero 43 al puesto de atención de British Airways. Pasajeros restantes esperando: 2
+11:05:13 Pasajero 40 fue atendido exitosamente en: British Airways
+11:05:13 > Pasajero 43 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:13 < Pasajero 40 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:13 Pasajero 35: ingresó a la Tienda Terminal B
+11:05:13 Pasajero 38: ingresó a la Tienda Terminal B
+11:05:13 Pasajero 39: ingresó a la Tienda Terminal B
+11:05:13 Pasajero 39: está usando una caja. Mostrando un gasto de $2081
+11:05:13 Pasajero 38: solo observó los productos
+11:05:13 Pasajero 38: salió de la Tienda Terminal B
+11:05:13 Pasajero 35: está usando una caja. Mostrando un gasto de $3362
+11:05:13 Pasajero 38: Perdió el avión con destino: Buenos Aires
+11:05:13 Pasajero 49 se tiene que dirigir al puesto American Airlines
+11:05:13 Pasajero 50 esta siendo atendido en el puesto de informes.
+11:05:13 Pasajero 49 está esperando en la cola del hall para American Airlines. Cantidad de personas: 2
+11:05:14 Pasajero 33 intenta subir al tren, pero no puede.
+11:05:14 Pasajero 40 intenta subir al tren, pero no puede.
+11:05:14 El tren se detiene en la terminal: C
+11:05:14 Esperando a que todos los pasajeros bajen en la terminal C...
+11:05:14 Pasajero 36 bajó en la terminal C
+11:05:14 Pasajero 37 bajó en la terminal C
+11:05:14 Pasajero 42 bajó en la terminal C
+11:05:14 Pasajero 35: salió de la Tienda Terminal B
+11:05:14 Pasajero 35: Perdió el avión con destino: Buenos Aires
+11:05:14 Pasajero 39: salió de la Tienda Terminal B
+11:05:14 Pasajero 39 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:05:14 Pasajero 50 se tiene que dirigir al puesto British Airways
+11:05:14 Pasajero 51 esta siendo atendido en el puesto de informes.
+11:05:14 Pasajero 50 está esperando en la cola del hall para British Airways. Cantidad de personas: 3
+11:05:15 Pasajero 42: ingresó a la Tienda Terminal C
+11:05:15 Pasajero 37 está esperando al abordaje del vuelo 'París' de la aerolinea 'British Airways'
+11:05:15 Pasajero 36 está esperando al abordaje del vuelo 'París' de la aerolinea 'British Airways'
+11:05:15 Pasajero 42: solo observó los productos
+11:05:15 Pasajero 42: salió de la Tienda Terminal C
+11:05:15 Pasajero 42 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:05:15 Pasajero 51 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:05:15 Pasajero 52 esta siendo atendido en el puesto de informes.
+11:05:15 Pasajero 51 está siendo atendido
+11:05:15 > Pasajero 51 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
+11:05:15 Pasajero 44 fue atendido exitosamente en: American Airlines
+11:05:15 < Pasajero 44 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:15 Guardia permitió el ingreso de pasajero 46 al puesto de atención de American Airlines. Pasajeros restantes esperando: 1
+11:05:15 Pasajero 45 está siendo atendido
+11:05:15 > Pasajero 46 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:16 Pasajero 43 está siendo atendido
+11:05:16 Guardia permitió el ingreso de pasajero 47 al puesto de atención de British Airways. Pasajeros restantes esperando: 2
+11:05:16 > Pasajero 47 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:16 Pasajero 41 fue atendido exitosamente en: British Airways
+11:05:16 < Pasajero 41 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:16 Terminó el recorrido del tren.
+11:05:16 Pasajero 44 intenta subir al tren, pero no puede.
+11:05:16 Pasajero 41 intenta subir al tren, pero no puede.
+11:05:16 Tren volviendo al inicio del aeropuerto...
+11:05:16 Pasajero 52 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:05:16 Pasajero 53 esta siendo atendido en el puesto de informes.
+11:05:16 > Pasajero 52 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:05:17 Pasajero 53 se tiene que dirigir al puesto American Airlines
+11:05:17 Pasajero 54 esta siendo atendido en el puesto de informes.
+11:05:17 Pasajero 53 está esperando en la cola del hall para American Airlines. Cantidad de personas: 2
+11:05:18 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:05:18 Pasajero 33: subió al tren. Pasajeros a bordo: 1
+11:05:18 Pasajero 40: subió al tren. Pasajeros a bordo: 2
+11:05:18 Pasajero 44: subió al tren. Pasajeros a bordo: 3
+11:05:18 Pasajero 41: subió al tren. Pasajeros a bordo: 4
+11:05:18 Pasajero 52 está siendo atendido
+11:05:18 Pasajero 51 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:18 < Pasajero 51 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:18 Pasajero 51: subió al tren. Pasajeros a bordo: 5
+11:05:18 Pasajero 54 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:05:18 > Pasajero 54 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:05:18 Pasajero 55 esta siendo atendido en el puesto de informes.
+11:05:18 Pasajero 45 fue atendido exitosamente en: American Airlines
+11:05:18 Guardia permitió el ingreso de pasajero 49 al puesto de atención de American Airlines. Pasajeros restantes esperando: 1
+11:05:18 Pasajero 46 está siendo atendido
+11:05:18 > Pasajero 49 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:18 < Pasajero 45 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:05:18 Pasajero 45: subió al tren. Pasajeros a bordo: 6
+11:05:19 Pasajero 43 fue atendido exitosamente en: British Airways
+11:05:19 Guardia permitió el ingreso de pasajero 48 al puesto de atención de British Airways. Pasajeros restantes esperando: 1
+11:05:19 Pasajero 47 está siendo atendido
+11:05:19 > Pasajero 48 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:19 < Pasajero 43 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:19 Pasajero 43: subió al tren. Pasajeros a bordo: 7
+11:05:19 Pasajero 55 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:05:19 Pasajero 56 esta siendo atendido en el puesto de informes.
+11:05:19 Pasajero 55 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+11:05:20 Pasajero 56 se tiene que dirigir al puesto American Airlines
+11:05:20 Pasajero 58 esta siendo atendido en el puesto de informes.
+11:05:20 Pasajero 56 está esperando en la cola del hall para American Airlines. Cantidad de personas: 2
+11:05:21 Pasajero 52 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:21 < Pasajero 52 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:21 Pasajero 54 está siendo atendido
+11:05:21 Guardia permitió el ingreso de pasajero 55 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+11:05:21 Pasajero 52: subió al tren. Pasajeros a bordo: 8
+11:05:21 > Pasajero 55 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:05:21 El tren comienza su recorrido con 8 pasajeros a bordo.
+11:05:21 Pasajero 52 espera para bajar en la terminal A
+11:05:21 Pasajero 33 espera para bajar en la terminal C
+11:05:21 Pasajero 40 espera para bajar en la terminal B
+11:05:21 Pasajero 44 espera para bajar en la terminal B
+11:05:21 Pasajero 41 espera para bajar en la terminal B
+11:05:21 Pasajero 51 espera para bajar en la terminal A
+11:05:21 Pasajero 45 espera para bajar en la terminal C
+11:05:21 Pasajero 43 espera para bajar en la terminal A
+11:05:21 El tren se detiene en la terminal: A
+11:05:21 Esperando a que todos los pasajeros bajen en la terminal A...
+11:05:21 Pasajero 52 bajó en la terminal A
+11:05:21 Pasajero 51 bajó en la terminal A
+11:05:21 Pasajero 43 bajó en la terminal A
+11:05:21 Pasajero 58 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:05:21 Pasajero 57 esta siendo atendido en el puesto de informes.
+11:05:21 Pasajero 58 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+11:05:21 Pasajero 49 está siendo atendido
+11:05:21 Guardia permitió el ingreso de pasajero 53 al puesto de atención de American Airlines. Pasajeros restantes esperando: 1
+11:05:21 Pasajero 46 fue atendido exitosamente en: American Airlines
+11:05:21 > Pasajero 53 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:21 < Pasajero 46 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:22 Pasajero 48 está siendo atendido
+11:05:22 Guardia permitió el ingreso de pasajero 50 al puesto de atención de British Airways. Pasajeros restantes esperando: 0
+11:05:22 Pasajero 47 fue atendido exitosamente en: British Airways
+11:05:22 > Pasajero 50 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:22 < Pasajero 47 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:22 Pasajero 52 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'Aerolíneas Argentinas'
+11:05:22 Pasajero 43: ingresó a la Tienda Terminal A
+11:05:22 Pasajero 51 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'Aerolíneas Argentinas'
+11:05:22 Pasajero 43: está usando una caja. Mostrando un gasto de $3720
+11:05:22 Pasajero 57 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:05:22 Pasajero 59 esta siendo atendido en el puesto de informes.
+11:05:22 Pasajero 57 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 2
+11:05:22 HORA ACTUAL DEL AEROPUERTO: 12:00hs
+11:05:22 Comienza el abordaje del vuelo con destino 'París de la aerolinea 'British Airways'
+11:05:22 Comienza el abordaje del vuelo con destino 'París de la aerolinea 'Aerolíneas Argentinas'
+11:05:22 Comienza el abordaje del vuelo con destino 'Roma de la aerolinea 'Aerolíneas Argentinas'
+11:05:22 Pasajero 34: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 29: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 16: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 21: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 7: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 15: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 5: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 3: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 36: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 37: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 25: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 27: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 22: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 8: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 1: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:22 Pasajero 51: Subió al avión con destino: Roma. Hora de vuelo: 12hs.
+11:05:22 Pasajero 52: Subió al avión con destino: Roma. Hora de vuelo: 12hs.
+11:05:22 Pasajero 28: Subió al avión con destino: Roma. Hora de vuelo: 12hs.
+11:05:22 Pasajero 31: Subió al avión con destino: Roma. Hora de vuelo: 12hs.
+11:05:22 Pasajero 12: Subió al avión con destino: Roma. Hora de vuelo: 12hs.
+11:05:22 Pasajero 4: Subió al avión con destino: Roma. Hora de vuelo: 12hs.
+11:05:23 El tren se detiene en la terminal: B
+11:05:23 Esperando a que todos los pasajeros bajen en la terminal B...
+11:05:23 Pasajero 46 intenta subir al tren, pero no puede.
+11:05:23 Pasajero 47 intenta subir al tren, pero no puede.
+11:05:23 Pasajero 40 bajó en la terminal B
+11:05:23 Pasajero 44 bajó en la terminal B
+11:05:23 Pasajero 41 bajó en la terminal B
+11:05:23 Pasajero 43: salió de la Tienda Terminal A
+11:05:23 Pasajero 43: Perdió el avión con destino: Buenos Aires
+11:05:23 Pasajero 59 se tiene que dirigir al puesto American Airlines
+11:05:23 Pasajero 60 esta siendo atendido en el puesto de informes.
+11:05:23 Pasajero 59 está esperando en la cola del hall para American Airlines. Cantidad de personas: 2
+11:05:24 Pasajero 55 está siendo atendido
+11:05:24 Guardia permitió el ingreso de pasajero 58 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 1
+11:05:24 Pasajero 54 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:24 > Pasajero 58 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:05:24 < Pasajero 54 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:24 Pasajero 41: ingresó a la Tienda Terminal B
+11:05:24 Pasajero 40: ingresó a la Tienda Terminal B
+11:05:24 Pasajero 40: solo observó los productos
+11:05:24 Pasajero 40: salió de la Tienda Terminal B
+11:05:24 Pasajero 40: Perdió el avión con destino: Buenos Aires
+11:05:24 Pasajero 44: ingresó a la Tienda Terminal B
+11:05:24 Pasajero 41: está usando una caja. Mostrando un gasto de $2957
+11:05:24 Pasajero 44: solo observó los productos
+11:05:24 Pasajero 44: salió de la Tienda Terminal B
+11:05:24 Pasajero 44 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:05:24 Pasajero 60 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:05:24 Pasajero 61 esta siendo atendido en el puesto de informes.
+11:05:24 Pasajero 60 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 2
+11:05:24 Pasajero 53 está siendo atendido
+11:05:24 Guardia permitió el ingreso de pasajero 56 al puesto de atención de American Airlines. Pasajeros restantes esperando: 1
+11:05:24 Pasajero 49 fue atendido exitosamente en: American Airlines
+11:05:24 > Pasajero 56 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:24 < Pasajero 49 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:25 Pasajero 50 está siendo atendido
+11:05:25 Pasajero 48 fue atendido exitosamente en: British Airways
+11:05:25 < Pasajero 48 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:25 El tren se detiene en la terminal: C
+11:05:25 Esperando a que todos los pasajeros bajen en la terminal C...
+11:05:25 Pasajero 54 intenta subir al tren, pero no puede.
+11:05:25 Pasajero 49 intenta subir al tren, pero no puede.
+11:05:25 Pasajero 48 intenta subir al tren, pero no puede.
+11:05:25 Pasajero 33 bajó en la terminal C
+11:05:25 Pasajero 45 bajó en la terminal C
+11:05:25 Pasajero 41: salió de la Tienda Terminal B
+11:05:25 Pasajero 41: Perdió el avión con destino: Buenos Aires
+11:05:25 Pasajero 61 se tiene que dirigir al puesto American Airlines
+11:05:25 Pasajero 62 esta siendo atendido en el puesto de informes.
+11:05:25 Pasajero 61 está esperando en la cola del hall para American Airlines. Cantidad de personas: 2
+11:05:26 Pasajero 45: ingresó a la Tienda Terminal C
+11:05:26 Pasajero 33: ingresó a la Tienda Terminal C
+11:05:26 Pasajero 45: está usando una caja. Mostrando un gasto de $1788
+11:05:26 Pasajero 33: está usando una caja. Mostrando un gasto de $2219
+11:05:26 Pasajero 62 se tiene que dirigir al puesto British Airways
+11:05:26 Pasajero 63 esta siendo atendido en el puesto de informes.
+11:05:26 > Pasajero 62 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:27 Pasajero 58 está siendo atendido
+11:05:27 Guardia permitió el ingreso de pasajero 57 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 1
+11:05:27 > Pasajero 57 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:05:27 Pasajero 55 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:27 < Pasajero 55 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:27 Pasajero 55 intenta subir al tren, pero no puede.
+11:05:27 Terminó el recorrido del tren.
+11:05:27 Tren volviendo al inicio del aeropuerto...
+11:05:27 Pasajero 45: salió de la Tienda Terminal C
+11:05:27 Pasajero 45 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:05:27 Pasajero 33: salió de la Tienda Terminal C
+11:05:27 Pasajero 33 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:05:27 Pasajero 63 se tiene que dirigir al puesto American Airlines
+11:05:27 Pasajero 64 esta siendo atendido en el puesto de informes.
+11:05:27 Pasajero 63 está esperando en la cola del hall para American Airlines. Cantidad de personas: 3
+11:05:27 Pasajero 56 está siendo atendido
+11:05:27 Guardia permitió el ingreso de pasajero 59 al puesto de atención de American Airlines. Pasajeros restantes esperando: 2
+11:05:27 Pasajero 53 fue atendido exitosamente en: American Airlines
+11:05:27 > Pasajero 59 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:27 < Pasajero 53 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:05:28 Pasajero 62 está siendo atendido
+11:05:28 Pasajero 50 fue atendido exitosamente en: British Airways
+11:05:28 < Pasajero 50 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:05:28 Pasajero 64 se tiene que dirigir al puesto British Airways
+11:05:28 Pasajero 65 esta siendo atendido en el puesto de informes.
+11:05:28 > Pasajero 64 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:29 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:05:29 Pasajero 53: subió al tren. Pasajeros a bordo: 1
+11:05:29 Pasajero 50: subió al tren. Pasajeros a bordo: 2
+11:05:29 Pasajero 46: subió al tren. Pasajeros a bordo: 3
+11:05:29 Pasajero 47: subió al tren. Pasajeros a bordo: 4
+11:05:29 Pasajero 54: subió al tren. Pasajeros a bordo: 5
+11:05:29 Pasajero 49: subió al tren. Pasajeros a bordo: 6
+11:05:29 Pasajero 48: subió al tren. Pasajeros a bordo: 7
+11:05:29 Pasajero 55: subió al tren. Pasajeros a bordo: 8
+11:05:29 Pasajero 55 espera para bajar en la terminal B
+11:05:29 El tren comienza su recorrido con 8 pasajeros a bordo.
+11:05:29 Pasajero 53 espera para bajar en la terminal C
+11:05:29 Pasajero 50 espera para bajar en la terminal C
+11:05:29 Pasajero 46 espera para bajar en la terminal B
+11:05:29 Pasajero 47 espera para bajar en la terminal B
+11:05:29 Pasajero 54 espera para bajar en la terminal B
+11:05:29 Pasajero 49 espera para bajar en la terminal B
+11:05:29 Pasajero 48 espera para bajar en la terminal B
+11:05:29 El tren se detiene en la terminal: A
+11:05:29 Pasajero 65 se tiene que dirigir al puesto British Airways
+11:05:29 Pasajero 66 esta siendo atendido en el puesto de informes.
+11:05:29 Pasajero 65 está esperando en la cola del hall para British Airways. Cantidad de personas: 1
+11:05:30 Pasajero 58 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:30 < Pasajero 58 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:30 Pasajero 57 está siendo atendido
+11:05:30 Guardia permitió el ingreso de pasajero 60 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+11:05:30 > Pasajero 60 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:05:30 Pasajero 66 se tiene que dirigir al puesto American Airlines
+11:05:30 Pasajero 67 esta siendo atendido en el puesto de informes.
+11:05:30 Pasajero 66 está esperando en la cola del hall para American Airlines. Cantidad de personas: 3
+11:05:30 Pasajero 59 está siendo atendido
+11:05:30 Guardia permitió el ingreso de pasajero 61 al puesto de atención de American Airlines. Pasajeros restantes esperando: 2
+11:05:30 Pasajero 56 fue atendido exitosamente en: American Airlines
+11:05:30 > Pasajero 61 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:30 < Pasajero 56 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:31 Pasajero 64 está siendo atendido
+11:05:31 Guardia permitió el ingreso de pasajero 65 al puesto de atención de British Airways. Pasajeros restantes esperando: 0
+11:05:31 Pasajero 62 fue atendido exitosamente en: British Airways
+11:05:31 < Pasajero 62 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:31 > Pasajero 65 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:31 Pasajero 58 intenta subir al tren, pero no puede.
+11:05:31 Pasajero 56 intenta subir al tren, pero no puede.
+11:05:31 Pasajero 62 intenta subir al tren, pero no puede.
+11:05:31 El tren se detiene en la terminal: B
+11:05:31 Esperando a que todos los pasajeros bajen en la terminal B...
+11:05:31 Pasajero 55 bajó en la terminal B
+11:05:31 Pasajero 46 bajó en la terminal B
+11:05:31 Pasajero 47 bajó en la terminal B
+11:05:31 Pasajero 54 bajó en la terminal B
+11:05:31 Pasajero 49 bajó en la terminal B
+11:05:31 Pasajero 48 bajó en la terminal B
+11:05:31 Pasajero 67 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:05:31 Pasajero 68 esta siendo atendido en el puesto de informes.
+11:05:31 Pasajero 67 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+11:05:32 Pasajero 49: ingresó a la Tienda Terminal B
+11:05:32 Pasajero 55 está esperando al abordaje del vuelo 'París' de la aerolinea 'Aerolíneas Argentinas'
+11:05:32 Pasajero 55: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:32 Pasajero 46: ingresó a la Tienda Terminal B
+11:05:32 Pasajero 46: solo observó los productos
+11:05:32 Pasajero 47: ingresó a la Tienda Terminal B
+11:05:32 Pasajero 48: ingresó a la Tienda Terminal B
+11:05:32 Pasajero 54 está esperando al abordaje del vuelo 'París' de la aerolinea 'Aerolíneas Argentinas'
+11:05:32 Pasajero 48: está usando una caja. Mostrando un gasto de $3016
+11:05:32 Pasajero 47: solo observó los productos
+11:05:32 Pasajero 46: salió de la Tienda Terminal B
+11:05:32 Pasajero 46 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:05:32 Pasajero 49: solo observó los productos
+11:05:32 Pasajero 47: salió de la Tienda Terminal B
+11:05:32 Pasajero 54: Subió al avión con destino: París. Hora de vuelo: 12hs.
+11:05:32 Pasajero 47: Perdió el avión con destino: Buenos Aires
+11:05:32 Pasajero 49: salió de la Tienda Terminal B
+11:05:32 Pasajero 49 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:05:32 Pasajero 68 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:05:32 Pasajero 69 esta siendo atendido en el puesto de informes.
+11:05:32 Pasajero 68 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 2
+11:05:32 HORA ACTUAL DEL AEROPUERTO: 13:00hs
+11:05:32 Despega el vuelo con destino 'París de la aerolinea 'British Airways'
+11:05:32 Despega el vuelo con destino 'París de la aerolinea 'Aerolíneas Argentinas'
+11:05:32 Despega el vuelo con destino 'Roma de la aerolinea 'Aerolíneas Argentinas'
+11:05:33 Pasajero 60 está siendo atendido
+11:05:33 Guardia permitió el ingreso de pasajero 67 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 1
+11:05:33 > Pasajero 67 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:05:33 Pasajero 57 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:33 < Pasajero 57 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:33 El tren se detiene en la terminal: C
+11:05:33 Esperando a que todos los pasajeros bajen en la terminal C...
+11:05:33 Pasajero 57 intenta subir al tren, pero no puede.
+11:05:33 Pasajero 53 bajó en la terminal C
+11:05:33 Pasajero 50 bajó en la terminal C
+11:05:33 Pasajero 48: salió de la Tienda Terminal B
+11:05:33 Pasajero 48: Perdió el avión con destino: Buenos Aires
+11:05:33 Pasajero 69 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:05:33 Pasajero 69 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 2
+11:05:33 Pasajero 71 esta siendo atendido en el puesto de informes.
+11:05:33 Pasajero 61 está siendo atendido
+11:05:33 Guardia permitió el ingreso de pasajero 63 al puesto de atención de American Airlines. Pasajeros restantes esperando: 1
+11:05:33 Pasajero 59 fue atendido exitosamente en: American Airlines
+11:05:33 > Pasajero 63 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:33 < Pasajero 59 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:34 Pasajero 65 está siendo atendido
+11:05:34 Pasajero 64 fue atendido exitosamente en: British Airways
+11:05:34 < Pasajero 64 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:34 Pasajero 53: ingresó a la Tienda Terminal C
+11:05:34 Pasajero 50: Perdió el avión con destino: París
+11:05:34 Pasajero 53: solo observó los productos
+11:05:34 Pasajero 53: salió de la Tienda Terminal C
+11:05:34 Pasajero 53 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:05:34 Pasajero 71 se tiene que dirigir al puesto British Airways
+11:05:34 Pasajero 70 esta siendo atendido en el puesto de informes.
+11:05:34 > Pasajero 71 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:35 Terminó el recorrido del tren.
+11:05:35 Pasajero 59 intenta subir al tren, pero no puede.
+11:05:35 Pasajero 64 intenta subir al tren, pero no puede.
+11:05:35 Tren volviendo al inicio del aeropuerto...
+11:05:35 Pasajero 70 se tiene que dirigir al puesto British Airways
+11:05:35 Pasajero 73 esta siendo atendido en el puesto de informes.
+11:05:35 Pasajero 70 está esperando en la cola del hall para British Airways. Cantidad de personas: 1
+11:05:36 Pasajero 60 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:36 < Pasajero 60 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:05:36 Guardia permitió el ingreso de pasajero 68 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 1
+11:05:36 Pasajero 67 está siendo atendido
+11:05:36 > Pasajero 68 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:05:36 Pasajero 73 se tiene que dirigir al puesto British Airways
+11:05:36 Pasajero 72 esta siendo atendido en el puesto de informes.
+11:05:36 Pasajero 73 está esperando en la cola del hall para British Airways. Cantidad de personas: 2
+11:05:36 Pasajero 63 está siendo atendido
+11:05:36 Pasajero 61 fue atendido exitosamente en: American Airlines
+11:05:36 Guardia permitió el ingreso de pasajero 66 al puesto de atención de American Airlines. Pasajeros restantes esperando: 0
+11:05:36 < Pasajero 61 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:36 > Pasajero 66 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:37 Pasajero 71 está siendo atendido
+11:05:37 Guardia permitió el ingreso de pasajero 70 al puesto de atención de British Airways. Pasajeros restantes esperando: 1
+11:05:37 Pasajero 65 fue atendido exitosamente en: British Airways
+11:05:37 > Pasajero 70 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:37 < Pasajero 65 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:37 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:05:37 Pasajero 60: subió al tren. Pasajeros a bordo: 1
+11:05:37 Pasajero 61: subió al tren. Pasajeros a bordo: 2
+11:05:37 Pasajero 65: subió al tren. Pasajeros a bordo: 3
+11:05:37 Pasajero 58: subió al tren. Pasajeros a bordo: 4
+11:05:37 Pasajero 56: subió al tren. Pasajeros a bordo: 5
+11:05:37 Pasajero 62: subió al tren. Pasajeros a bordo: 6
+11:05:37 Pasajero 57: subió al tren. Pasajeros a bordo: 7
+11:05:37 Pasajero 59: subió al tren. Pasajeros a bordo: 8
+11:05:37 Pasajero 64 intenta subir al tren, pero no puede.
+11:05:37 El tren comienza su recorrido con 8 pasajeros a bordo.
+11:05:37 Pasajero 59 espera para bajar en la terminal A
+11:05:37 Pasajero 60 espera para bajar en la terminal C
+11:05:37 Pasajero 61 espera para bajar en la terminal A
+11:05:37 Pasajero 65 espera para bajar en la terminal A
+11:05:37 Pasajero 72 se tiene que dirigir al puesto British Airways
+11:05:37 Pasajero 58 espera para bajar en la terminal B
+11:05:37 Pasajero 74 esta siendo atendido en el puesto de informes.
+11:05:37 Pasajero 72 está esperando en la cola del hall para British Airways. Cantidad de personas: 2
+11:05:37 Pasajero 56 espera para bajar en la terminal B
+11:05:37 Pasajero 62 espera para bajar en la terminal A
+11:05:37 Pasajero 57 espera para bajar en la terminal A
+11:05:37 El tren se detiene en la terminal: A
+11:05:37 Esperando a que todos los pasajeros bajen en la terminal A...
+11:05:37 Pasajero 59 bajó en la terminal A
+11:05:37 Pasajero 61 bajó en la terminal A
+11:05:37 Pasajero 65 bajó en la terminal A
+11:05:37 Pasajero 62 bajó en la terminal A
+11:05:37 Pasajero 57 bajó en la terminal A
+11:05:38 Pasajero 74 se tiene que dirigir al puesto British Airways
+11:05:38 Pasajero 75 esta siendo atendido en el puesto de informes.
+11:05:38 Pasajero 74 está esperando en la cola del hall para British Airways. Cantidad de personas: 3
+11:05:38 Pasajero 59: ingresó a la Tienda Terminal A
+11:05:38 Pasajero 59: solo observó los productos
+11:05:38 Pasajero 59: salió de la Tienda Terminal A
+11:05:38 Pasajero 59 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:05:38 Pasajero 57: Perdió el avión con destino: Roma
+11:05:38 Pasajero 61: ingresó a la Tienda Terminal A
+11:05:38 Pasajero 65: Perdió el avión con destino: París
+11:05:38 Pasajero 62: ingresó a la Tienda Terminal A
+11:05:38 Pasajero 61: está usando una caja. Mostrando un gasto de $2452
+11:05:38 Pasajero 62: está usando una caja. Mostrando un gasto de $1738
+11:05:39 Pasajero 67 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:39 < Pasajero 67 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:39 Guardia permitió el ingreso de pasajero 69 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+11:05:39 Pasajero 68 está siendo atendido
+11:05:39 > Pasajero 69 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:05:39 Pasajero 75 se tiene que dirigir al puesto American Airlines
+11:05:39 Pasajero 76 esta siendo atendido en el puesto de informes.
+11:05:39 Pasajero 75 está esperando en la cola del hall para American Airlines. Cantidad de personas: 1
+11:05:39 Pasajero 67 intenta subir al tren, pero no puede.
+11:05:39 El tren se detiene en la terminal: B
+11:05:39 Esperando a que todos los pasajeros bajen en la terminal B...
+11:05:39 Pasajero 58 bajó en la terminal B
+11:05:39 Pasajero 56 bajó en la terminal B
+11:05:39 Pasajero 61: salió de la Tienda Terminal A
+11:05:39 Pasajero 61 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:05:39 Pasajero 62: salió de la Tienda Terminal A
+11:05:39 Pasajero 62: Perdió el avión con destino: Buenos Aires
+11:05:39 Pasajero 66 está siendo atendido
+11:05:39 Guardia permitió el ingreso de pasajero 75 al puesto de atención de American Airlines. Pasajeros restantes esperando: 0
+11:05:39 Pasajero 63 fue atendido exitosamente en: American Airlines
+11:05:39 > Pasajero 75 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:39 < Pasajero 63 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:40 Pasajero 70 está siendo atendido
+11:05:40 Guardia permitió el ingreso de pasajero 73 al puesto de atención de British Airways. Pasajeros restantes esperando: 2
+11:05:40 Pasajero 71 fue atendido exitosamente en: British Airways
+11:05:40 > Pasajero 73 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:40 < Pasajero 71 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:40 Pasajero 76 se tiene que dirigir al puesto American Airlines
+11:05:40 Pasajero 77 esta siendo atendido en el puesto de informes.
+11:05:40 Pasajero 76 está esperando en la cola del hall para American Airlines. Cantidad de personas: 1
+11:05:40 Pasajero 56: ingresó a la Tienda Terminal B
+11:05:40 Pasajero 56: está usando una caja. Mostrando un gasto de $3880
+11:05:40 Pasajero 58: Perdió el avión con destino: París
+11:05:41 Pasajero 77 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:05:41 Pasajero 78 esta siendo atendido en el puesto de informes.
+11:05:41 Pasajero 77 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+11:05:41 Pasajero 63 intenta subir al tren, pero no puede.
+11:05:41 Pasajero 71 intenta subir al tren, pero no puede.
+11:05:41 El tren se detiene en la terminal: C
+11:05:41 Esperando a que todos los pasajeros bajen en la terminal C...
+11:05:41 Pasajero 60 bajó en la terminal C
+11:05:41 Pasajero 56: salió de la Tienda Terminal B
+11:05:41 Pasajero 56 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:05:42 Pasajero 69 está siendo atendido
+11:05:42 Guardia permitió el ingreso de pasajero 77 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+11:05:42 Pasajero 68 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:42 > Pasajero 77 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:05:42 < Pasajero 68 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:05:42 Pasajero 78 se tiene que dirigir al puesto British Airways
+11:05:42 Pasajero 79 esta siendo atendido en el puesto de informes.
+11:05:42 Pasajero 78 está esperando en la cola del hall para British Airways. Cantidad de personas: 3
+11:05:42 Pasajero 60: Perdió el avión con destino: París
+11:05:42 HORA ACTUAL DEL AEROPUERTO: 14:00hs
+11:05:42 Pasajero 66 fue atendido exitosamente en: American Airlines
+11:05:42 < Pasajero 66 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:42 Pasajero 75 está siendo atendido
+11:05:42 Guardia permitió el ingreso de pasajero 76 al puesto de atención de American Airlines. Pasajeros restantes esperando: 0
+11:05:42 > Pasajero 76 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:43 Pasajero 73 está siendo atendido
+11:05:43 Pasajero 70 fue atendido exitosamente en: British Airways
+11:05:43 < Pasajero 70 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:43 Guardia permitió el ingreso de pasajero 72 al puesto de atención de British Airways. Pasajeros restantes esperando: 2
+11:05:43 > Pasajero 72 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:43 Pasajero 79 se tiene que dirigir al puesto American Airlines
+11:05:43 Pasajero 79 está esperando en la cola del hall para American Airlines. Cantidad de personas: 1
+11:05:43 Pasajero 68 intenta subir al tren, pero no puede.
+11:05:43 Terminó el recorrido del tren.
+11:05:43 Pasajero 66 intenta subir al tren, pero no puede.
+11:05:43 Pasajero 70 intenta subir al tren, pero no puede.
+11:05:43 Tren volviendo al inicio del aeropuerto...
+11:05:45 Pasajero 77 está siendo atendido
+11:05:45 Pasajero 69 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:45 < Pasajero 69 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:45 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:05:45 Pasajero 69: subió al tren. Pasajeros a bordo: 1
+11:05:45 Pasajero 64: subió al tren. Pasajeros a bordo: 2
+11:05:45 Pasajero 67: subió al tren. Pasajeros a bordo: 3
+11:05:45 Pasajero 63: subió al tren. Pasajeros a bordo: 4
+11:05:45 Pasajero 71: subió al tren. Pasajeros a bordo: 5
+11:05:45 Pasajero 68: subió al tren. Pasajeros a bordo: 6
+11:05:45 Pasajero 66: subió al tren. Pasajeros a bordo: 7
+11:05:45 Pasajero 70: subió al tren. Pasajeros a bordo: 8
+11:05:45 El tren comienza su recorrido con 8 pasajeros a bordo.
+11:05:45 Pasajero 70 espera para bajar en la terminal A
+11:05:45 Pasajero 69 espera para bajar en la terminal B
+11:05:45 Pasajero 64 espera para bajar en la terminal A
+11:05:45 Pasajero 67 espera para bajar en la terminal B
+11:05:45 Pasajero 63 espera para bajar en la terminal A
+11:05:45 Pasajero 71 espera para bajar en la terminal A
+11:05:45 Pasajero 68 espera para bajar en la terminal C
+11:05:45 Pasajero 66 espera para bajar en la terminal A
+11:05:45 El tren se detiene en la terminal: A
+11:05:45 Esperando a que todos los pasajeros bajen en la terminal A...
+11:05:45 Pasajero 70 bajó en la terminal A
+11:05:45 Pasajero 64 bajó en la terminal A
+11:05:45 Pasajero 63 bajó en la terminal A
+11:05:45 Pasajero 71 bajó en la terminal A
+11:05:45 Pasajero 66 bajó en la terminal A
+11:05:45 Pasajero 76 está siendo atendido
+11:05:45 Guardia permitió el ingreso de pasajero 79 al puesto de atención de American Airlines. Pasajeros restantes esperando: 0
+11:05:45 Pasajero 75 fue atendido exitosamente en: American Airlines
+11:05:45 > Pasajero 79 ingresó al puesto de atención de: American Airlines en la posicion: 2
+11:05:45 < Pasajero 75 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:46 Pasajero 72 está siendo atendido
+11:05:46 Guardia permitió el ingreso de pasajero 74 al puesto de atención de British Airways. Pasajeros restantes esperando: 1
+11:05:46 Pasajero 73 fue atendido exitosamente en: British Airways
+11:05:46 > Pasajero 74 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:46 < Pasajero 73 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:46 Pasajero 64: ingresó a la Tienda Terminal A
+11:05:46 Pasajero 70: ingresó a la Tienda Terminal A
+11:05:46 Pasajero 63: ingresó a la Tienda Terminal A
+11:05:46 Pasajero 70: está usando una caja. Mostrando un gasto de $2304
+11:05:46 Pasajero 64: está usando una caja. Mostrando un gasto de $2214
+11:05:46 Pasajero 66: ingresó a la Tienda Terminal A
+11:05:46 Pasajero 71: ingresó a la Tienda Terminal A
+11:05:46 Pasajero 66: solo observó los productos
+11:05:46 Pasajero 66: salió de la Tienda Terminal A
+11:05:46 Pasajero 66 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:05:47 Pasajero 64: salió de la Tienda Terminal A
+11:05:47 El tren se detiene en la terminal: B
+11:05:47 Pasajero 63: está usando una caja. Mostrando un gasto de $2608
+11:05:47 Pasajero 71: está usando una caja. Mostrando un gasto de $2100
+11:05:47 Pasajero 70: salió de la Tienda Terminal A
+11:05:47 Esperando a que todos los pasajeros bajen en la terminal B...
+11:05:47 Pasajero 64: Perdió el avión con destino: Buenos Aires
+11:05:47 Pasajero 75 intenta subir al tren, pero no puede.
+11:05:47 Pasajero 70: Perdió el avión con destino: Buenos Aires
+11:05:47 Pasajero 73 intenta subir al tren, pero no puede.
+11:05:47 Pasajero 69 bajó en la terminal B
+11:05:47 Pasajero 67 bajó en la terminal B
+11:05:48 Pasajero 77 fue atendido exitosamente en: Aerolíneas Argentinas
+11:05:48 < Pasajero 77 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:48 Pasajero 63: salió de la Tienda Terminal A
+11:05:48 Pasajero 71: salió de la Tienda Terminal A
+11:05:48 Pasajero 71: Perdió el avión con destino: Buenos Aires
+11:05:48 Pasajero 63 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:05:48 Pasajero 69: ingresó a la Tienda Terminal B
+11:05:48 Pasajero 67: ingresó a la Tienda Terminal B
+11:05:48 Pasajero 69: solo observó los productos
+11:05:48 Pasajero 67: solo observó los productos
+11:05:48 Pasajero 67: salió de la Tienda Terminal B
+11:05:48 Pasajero 69: salió de la Tienda Terminal B
+11:05:48 Pasajero 67: Perdió el avión con destino: París
+11:05:48 Pasajero 69: Perdió el avión con destino: Roma
+11:05:48 Pasajero 79 está siendo atendido
+11:05:48 Pasajero 76 fue atendido exitosamente en: American Airlines
+11:05:48 < Pasajero 76 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:05:49 Pasajero 74 está siendo atendido
+11:05:49 Guardia permitió el ingreso de pasajero 78 al puesto de atención de British Airways. Pasajeros restantes esperando: 0
+11:05:49 Pasajero 72 fue atendido exitosamente en: British Airways
+11:05:49 > Pasajero 78 ingresó al puesto de atención de: British Airways en la posicion: 2
+11:05:49 < Pasajero 72 salió del puesto de atencion y se dirige rumbo a la terminal B
+11:05:49 El tren se detiene en la terminal: C
+11:05:49 Esperando a que todos los pasajeros bajen en la terminal C...
+11:05:49 Pasajero 77 intenta subir al tren, pero no puede.
+11:05:49 Pasajero 76 intenta subir al tren, pero no puede.
+11:05:49 Pasajero 72 intenta subir al tren, pero no puede.
+11:05:49 Pasajero 68 bajó en la terminal C
+11:05:50 Pasajero 68: ingresó a la Tienda Terminal C
+11:05:50 Pasajero 68: solo observó los productos
+11:05:50 Pasajero 68: salió de la Tienda Terminal C
+11:05:50 Pasajero 68: Perdió el avión con destino: París
+11:05:51 Terminó el recorrido del tren.
+11:05:51 Tren volviendo al inicio del aeropuerto...
+11:05:51 Pasajero 79 fue atendido exitosamente en: American Airlines
+11:05:51 < Pasajero 79 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:05:52 Pasajero 78 está siendo atendido
+11:05:52 Pasajero 74 fue atendido exitosamente en: British Airways
+11:05:52 < Pasajero 74 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:52 HORA ACTUAL DEL AEROPUERTO: 15:00hs
+11:05:52 Comienza el abordaje del vuelo con destino 'Roma de la aerolinea 'American Airlines'
+11:05:52 Pasajero 2: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:05:52 Pasajero 56: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:05:52 Pasajero 49: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:05:52 Pasajero 46: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:05:52 Pasajero 42: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:05:52 Pasajero 39: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:05:52 Pasajero 32: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:05:52 Pasajero 19: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:05:52 Pasajero 23: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:05:52 Pasajero 13: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:05:53 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:05:53 Pasajero 79: subió al tren. Pasajeros a bordo: 1
+11:05:53 Pasajero 74: subió al tren. Pasajeros a bordo: 2
+11:05:53 Pasajero 75: subió al tren. Pasajeros a bordo: 3
+11:05:53 Pasajero 73: subió al tren. Pasajeros a bordo: 4
+11:05:53 Pasajero 77: subió al tren. Pasajeros a bordo: 5
+11:05:53 Pasajero 76: subió al tren. Pasajeros a bordo: 6
+11:05:53 Pasajero 72: subió al tren. Pasajeros a bordo: 7
+11:05:55 Pasajero 78 fue atendido exitosamente en: British Airways
+11:05:55 < Pasajero 78 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:05:55 Pasajero 78: subió al tren. Pasajeros a bordo: 8
+11:05:55 Pasajero 78 espera para bajar en la terminal A
+11:05:55 El tren comienza su recorrido con 8 pasajeros a bordo.
+11:05:55 Pasajero 79 espera para bajar en la terminal C
+11:05:55 Pasajero 74 espera para bajar en la terminal A
+11:05:55 Pasajero 75 espera para bajar en la terminal A
+11:05:55 Pasajero 73 espera para bajar en la terminal B
+11:05:55 Pasajero 77 espera para bajar en la terminal B
+11:05:55 Pasajero 76 espera para bajar en la terminal C
+11:05:55 Pasajero 72 espera para bajar en la terminal B
+11:05:55 El tren se detiene en la terminal: A
+11:05:55 Esperando a que todos los pasajeros bajen en la terminal A...
+11:05:55 Pasajero 78 bajó en la terminal A
+11:05:55 Pasajero 74 bajó en la terminal A
+11:05:55 Pasajero 75 bajó en la terminal A
+11:05:56 Pasajero 78: ingresó a la Tienda Terminal A
+11:05:56 Pasajero 75 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:05:56 Pasajero 74: ingresó a la Tienda Terminal A
+11:05:56 Pasajero 75: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:05:56 Pasajero 78: solo observó los productos
+11:05:56 Pasajero 78: salió de la Tienda Terminal A
+11:05:56 Pasajero 78: Perdió el avión con destino: París
+11:05:56 Pasajero 74: solo observó los productos
+11:05:56 Pasajero 74: salió de la Tienda Terminal A
+11:05:56 Pasajero 74: Perdió el avión con destino: Buenos Aires
+11:05:57 El tren se detiene en la terminal: B
+11:05:57 Esperando a que todos los pasajeros bajen en la terminal B...
+11:05:57 Pasajero 73 bajó en la terminal B
+11:05:57 Pasajero 77 bajó en la terminal B
+11:05:57 Pasajero 72 bajó en la terminal B
+11:05:58 Pasajero 77: ingresó a la Tienda Terminal B
+11:05:58 Pasajero 72: ingresó a la Tienda Terminal B
+11:05:58 Pasajero 73: ingresó a la Tienda Terminal B
+11:05:58 Pasajero 73: solo observó los productos
+11:05:58 Pasajero 72: solo observó los productos
+11:05:58 Pasajero 77: solo observó los productos
+11:05:58 Pasajero 72: salió de la Tienda Terminal B
+11:05:58 Pasajero 73: salió de la Tienda Terminal B
+11:05:58 Pasajero 73: Perdió el avión con destino: París
+11:05:58 Pasajero 72: Perdió el avión con destino: Buenos Aires
+11:05:58 Pasajero 77: salió de la Tienda Terminal B
+11:05:58 Pasajero 77: Perdió el avión con destino: París
+11:05:59 El tren se detiene en la terminal: C
+11:05:59 Esperando a que todos los pasajeros bajen en la terminal C...
+11:05:59 Pasajero 79 bajó en la terminal C
+11:05:59 Pasajero 76 bajó en la terminal C
+11:06:00 Pasajero 76: ingresó a la Tienda Terminal C
+11:06:00 Pasajero 79 está esperando al abordaje del vuelo 'Roma' de la aerolinea 'American Airlines'
+11:06:00 Pasajero 79: Subió al avión con destino: Roma. Hora de vuelo: 15hs.
+11:06:00 Pasajero 76: está usando una caja. Mostrando un gasto de $3932
+11:06:01 Terminó el recorrido del tren.
+11:06:01 Tren volviendo al inicio del aeropuerto...
+11:06:01 Pasajero 76: salió de la Tienda Terminal C
+11:06:01 Pasajero 76 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'American Airlines'
+11:06:02 HORA ACTUAL DEL AEROPUERTO: 16:00hs
+11:06:02 Despega el vuelo con destino 'Roma de la aerolinea 'American Airlines'
+11:06:03 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:06:12 HORA ACTUAL DEL AEROPUERTO: 17:00hs
+11:06:22 HORA ACTUAL DEL AEROPUERTO: 18:00hs
+11:06:22 Comienza el abordaje del vuelo con destino 'Nueva York de la aerolinea 'American Airlines'
+11:06:22 Pasajero 10: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 76: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 63: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 66: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 61: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 59: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 53: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 44: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 33: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 45: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 20: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 26: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 30: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 17: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:22 Pasajero 14: Subió al avión con destino: Nueva York. Hora de vuelo: 18hs.
+11:06:32 HORA ACTUAL DEL AEROPUERTO: 19:00hs
+11:06:32 Despega el vuelo con destino 'Nueva York de la aerolinea 'American Airlines'
+11:06:42 HORA ACTUAL DEL AEROPUERTO: 20:00hs
+11:06:52 HORA ACTUAL DEL AEROPUERTO: 21:00hs
+11:07:02 HORA ACTUAL DEL AEROPUERTO: 22:00hs
+11:07:02 El aeropuerto esta ahora cerrado
+11:07:12 HORA ACTUAL DEL AEROPUERTO: 23:00hs
+11:07:22 HORA ACTUAL DEL AEROPUERTO: 24:00hs
+11:07:32 HORA ACTUAL DEL AEROPUERTO: 1:00hs

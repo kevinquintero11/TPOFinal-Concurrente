@@ -14,7 +14,7 @@ import Utilidades.Log;
 
 public class Hall {
 
-    // Mapa que asocia aerolíneas con sus respectivas BlockingQueues
+    // Mapa que asocia los puestos de atencion de las aerolíneas con sus respectivas BlockingQueues
     private final Map<String, BlockingQueue<Pasajero>> colasDeEspera;
 
     public Hall(List<Aerolinea> listaAerolineas) {

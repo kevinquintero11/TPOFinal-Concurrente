@@ -19,5 +19,9 @@ public class Aerolinea {
     public List<Vuelo> getVuelos(){
         return this.listaVuelos;
     }
+
+    public void setVuelos(List<Vuelo> vuelos){
+        this.listaVuelos = vuelos;
+    }
     
 }
