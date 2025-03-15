@@ -1,0 +1,214 @@
+11:01:48 Pasajero 0 intenta ingresar, pero el aeropuerto está cerrado
+11:01:48 Pasajero 9 intenta ingresar, pero el aeropuerto está cerrado
+11:01:48 Pasajero 8 intenta ingresar, pero el aeropuerto está cerrado
+11:01:48 Pasajero 7 intenta ingresar, pero el aeropuerto está cerrado
+11:01:48 Pasajero 6 intenta ingresar, pero el aeropuerto está cerrado
+11:01:48 Pasajero 5 intenta ingresar, pero el aeropuerto está cerrado
+11:01:48 Pasajero 4 intenta ingresar, pero el aeropuerto está cerrado
+11:01:48 Pasajero 3 intenta ingresar, pero el aeropuerto está cerrado
+11:01:48 Pasajero 2 intenta ingresar, pero el aeropuerto está cerrado
+11:01:48 Pasajero 1 intenta ingresar, pero el aeropuerto está cerrado
+11:01:58 HORA ACTUAL DEL AEROPUERTO: 6:00hs
+11:01:58 El aeropuerto está ahora abierto.
+11:01:58 Pasajero 0 ingresa al aeropuerto.
+11:01:58 Pasajero 1 ingresa al aeropuerto.
+11:01:58 Pasajero 2 ingresa al aeropuerto.
+11:01:58 Pasajero 0 esta siendo atendido en el puesto de informes.
+11:01:58 Pasajero 3 ingresa al aeropuerto.
+11:01:58 Pasajero 4 ingresa al aeropuerto.
+11:01:58 Pasajero 5 ingresa al aeropuerto.
+11:01:58 Pasajero 6 ingresa al aeropuerto.
+11:01:58 Pasajero 7 ingresa al aeropuerto.
+11:01:58 Pasajero 8 ingresa al aeropuerto.
+11:01:58 Pasajero 9 ingresa al aeropuerto.
+11:01:59 Pasajero 0 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:01:59 Pasajero 1 esta siendo atendido en el puesto de informes.
+11:01:59 > Pasajero 0 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 1
+11:01:59 Pasajero 0 está siendo atendido
+11:02:00 Pasajero 1 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:02:00 Pasajero 2 esta siendo atendido en el puesto de informes.
+11:02:00 > Pasajero 1 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 2
+11:02:01 Pasajero 2 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:02:01 Pasajero 3 esta siendo atendido en el puesto de informes.
+11:02:01 > Pasajero 2 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 3
+11:02:01 Pasajero 0 fue atendido exitosamente en: Aerolíneas Argentinas
+11:02:01 < Pasajero 0 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:02:01 Pasajero 0: subió al tren. Pasajeros a bordo: 1
+11:02:01 Pasajero 1 está siendo atendido
+11:02:02 Pasajero 3 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:02:02 Pasajero 4 esta siendo atendido en el puesto de informes.
+11:02:02 > Pasajero 3 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 3
+11:02:03 Pasajero 4 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:02:03 Pasajero 5 esta siendo atendido en el puesto de informes.
+11:02:03 Pasajero 4 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+11:02:03 Pasajero 1 fue atendido exitosamente en: Aerolíneas Argentinas
+11:02:03 < Pasajero 1 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:02:03 Pasajero 1: subió al tren. Pasajeros a bordo: 2
+11:02:03 Guardia permitió el ingreso de pasajero 4 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+11:02:03 > Pasajero 4 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 3
+11:02:04 Pasajero 2 está siendo atendido
+11:02:04 Pasajero 5 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:02:04 Pasajero 6 esta siendo atendido en el puesto de informes.
+11:02:04 Pasajero 5 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 1
+11:02:05 Pasajero 6 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:02:05 Pasajero 7 esta siendo atendido en el puesto de informes.
+11:02:05 Pasajero 6 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 2
+11:02:06 Pasajero 2 fue atendido exitosamente en: Aerolíneas Argentinas
+11:02:06 Guardia permitió el ingreso de pasajero 5 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 1
+11:02:06 < Pasajero 2 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:02:06 > Pasajero 5 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 3
+11:02:06 Pasajero 2: subió al tren. Pasajeros a bordo: 3
+11:02:06 Pasajero 7 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:02:06 Pasajero 8 esta siendo atendido en el puesto de informes.
+11:02:06 Pasajero 7 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 2
+11:02:06 Pasajero 3 está siendo atendido
+11:02:07 Pasajero 8 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:02:07 Pasajero 9 esta siendo atendido en el puesto de informes.
+11:02:07 Pasajero 8 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 3
+11:02:08 HORA ACTUAL DEL AEROPUERTO: 7:00hs
+11:02:08 Pasajero 9 se tiene que dirigir al puesto Aerolíneas Argentinas
+11:02:08 Pasajero 9 está esperando en la cola del hall para Aerolíneas Argentinas. Cantidad de personas: 4
+11:02:08 Pasajero 3 fue atendido exitosamente en: Aerolíneas Argentinas
+11:02:08 Guardia permitió el ingreso de pasajero 6 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 3
+11:02:08 < Pasajero 3 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:02:08 > Pasajero 6 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 3
+11:02:08 Pasajero 3: subió al tren. Pasajeros a bordo: 4
+11:02:08 Pasajero 4 está siendo atendido
+11:02:10 Pasajero 4 fue atendido exitosamente en: Aerolíneas Argentinas
+11:02:10 < Pasajero 4 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:02:10 Guardia permitió el ingreso de pasajero 7 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 2
+11:02:10 > Pasajero 7 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 3
+11:02:10 Pasajero 4: subió al tren. Pasajeros a bordo: 5
+11:02:10 Pasajero 4 espera para bajar en la terminal C
+11:02:10 El tren comienza su recorrido con 5 pasajeros a bordo.
+11:02:10 Pasajero 0 espera para bajar en la terminal C
+11:02:10 Pasajero 1 espera para bajar en la terminal A
+11:02:10 Pasajero 2 espera para bajar en la terminal A
+11:02:10 Pasajero 3 espera para bajar en la terminal A
+11:02:10 El tren se detiene en la terminal: A
+11:02:10 Esperando a que todos los pasajeros bajen en la terminal A...
+11:02:10 Pasajero 1 bajó en la terminal A
+11:02:10 Pasajero 1: ingresó a la Tienda Terminal A
+11:02:10 Pasajero 2 bajó en la terminal A
+11:02:10 Pasajero 2: ingresó a la Tienda Terminal A
+11:02:10 Pasajero 3 bajó en la terminal A
+11:02:10 Pasajero 3: no pudo ingresar. Tienda Terminal A está llena.
+11:02:10 Pasajero 1: está usando una caja. Mostrando un gasto de $3234
+11:02:10 Pasajero 2: está usando una caja. Mostrando un gasto de $1059
+11:02:10 Pasajero 3 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'Aerolíneas Argentinas' con horario de embarque: 9:00hs
+11:02:11 Pasajero 5 está siendo atendido
+11:02:11 Pasajero 1: salió de la Tienda Terminal A
+11:02:11 Pasajero 2: salió de la Tienda Terminal A
+11:02:11 Pasajero 1 está esperando al abordaje del vuelo 'Buenos Aires' de la aerolinea 'Aerolíneas Argentinas' con horario de embarque: 16:00hs
+11:02:11 Pasajero 2 está esperando al abordaje del vuelo 'Buenos Aires' de la aerolinea 'Aerolíneas Argentinas' con horario de embarque: 16:00hs
+11:02:12 El tren se detiene en la terminal: B
+11:02:13 Pasajero 5 fue atendido exitosamente en: Aerolíneas Argentinas
+11:02:13 < Pasajero 5 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:02:13 Guardia permitió el ingreso de pasajero 8 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 1
+11:02:13 > Pasajero 8 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 3
+11:02:13 Pasajero 6 está siendo atendido
+11:02:14 Pasajero 5 intenta subir al tren, pero no puede.
+11:02:14 El tren se detiene en la terminal: C
+11:02:14 Esperando a que todos los pasajeros bajen en la terminal C...
+11:02:14 Pasajero 4 bajó en la terminal C
+11:02:14 Pasajero 0 bajó en la terminal C
+11:02:14 Pasajero 0: ingresó a la Tienda Terminal C
+11:02:14 Pasajero 0: solo observó los productos
+11:02:14 Pasajero 4: ingresó a la Tienda Terminal C
+11:02:14 Pasajero 4: está usando una caja. Mostrando un gasto de $2193
+11:02:14 Pasajero 0: salió de la Tienda Terminal C
+11:02:14 Pasajero 0 está esperando al abordaje del vuelo 'Sídney' de la aerolinea 'Aerolíneas Argentinas' con horario de embarque: 11:00hs
+11:02:15 Pasajero 6 fue atendido exitosamente en: Aerolíneas Argentinas
+11:02:15 Guardia permitió el ingreso de pasajero 9 al puesto de atención de Aerolíneas Argentinas. Pasajeros restantes esperando: 0
+11:02:15 < Pasajero 6 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:02:15 > Pasajero 9 ingresó al puesto de atención de: Aerolíneas Argentinas en la posicion: 3
+11:02:15 Pasajero 7 está siendo atendido
+11:02:15 Pasajero 4: salió de la Tienda Terminal C
+11:02:15 Pasajero 4 está esperando al abordaje del vuelo 'Sídney' de la aerolinea 'Aerolíneas Argentinas' con horario de embarque: 11:00hs
+11:02:16 Terminó el recorrido del tren.
+11:02:16 Pasajero 6 intenta subir al tren, pero no puede.
+11:02:16 Tren volviendo al inicio del aeropuerto...
+11:02:17 Pasajero 7 fue atendido exitosamente en: Aerolíneas Argentinas
+11:02:17 < Pasajero 7 salió del puesto de atencion y se dirige rumbo a la terminal A
+11:02:17 Pasajero 8 está siendo atendido
+11:02:18 HORA ACTUAL DEL AEROPUERTO: 8:00hs
+11:02:18 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:02:18 Pasajero 7: subió al tren. Pasajeros a bordo: 1
+11:02:18 Pasajero 5: subió al tren. Pasajeros a bordo: 2
+11:02:18 Pasajero 6: subió al tren. Pasajeros a bordo: 3
+11:02:20 Pasajero 8 fue atendido exitosamente en: Aerolíneas Argentinas
+11:02:20 < Pasajero 8 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:02:20 Pasajero 8: subió al tren. Pasajeros a bordo: 4
+11:02:20 Pasajero 9 está siendo atendido
+11:02:22 Pasajero 9 fue atendido exitosamente en: Aerolíneas Argentinas
+11:02:22 < Pasajero 9 salió del puesto de atencion y se dirige rumbo a la terminal C
+11:02:22 Pasajero 9: subió al tren. Pasajeros a bordo: 5
+11:02:22 Pasajero 9 espera para bajar en la terminal C
+11:02:22 El tren comienza su recorrido con 5 pasajeros a bordo.
+11:02:22 Pasajero 7 espera para bajar en la terminal A
+11:02:22 Pasajero 5 espera para bajar en la terminal A
+11:02:22 Pasajero 6 espera para bajar en la terminal C
+11:02:22 Pasajero 8 espera para bajar en la terminal C
+11:02:22 El tren se detiene en la terminal: A
+11:02:22 Esperando a que todos los pasajeros bajen en la terminal A...
+11:02:22 Pasajero 7 bajó en la terminal A
+11:02:22 Pasajero 7: ingresó a la Tienda Terminal A
+11:02:22 Pasajero 5 bajó en la terminal A
+11:02:22 Pasajero 5 está esperando al abordaje del vuelo 'Nueva York' de la aerolinea 'Aerolíneas Argentinas' con horario de embarque: 9:00hs
+11:02:22 Pasajero 7: está usando una caja. Mostrando un gasto de $3890
+11:02:23 Pasajero 7: salió de la Tienda Terminal A
+11:02:23 Pasajero 7 está esperando al abordaje del vuelo 'Buenos Aires' de la aerolinea 'Aerolíneas Argentinas' con horario de embarque: 16:00hs
+11:02:24 El tren se detiene en la terminal: B
+11:02:26 El tren se detiene en la terminal: C
+11:02:26 Esperando a que todos los pasajeros bajen en la terminal C...
+11:02:26 Pasajero 9 bajó en la terminal C
+11:02:26 Pasajero 9: ingresó a la Tienda Terminal C
+11:02:26 Pasajero 6 bajó en la terminal C
+11:02:26 Pasajero 9: está usando una caja. Mostrando un gasto de $3255
+11:02:26 Pasajero 8 bajó en la terminal C
+11:02:26 Pasajero 6: ingresó a la Tienda Terminal C
+11:02:26 Pasajero 6: solo observó los productos
+11:02:26 Pasajero 6: salió de la Tienda Terminal C
+11:02:26 Pasajero 8: no pudo ingresar. Tienda Terminal C está llena.
+11:02:26 Pasajero 6 está esperando al abordaje del vuelo 'Sídney' de la aerolinea 'Aerolíneas Argentinas' con horario de embarque: 11:00hs
+11:02:26 Pasajero 8 está esperando al abordaje del vuelo 'Sídney' de la aerolinea 'Aerolíneas Argentinas' con horario de embarque: 11:00hs
+11:02:27 Pasajero 9: salió de la Tienda Terminal C
+11:02:27 Pasajero 9 está esperando al abordaje del vuelo 'Sídney' de la aerolinea 'Aerolíneas Argentinas' con horario de embarque: 11:00hs
+11:02:28 HORA ACTUAL DEL AEROPUERTO: 9:00hs
+11:02:28 Comienza el abordaje del vuelo con destino 'Nueva York de la aerolinea 'Aerolíneas Argentinas' en la Terminal A
+11:02:28 Pasajero 5: Subió al avión con destino: Nueva York. Hora de vuelo: 9hs.
+11:02:28 Pasajero 3: Subió al avión con destino: Nueva York. Hora de vuelo: 9hs.
+11:02:28 Terminó el recorrido del tren.
+11:02:28 Tren volviendo al inicio del aeropuerto...
+11:02:30 El tren está listo a la espera de pasajeros para un nuevo recorrido
+11:02:38 HORA ACTUAL DEL AEROPUERTO: 10:00hs
+11:02:38 Despega el vuelo con destino 'Nueva York de la aerolinea 'Aerolíneas Argentinas'
+11:02:48 HORA ACTUAL DEL AEROPUERTO: 11:00hs
+11:02:48 Comienza el abordaje del vuelo con destino 'Sídney de la aerolinea 'Aerolíneas Argentinas' en la Terminal C
+11:02:48 Pasajero 4: Subió al avión con destino: Sídney. Hora de vuelo: 11hs.
+11:02:48 Pasajero 9: Subió al avión con destino: Sídney. Hora de vuelo: 11hs.
+11:02:48 Pasajero 8: Subió al avión con destino: Sídney. Hora de vuelo: 11hs.
+11:02:48 Pasajero 6: Subió al avión con destino: Sídney. Hora de vuelo: 11hs.
+11:02:48 Pasajero 0: Subió al avión con destino: Sídney. Hora de vuelo: 11hs.
+11:02:58 HORA ACTUAL DEL AEROPUERTO: 12:00hs
+11:02:58 Despega el vuelo con destino 'Sídney de la aerolinea 'Aerolíneas Argentinas'
+11:03:08 HORA ACTUAL DEL AEROPUERTO: 13:00hs
+11:03:18 HORA ACTUAL DEL AEROPUERTO: 14:00hs
+11:03:28 HORA ACTUAL DEL AEROPUERTO: 15:00hs
+11:03:38 HORA ACTUAL DEL AEROPUERTO: 16:00hs
+11:03:38 Comienza el abordaje del vuelo con destino 'Buenos Aires de la aerolinea 'Aerolíneas Argentinas' en la Terminal A
+11:03:38 Pasajero 1: Subió al avión con destino: Buenos Aires. Hora de vuelo: 16hs.
+11:03:38 Pasajero 7: Subió al avión con destino: Buenos Aires. Hora de vuelo: 16hs.
+11:03:38 Pasajero 2: Subió al avión con destino: Buenos Aires. Hora de vuelo: 16hs.
+11:03:48 Despega el vuelo con destino 'Buenos Aires de la aerolinea 'Aerolíneas Argentinas'
+11:03:48 HORA ACTUAL DEL AEROPUERTO: 17:00hs
+11:03:58 HORA ACTUAL DEL AEROPUERTO: 18:00hs
+11:04:08 HORA ACTUAL DEL AEROPUERTO: 19:00hs
+11:04:18 HORA ACTUAL DEL AEROPUERTO: 20:00hs
+11:04:28 HORA ACTUAL DEL AEROPUERTO: 21:00hs
+11:04:38 HORA ACTUAL DEL AEROPUERTO: 22:00hs
+11:04:38 El aeropuerto esta ahora cerrado
+11:04:48 HORA ACTUAL DEL AEROPUERTO: 23:00hs
+11:04:58 HORA ACTUAL DEL AEROPUERTO: 24:00hs
+11:05:08 HORA ACTUAL DEL AEROPUERTO: 1:00hs
+11:05:18 HORA ACTUAL DEL AEROPUERTO: 2:00hs

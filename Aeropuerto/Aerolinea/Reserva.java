@@ -2,6 +2,8 @@ package Aeropuerto.Aerolinea;
 import Aeropuerto.Aeropuerto;
 import Aeropuerto.Terminal.Terminal;
 
+// CLASE QUE SIMULA LA RESERVA DE UN PASAJERO PARA UN VUELO
+
 public class Reserva {
     private Aerolinea aerolinea;
     private Terminal terminal;
@@ -9,10 +11,33 @@ public class Reserva {
     private Vuelo miVuelo;
     private int idReserva;
 
-    public Reserva(Aeropuerto aeropuerto, Aerolinea aero, Vuelo vuelo, int id){
+    public Reserva(Aeropuerto aeropuerto, Aerolinea aero, Vuelo vuelo, int id, Terminal term){
         this.aerolinea = aero;
         this.miVuelo = vuelo;
         this.aeropuerto = aeropuerto;
         this.idReserva = id;
+        this.terminal = term;
     }
+
+    public Aeropuerto getAeropuerto(){
+        return this.aeropuerto;
+    }
+
+    public Aerolinea getAerolinea(){
+        return this.aerolinea;
+    }
+
+    public int getIdReserva(){
+        return this.idReserva;
+    }
+
+    public Vuelo getVuelo(){
+        return this.miVuelo;
+    }
+
+    public Terminal getTerminal(){
+        return this.terminal;
+    }
+
+    
 }
