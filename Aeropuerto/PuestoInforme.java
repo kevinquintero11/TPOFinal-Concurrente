@@ -35,8 +35,7 @@ public class PuestoInforme {
         
         while (i < longitud && puestoEncontrado == null) {
             PuestoAtencion puesto = puestos.get(i);
-            if (puesto.getAerolinea() != null 
-                && puesto.getAerolinea().getNombre().equals(aerolineaReserva.getNombre())) {
+            if (puesto.getAerolinea() != null && puesto.getAerolinea().getNombre().equals(aerolineaReserva.getNombre())) {
                 puestoEncontrado = puesto;
             }
             i++;

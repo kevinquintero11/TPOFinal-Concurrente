@@ -16,9 +16,9 @@ public class Log {
     
     public static void inicializarLog(){
         try {
-                log = new PrintWriter(new File("./log.txt"));
+            log = new PrintWriter(new File("./log.txt"));
         } catch (IOException e) {
-                System.err.println("ERROR " + e);
+            System.err.println("ERROR " + e);
         }
     }
     

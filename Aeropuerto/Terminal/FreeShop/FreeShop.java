@@ -28,11 +28,13 @@ public class FreeShop {
         boolean ingreso = false;
         try {
             if (!capacidadTienda.tryAcquire()) {
-                Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": no pudo ingresar." + this.nombre + " lleno.");
+                Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": no pudo ingresar. " + this.nombre + " está llena.");
                 ingreso = false;
-            }
-            Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": ingresó a la " + this.nombre);
-            ingreso = true;
+            }else{
+                Log.escribir("Pasajero " + pasajero.getIdPasajero() + ": ingresó a la " + this.nombre);
+                ingreso = true;
+            }   
+            
         } catch (Exception e) {
             e.printStackTrace();          
         }

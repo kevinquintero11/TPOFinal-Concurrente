@@ -40,7 +40,7 @@ public class PuestoAtencion implements Runnable {
         if (this.cantidadPasajeroEnPuesto == this.capacidadMax) {
             this.mutex.release();
             this.hall.esperarEnHall(pasajero, this);
-            this.mutex.acquire();
+            //this.mutex.acquire();
         }else{
             this.colaPasajeros.put(pasajero);
             this.cantidadPasajeroEnPuesto++;
@@ -53,16 +53,18 @@ public class PuestoAtencion implements Runnable {
     // Método ejecutado por los hilos puestoAtencion
     public void atenderPasajero() throws InterruptedException {
         Pasajero pasajero = colaPasajeros.take(); // Toma al primer pasajero ubicado en la cola de espera
+        Thread.sleep(300); // Este sleep es para ajustar la salida por pantalla
         Log.escribir("Pasajero " + pasajero.getIdPasajero() + " está siendo atendido");
         
         // Simula el tiempo de atención
-        Thread.sleep(3000); 
+        Thread.sleep(2000); 
 
         synchronized (pasajero) {
             pasajero.notify(); // Notifica al pasajero que ha sido atendido
         }
-    
+       
         this.cantidadPasajeroEnPuesto--;
+        
         this.semaforoGuardia.release(); // Libera el semáforo del guardia para avisar que se desocupo un espacio en la fila
     }
 
@@ -89,7 +91,9 @@ public class PuestoAtencion implements Runnable {
             if (!cola.isEmpty()) {
                 Pasajero pasajero = cola.remove(); // Quita al pasjero de la cola de espera del hall
                 colaPasajeros.put(pasajero); // Agrega al pasajero a la cola del puesto de atención
+                
                 cantidadPasajeroEnPuesto++;
+                
                 Log.escribir("Guardia permitió el ingreso de pasajero " + pasajero.getIdPasajero() + " al puesto de atención de " + this.aerolinea.getNombre() + ". Pasajeros restantes esperando: " + cola.size());
                 Log.escribir("> Pasajero " + pasajero.getIdPasajero() + " ingresó al puesto de atención de: " + aerolinea.getNombre() + " en la posicion: " + cantidadPasajeroEnPuesto);
                 

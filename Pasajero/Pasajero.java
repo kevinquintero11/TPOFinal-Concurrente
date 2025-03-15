@@ -49,8 +49,7 @@ public class Pasajero implements Runnable {
                 Terminal terminalVuelo = (Terminal) terminalYPuertoEmbarque.get(0);
                 Log.escribir("< Pasajero " + this.idPasajero + " salió del puesto de atencion y se dirige rumbo a la terminal " + terminalVuelo.getIdTerminal());
                 aeropuerto.irTerminal(this, terminalVuelo);
-                Thread.sleep(1000); // simular viaje a la terminal
-                if (Math.abs(aeropuerto.getReloj().getHora() - this.miReserva.getVuelo().getHora()) > 1) {
+                if ((this.miReserva.getVuelo().getHora() - aeropuerto.getReloj().getHora()) >= 2) {
                     FreeShop tienda = this.miReserva.getTerminal().getTienda();
                     if(tienda.ingresarFreeShop(this)) {
                         Random random = new Random();

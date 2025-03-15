@@ -2,6 +2,7 @@ package Aeropuerto.Aerolinea;
 
 import java.util.concurrent.CountDownLatch;
 import Aeropuerto.Terminal.PuestoEmbarque;
+import Aeropuerto.Terminal.Terminal;
 import Utilidades.Log;
 import Utilidades.Reloj;
 
@@ -16,8 +17,9 @@ public class Vuelo implements Runnable{
     private CountDownLatch latchDespegue;
     private boolean partioRumbo;
     private Aerolinea aerolinea;
+    private Terminal terminal;
 
-    public Vuelo(int hs, String nombreDestino, PuestoEmbarque puesto, Reloj reloj, CountDownLatch despegue, Aerolinea aero){
+    public Vuelo(int hs, String nombreDestino, PuestoEmbarque puesto, Reloj reloj, CountDownLatch despegue, Aerolinea aero, Terminal term){
         this.horaDespegue = hs;
         this.destino = nombreDestino;
         this.puestoSalida = puesto;
@@ -25,6 +27,7 @@ public class Vuelo implements Runnable{
         this.latchDespegue = despegue;
         this.partioRumbo = false;
         this.aerolinea = aero;
+        this.terminal = term;
     }
 
     public String getDestino(){
@@ -51,11 +54,15 @@ public class Vuelo implements Runnable{
         return this.aerolinea;
     }
 
+    public Terminal getTerminal(){
+        return this.terminal;
+    }
+
     @Override
     public void run() {
         try {
             relojAeropuerto.verificarHoraVuelo(horaDespegue); // Verifica si ya es hora de despegar
-            Log.escribir("Comienza el abordaje del vuelo con destino '" + this.destino + " de la aerolinea '" + this.aerolinea.getNombre() + "'");
+            Log.escribir("Comienza el abordaje del vuelo con destino '" + this.destino + " de la aerolinea '" + this.aerolinea.getNombre() + "'" + " en la Terminal " + this.terminal.getIdTerminal());
             latchDespegue.countDown();
             Thread.sleep(10000); // Se da un tiempo de una hora para el abordaje de los pasajeros
             this.partioRumbo = true;

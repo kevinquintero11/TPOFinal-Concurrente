@@ -1,5 +1,7 @@
 package Main;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -21,14 +23,14 @@ import Utilidades.Reloj;
 
 public class Main {
     
-    final static int CANTIDAD_PASAJEROS = 80; 
+    final static int CANTIDAD_PASAJEROS = 15; 
     final static int CANTIDAD_TERMINALES = 3; // Terminales A, B y C segun enunciado
-    final static int CANTIDAD_AEROLINEAS = 3;  
-    final static int CANTIDAD_VUELOS = 2; // Cantidad de vuelos por aerolinea
+    final static int CANTIDAD_AEROLINEAS = 1;  
+    final static int CANTIDAD_VUELOS = 3; // Cantidad de vuelos por aerolinea
     final static int CANTIDAD_PUESTOSATENCION = CANTIDAD_AEROLINEAS; // Un puesto por cada aerolinea
-    final static int CAPACIDAD_PUESTOATENCION = 2; // Capacidad de pasajeros que pueden haber esperando en la cola de cada puesto
-    final static int CAPACIDAD_TREN = 8; // Cantidad de pasajeros que soporta el tren
-    final static int CAPACIDAD_FREESHOP = 6; // Cantidad de lugares disponibles en las tiendas
+    final static int CAPACIDAD_PUESTOATENCION = 3; // Capacidad de pasajeros que pueden haber esperando en la cola de cada puesto
+    final static int CAPACIDAD_TREN = 5; // Cantidad de pasajeros que soporta el tren
+    final static int CAPACIDAD_FREESHOP = 2; // Cantidad de lugares disponibles en las tiendas
     final static List<PuestoEmbarque> listaPuestosEmbarques = new LinkedList<>();
     final static List<Terminal> listaTerminales = new LinkedList<>();
     final static List<Aerolinea> listaAerolineas = new LinkedList<>();
@@ -53,10 +55,10 @@ public class Main {
         crearPasajeros(aeropuerto);
         
 
-        Thread hiloReloj = new Thread(reloj);
+        Thread hiloReloj = new Thread(reloj, "Reloj");
         listaHilos.add(hiloReloj);
 
-        Thread hiloTren = new Thread(tren);
+        Thread hiloTren = new Thread(tren, "Tren");
         listaHilos.add(hiloTren);
 
 
@@ -84,22 +86,23 @@ public class Main {
     
     public static List<Vuelo> crearVuelos(Aerolinea aerolinea){
           
-        String[] DESTINOS = {
-            "Buenos Aires", "Madrid", "Nueva York", "Tokio", "Londres",
-            "París", "Roma", "Sídney", "Dubai", "Berlin"
-        };
+        List<String> destinosDisponibles = new ArrayList<>(Arrays.asList("Buenos Aires", "Madrid", "Nueva York", "Tokio", "Londres", "París", "Roma", "Sídney", "Dubai", "Berlín"));
 
         List<Vuelo> listaVuelos = new LinkedList<>();
         Random random = new Random();
-        
-        for(int i = 0; i < CANTIDAD_VUELOS; i++){
-            int indiceDestino = random.nextInt(DESTINOS.length);
+
+        for (int i = 0; i < CANTIDAD_VUELOS && !destinosDisponibles.isEmpty(); i++) {
+            int indiceDestino = random.nextInt(destinosDisponibles.size()); 
+            String destinoSeleccionado = destinosDisponibles.remove(indiceDestino); 
+
             int horaSalida = 8 + random.nextInt(14);
             int numAleatorio = random.nextInt(2) + 1;
             PuestoEmbarque puesto = listaPuestosEmbarques.get(numAleatorio);
             CountDownLatch latchDespegue = new CountDownLatch(1);
-            Vuelo vuelo = new Vuelo(horaSalida, DESTINOS[indiceDestino], puesto, reloj, latchDespegue, aerolinea);
-            Thread hiloVuelo = new Thread(vuelo);
+            int terminalAleatoria = random.nextInt(listaTerminales.size());
+
+            Vuelo vuelo = new Vuelo(horaSalida, destinoSeleccionado, puesto, reloj, latchDespegue, aerolinea, listaTerminales.get(terminalAleatoria));
+            Thread hiloVuelo = new Thread(vuelo, "Vuelo " + destinoSeleccionado);
             listaHilos.add(hiloVuelo);
             listaVuelos.add(vuelo);
         }
@@ -131,9 +134,9 @@ public class Main {
 
         for(int i = 0; i < CANTIDAD_PUESTOSATENCION; i++){
             PuestoAtencion puesto = new PuestoAtencion(listaAerolineas.get(i), hall, CAPACIDAD_PUESTOATENCION);
-            Thread hiloPuesto = new Thread(puesto);
+            Thread hiloPuesto = new Thread(puesto, "Puesto " + puesto.getAerolinea().getNombre());
             Guardia guardia = new Guardia(puesto);
-            Thread hiloGuardia = new Thread(guardia);
+            Thread hiloGuardia = new Thread(guardia, "Guardia " + puesto.getAerolinea().getNombre());
             listaPuestosAtencion.add(puesto);
             listaHilos.add(hiloGuardia);
             listaHilos.add(hiloPuesto);
@@ -148,12 +151,10 @@ public class Main {
             Aerolinea aerolinea = listaAerolineas.get(numAleatorio);
             int  vueloAleatorio = random.nextInt(aerolinea.getVuelos().size());
             Vuelo vuelo = aerolinea.getVuelos().get(vueloAleatorio);
-            int terminalAleatoria = random.nextInt(listaTerminales.size());
-            Terminal terminal = listaTerminales.get(terminalAleatoria);
-            Reserva reserva = new Reserva(aeropuerto, aerolinea, vuelo, i+100, terminal);
+            Reserva reserva = new Reserva(aeropuerto, aerolinea, vuelo, i+100, vuelo.getTerminal());
             Pasajero pasajero = new Pasajero(i, reserva);
             listaPasajeros.add(pasajero);
-            Thread pasajeroHilo = new Thread(pasajero);
+            Thread pasajeroHilo = new Thread(pasajero, "Pasajero " + pasajero.getIdPasajero());
            
             // Agrego el pasajero a la lista de hilos
             listaHilos.add(pasajeroHilo);  
